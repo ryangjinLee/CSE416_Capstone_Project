@@ -67,8 +67,10 @@ Ex. You only want one content box, set size of top to 100%, bottom to 0% or some
 .toolbar-content-bottom,
 .toolbar-content-top,
 .SelectionMenuSection {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 .title-text {
@@ -87,8 +89,7 @@ Ex. You only want one content box, set size of top to 100%, bottom to 0% or some
   float: none !important;
 }
 
-.stat-window {
-}
+.stat-window {}
 
 .tooltip {
   position: absolute;
@@ -102,15 +103,14 @@ Ex. You only want one content box, set size of top to 100%, bottom to 0% or some
   pointer-events: none;
 }
 
-.confirmationButton {
-}
+.confirmationButton {}
 
 .constraint-protection-collapsible {
   background-color: var(--tertiary-color);
 }
 
 /* For incumbent labels */
-.collapsible-body > .row > label {
+.collapsible-body>.row>label {
   color: black !important;
 }
 
@@ -121,7 +121,7 @@ Ex. You only want one content box, set size of top to 100%, bottom to 0% or some
   flex-wrap: wrap;
 }
 
-.iconAndLabel > span {
+.iconAndLabel>span {
   padding-left: 10px;
 }
 
@@ -132,7 +132,7 @@ Ex. You only want one content box, set size of top to 100%, bottom to 0% or some
   flex-wrap: wrap;
 }
 
-.labelAndIcon > span {
+.labelAndIcon>span {
   padding-right: 5px;
 }
 
@@ -216,14 +216,14 @@ Ex. You only want one content box, set size of top to 100%, bottom to 0% or some
 }
 
 .CompareSection {
-  flex-grow: 1;
+  flex-grow: 10;
+  width: 150vh;
+  padding-left: 50vh;
 }
 
-.ListingSection {
-}
+.ListingSection {}
 
-.FilterSection {
-}
+.FilterSection {}
 
 /* Whenever you want to center text */
 .center-title {
@@ -260,7 +260,7 @@ Ex. You only want one content box, set size of top to 100%, bottom to 0% or some
   justify-content: space-between;
 }
 
-.DistrictingResultsHeader > h5 {
+.DistrictingResultsHeader>h5 {
   font-weight: bold;
   padding-left: 10px;
   margin: 2.1rem 0 0 0 !important;
@@ -274,8 +274,7 @@ Ex. You only want one content box, set size of top to 100%, bottom to 0% or some
   font-size: small;
 }
 
-.DistrictingComparisonItem {
-}
+.DistrictingComparisonItem {}
 
 .cancelBtn {
   color: var(--fourthary-color);
@@ -308,7 +307,7 @@ button:focus {
   align-items: center;
 }
 
-.constraintAndCheckbox > h6 {
+.constraintAndCheckbox>h6 {
   font-size: 15px;
 }
 
@@ -383,7 +382,7 @@ button:focus {
 }
 
 /* Hide the body of the sorting collapsible*/
-.sortingCollapsible > .collapsible-body {
+.sortingCollapsible>.collapsible-body {
   display: none !important;
 }
 
@@ -403,7 +402,7 @@ button:focus {
   padding-top: 10px;
 }
 
-.listingOptions > .switch > label {
+.listingOptions>.switch>label {
   color: var(--fourthary-color);
 }
 
@@ -499,15 +498,4 @@ button:focus {
 
 .underline {
   text-decoration: underline;
-}
-
-.team-name {
-  font-size: 2rem; /* Large text size */
-  color: red; /* Red text color */
-  font-family: "Arial", sans-serif; /* Bold and simple font */
-  text-transform: uppercase; /* All caps */
-  letter-spacing: 5px; /* Space between the letters */
-  text-shadow: -1px -1px 0 black, /* Top-left shadow */ 1px -1px 0 black,
-    /* Top-right shadow */ -1px 1px 0 black,
-    /* Bottom-left shadow */ 1px 1px 0 black; /* Bottom-right shadow */
 }
