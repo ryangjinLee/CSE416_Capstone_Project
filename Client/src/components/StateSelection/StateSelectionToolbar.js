@@ -13,9 +13,9 @@ import logo from "../../pictures/Logo.png";
 class StateSelectionToolbar extends Component {
   handleChange(e) {
     switch (e.target.value) {
-      case ViewportUtilities.STATE_OPTIONS.NEW_YORK:
+      case ViewportUtilities.STATE_OPTIONS.LOUISIANA:
         this.props.setTentativeState(
-          ViewportUtilities.STATE_OPTIONS.NEW_YORK
+          ViewportUtilities.STATE_OPTIONS.LOUISIANA
         );
         this.props.setViewport(ViewportUtilities.NEW_YORK.Maximized);
         break;
@@ -100,7 +100,7 @@ class StateSelectionToolbar extends Component {
               <option value={ViewportUtilities.STATE_OPTIONS.MISSISSIPPI}>
                 Mississippi
               </option>
-              <option value={ViewportUtilities.STATE_OPTIONS.NEW_YORK}>
+              <option value={ViewportUtilities.STATE_OPTIONS.LOUISIANA}>
                 New York
               </option>
             </Select>
