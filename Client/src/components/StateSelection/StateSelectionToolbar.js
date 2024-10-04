@@ -13,19 +13,19 @@ import logo from "../../pictures/Logo.png";
 class StateSelectionToolbar extends Component {
   handleChange(e) {
     switch (e.target.value) {
-      case ViewportUtilities.STATE_OPTIONS.NORTH_CAROLINA:
+      case ViewportUtilities.STATE_OPTIONS.NEW_YORK:
         this.props.setTentativeState(
-          ViewportUtilities.STATE_OPTIONS.NORTH_CAROLINA
+          ViewportUtilities.STATE_OPTIONS.NEW_YORK
         );
-        this.props.setViewport(ViewportUtilities.NORTH_CAROLINA.Maximized);
+        this.props.setViewport(ViewportUtilities.NEW_YORK.Maximized);
         break;
-      case ViewportUtilities.STATE_OPTIONS.LOUISIANA:
-        this.props.setTentativeState(ViewportUtilities.STATE_OPTIONS.LOUISIANA);
-        this.props.setViewport(ViewportUtilities.LOUISIANA.Maximized);
+      case ViewportUtilities.STATE_OPTIONS.CALIFORNIA:
+        this.props.setTentativeState(ViewportUtilities.STATE_OPTIONS.CALIFORNIA);
+        this.props.setViewport(ViewportUtilities.CALIFORNIA.Maximized);
         break;
-      case ViewportUtilities.STATE_OPTIONS.ALABAMA:
-        this.props.setTentativeState(ViewportUtilities.STATE_OPTIONS.ALABAMA);
-        this.props.setViewport(ViewportUtilities.ALABAMA.Maximized);
+      case ViewportUtilities.STATE_OPTIONS.MISSISSIPPI:
+        this.props.setTentativeState(ViewportUtilities.STATE_OPTIONS.MISSISSIPPI);
+        this.props.setViewport(ViewportUtilities.MISSISSIPPI.Maximized);
         break;
       default:
         this.props.setTentativeState(
@@ -94,13 +94,13 @@ class StateSelectionToolbar extends Component {
               >
                 -Select-
               </option>
-              <option value={ViewportUtilities.STATE_OPTIONS.NORTH_CAROLINA}>
+              <option value={ViewportUtilities.STATE_OPTIONS.CALIFORNIA}>
                 California
               </option>
-              <option value={ViewportUtilities.STATE_OPTIONS.LOUISIANA}>
+              <option value={ViewportUtilities.STATE_OPTIONS.MISSISSIPPI}>
                 Mississippi
               </option>
-              <option value={ViewportUtilities.STATE_OPTIONS.ALABAMA}>
+              <option value={ViewportUtilities.STATE_OPTIONS.NEW_YORK}>
                 New York
               </option>
             </Select>
