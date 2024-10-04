@@ -3,6 +3,9 @@ export const STATE_OPTIONS = {
   NORTH_CAROLINA: "NORTH_CAROLINA",
   ALABAMA: "ALABAMA",
   LOUISIANA: "LOUISIANA",
+    NEW_YORK: "NEW_YORK",
+  CALIFORNIA: "CALIFORNIA",
+  MISSISSIPPI: "MISSISSIPPI",
 };
 
 /* Global view */
@@ -72,5 +75,57 @@ export const ALABAMA = {
     width: "40vw",
     height: window.innerHeight,
     zoom: 4.5,
+  },
+};
+
+
+export const NEW_YORK = {
+  Maximized: {
+    latitude: 42.9538,
+    longitude: -75.5268,
+    width: "75vw",
+    height: window.innerHeight,
+    zoom: 6.5,
+  },
+  Minimized: {
+    latitude: 42.9538,
+    longitude: -75.5268,
+    width: "40vw",
+    height: window.innerHeight,
+    zoom: 4.5,
+  },
+};
+
+export const CALIFORNIA = {
+  Maximized: {
+    latitude: 36.7783,
+    longitude: -119.4179,
+    width: "75vw",
+    height: window.innerHeight,
+    zoom: 5.5,
+  },
+  Minimized: {
+    latitude: 36.7783,
+    longitude: -119.4179,
+    width: "40vw",
+    height: window.innerHeight,
+    zoom: 4,
+  },
+};
+
+export const MISSISSIPPI = {
+  Maximized: {
+    latitude: 32.3547,
+    longitude: -89.3985,
+    width: "75vw",
+    height: window.innerHeight,
+    zoom: 6,
+  },
+  Minimized: {
+    latitude: 32.3547,
+    longitude: -89.3985,
+    width: "40vw",
+    height: window.innerHeight,
+    zoom: 5,
   },
 };

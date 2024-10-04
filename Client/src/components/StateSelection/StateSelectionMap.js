@@ -13,6 +13,12 @@ import * as ViewportUtilities from "../../utilities/ViewportUtilities";
 import * as MapUtilities from "../../utilities/MapUtilities";
 import * as NetworkingUtilities from "../../network/NetworkingUtilities";
 
+//temp
+import NYCountiesGeoData from '../../data/NY/CountiesGeoData.json';
+import CACountiesGeoData from '../../data/CA/CountiesGeoData.json';
+import MSCountiesGeoData from '../../data/MS/CountiesGeoData.json';
+
+
 class StateSelectionMap extends Component {
   componentDidMount() {
     // Fresh start
@@ -35,25 +41,40 @@ class StateSelectionMap extends Component {
         (f) =>
           f.layer.id === MapUtilities.IDs.COUNTY_FILL_LAYER_ID + "NC" ||
           f.layer.id === MapUtilities.IDs.COUNTY_FILL_LAYER_ID + "LA" ||
-          f.layer.id === MapUtilities.IDs.COUNTY_FILL_LAYER_ID + "TX"
+          f.layer.id === MapUtilities.IDs.COUNTY_FILL_LAYER_ID + "TX" ||
+          f.layer.id === "ny-counties-fill" ||
+          f.layer.id === "ca-counties-fill" ||
+          f.layer.id === "ms-counties-fill"
       );
     if (hoveredFeature != undefined) {
       switch (hoveredFeature.layer.id) {
-        case MapUtilities.IDs.COUNTY_FILL_LAYER_ID + "NC":
-          this.props.setViewport(ViewportUtilities.NORTH_CAROLINA.Maximized);
-          this.props.setTentativeState(
-            ViewportUtilities.STATE_OPTIONS.NORTH_CAROLINA
-          );
+        // case MapUtilities.IDs.COUNTY_FILL_LAYER_ID + "NC":
+        //   this.props.setViewport(ViewportUtilities.NORTH_CAROLINA.Maximized);
+        //   this.props.setTentativeState(
+        //     ViewportUtilities.STATE_OPTIONS.NORTH_CAROLINA
+        //   );
+        //   break;
+        // case MapUtilities.IDs.COUNTY_FILL_LAYER_ID + "LA":
+        //   this.props.setViewport(ViewportUtilities.LOUISIANA.Maximized);
+        //   this.props.setTentativeState(
+        //     ViewportUtilities.STATE_OPTIONS.LOUISIANA
+        //   );
+        //   break;
+        // case MapUtilities.IDs.COUNTY_FILL_LAYER_ID + "TX":
+        //   this.props.setViewport(ViewportUtilities.ALABAMA.Maximized);
+        //   this.props.setTentativeState(ViewportUtilities.STATE_OPTIONS.ALABAMA);
+        //   break;
+        case "ny-counties-fill":
+          this.props.setViewport(ViewportUtilities.NEW_YORK.Maximized);
+          this.props.setTentativeState(ViewportUtilities.STATE_OPTIONS.NEW_YORK);
           break;
-        case MapUtilities.IDs.COUNTY_FILL_LAYER_ID + "LA":
-          this.props.setViewport(ViewportUtilities.LOUISIANA.Maximized);
-          this.props.setTentativeState(
-            ViewportUtilities.STATE_OPTIONS.LOUISIANA
-          );
+        case "ca-counties-fill":
+          this.props.setViewport(ViewportUtilities.CALIFORNIA.Maximized);
+          this.props.setTentativeState(ViewportUtilities.STATE_OPTIONS.CALIFORNIA);
           break;
-        case MapUtilities.IDs.COUNTY_FILL_LAYER_ID + "TX":
-          this.props.setViewport(ViewportUtilities.ALABAMA.Maximized);
-          this.props.setTentativeState(ViewportUtilities.STATE_OPTIONS.ALABAMA);
+        case "ms-counties-fill":
+          this.props.setViewport(ViewportUtilities.MISSISSIPPI.Maximized);
+          this.props.setTentativeState(ViewportUtilities.STATE_OPTIONS.MISSISSIPPI);
           break;
         default:
           this.props.setViewport(ViewportUtilities.UNSELECTED.Maximized);
@@ -81,14 +102,21 @@ class StateSelectionMap extends Component {
       );
     } else {
       /* Only load these if it's not empty*/
-      const NCCountyGeoData =
-        this.props.StateCounties[
-          ViewportUtilities.STATE_OPTIONS.NORTH_CAROLINA
-        ];
-      const LACountyGeoData =
-        this.props.StateCounties[ViewportUtilities.STATE_OPTIONS.LOUISIANA];
-      const TXCountyGeoData =
-        this.props.StateCounties[ViewportUtilities.STATE_OPTIONS.ALABAMA];
+      // const NCCountyGeoData = this.props.StateCounties[
+      //   ViewportUtilities.STATE_OPTIONS.NORTH_CAROLINA
+      // ];
+      // const LACountyGeoData = this.props.StateCounties[
+      //   ViewportUtilities.STATE_OPTIONS.LOUISIANA
+      // ];
+      // const TXCountyGeoData = this.props.StateCounties[
+      //   ViewportUtilities.STATE_OPTIONS.ALABAMA
+      // ];
+      const NYCountyGeoData = this.props.StateCounties[
+        ViewportUtilities.STATE_OPTIONS.NEW_YORK
+      ];
+      const CACountyGeoData = this.props.StateCounties[
+        ViewportUtilities.STATE_OPTIONS.CALIFORNIA
+      ];
       return (
         <div>
           <ReactMapGL
@@ -100,7 +128,7 @@ class StateSelectionMap extends Component {
             }}
             onClick={this._onClick.bind(this)}
           >
-            <Source
+            {/* <Source
               id={MapUtilities.IDs.COUNTY_SOURCE_ID + "NC"}
               type="geojson"
               data={NCCountyGeoData}
@@ -111,7 +139,7 @@ class StateSelectionMap extends Component {
               type="fill"
               source={MapUtilities.IDs.COUNTY_SOURCE_ID + "NC"}
               paint={{
-                "fill-color": "#ff6949",
+                "fill-color": "#abcdef",
                 "fill-opacity": [
                   "case",
                   ["boolean", ["feature-state", "hover"], false],
@@ -131,7 +159,7 @@ class StateSelectionMap extends Component {
               type="fill"
               source={MapUtilities.IDs.COUNTY_SOURCE_ID + "LA"}
               paint={{
-                "fill-color": "#ff6949",
+                "fill-color": "#8effba",
                 "fill-opacity": [
                   "case",
                   ["boolean", ["feature-state", "hover"], false],
@@ -151,13 +179,123 @@ class StateSelectionMap extends Component {
               type="fill"
               source={MapUtilities.IDs.COUNTY_SOURCE_ID + "TX"}
               paint={{
-                "fill-color": "#ff6949",
+                "fill-color": "#2ea3fa",
                 "fill-opacity": [
                   "case",
                   ["boolean", ["feature-state", "hover"], false],
                   0.1,
                   0.6,
                 ],
+              }}
+            /> */}
+
+              {/* temp */}
+          <Source
+            id="ny-counties"
+            type="geojson"
+            data={NYCountiesGeoData}
+          >
+            <Layer
+              id="ny-counties-fill"
+              type="fill"
+              source="ny-counties"
+              paint={{
+                'fill-color': [
+                  'match',
+                  ['get', 'name'],
+                  'Hamilton County', 'purple',
+                  'Chenango County', 'purple',
+                  'Livingston County', 'purple',
+                  
+                  'purple'  // default color for other counties
+                ],
+                'fill-opacity': 0.7
+              }}
+            />
+          </Source>
+
+          {/* For CA */}
+          <Source
+            id="ca-counties"
+            type="geojson"
+            data={CACountiesGeoData}
+          >
+            <Layer
+              id="ca-counties-fill"
+              type="fill"
+              source="ca-counties"
+              paint={{
+                'fill-color': [
+                  'match',
+                  ['get', 'name'],
+                  'Nevada', 'red',
+                  'Monterey', 'green',
+                  'San Benito', 'blue',
+                  
+                  'yellow'  // default color for other counties
+                ],
+                'fill-opacity': 0.7
+              }}
+            />
+          </Source>
+
+          {/* For MS */}
+          <Source
+            id="ms-counties"
+            type="geojson"
+            data={MSCountiesGeoData}
+          >
+            <Layer
+              id="ms-counties-fill"
+              type="fill"
+              source="ms-counties"
+              paint={{
+                'fill-color': 'orange',
+                'fill-opacity': 0.7
+              }}
+            />
+          </Source>
+              {/* temp end */}
+
+            <Source
+              id={MapUtilities.IDs.COUNTY_SOURCE_ID + "NY"}
+              type="geojson"
+              data={NYCountyGeoData}
+              generateId={true}
+            />
+            <Layer
+              id={MapUtilities.IDs.COUNTY_FILL_LAYER_ID + "NY"}
+              type="fill"
+              source={MapUtilities.IDs.COUNTY_SOURCE_ID + "NY"}
+              paint={{
+                "fill-color": "#ff9900",
+                "fill-opacity": 0.6,
+                "fill-outline-color": "#000000"
+              }}
+            />
+
+            <Source
+              id={MapUtilities.IDs.COUNTY_SOURCE_ID + "CA"}
+              type="geojson"
+              data={CACountyGeoData || CACountiesGeoData}
+              generateId={true}
+            />
+            <Layer
+              id={MapUtilities.IDs.COUNTY_FILL_LAYER_ID + "CA"}
+              type="fill"
+              source={MapUtilities.IDs.COUNTY_SOURCE_ID + "CA"}
+              paint={{
+                'fill-color': [
+                  'match',
+                  ['get', 'name'],
+                  'Nevada County', 'red',
+                  'Monterey County', 'green',
+                  'San Benito County', 'blue',
+                  
+                  'yellow'  // default color for other counties
+                ],
+                'fill-opacity': 0.6,
+                'fill-outline-color': '#000000'
               }}
             />
           </ReactMapGL>
