@@ -48,14 +48,10 @@ class CompareSection extends Component {
 
   render() {
     return (
-<<<<<<< HEAD
       <div
         id="compare_1"
         className="SelectionMenuSection CompareSection centerWithinMe space-between"
       >
-=======
-      <div className="SelectionMenuSection CompareSection  space-between">
->>>>>>> e8d5dc4d03ec5bd43be52f758b31c8bbe16acc0a
         <div>
           <h5>
             <b>Compare Districtings</b>
@@ -104,40 +100,40 @@ class CompareSection extends Component {
               {!this.readyToCompare()
                 ? ""
                 : Object.keys(this.statsToCompare).map((key) => {
-                  let thisDistrictingVal =
-                    this.props.ComparisonDistrictingA[
-                    this.statsToCompare[key][0]
-                    ];
-                  let otherDistrictingVal =
-                    this.props.ComparisonDistrictingB[
-                    this.statsToCompare[key][0]
-                    ];
-                  if (this.statsToCompare[key].length == 2) {
-                    thisDistrictingVal =
-                      thisDistrictingVal[this.statsToCompare[key][1]];
-                    otherDistrictingVal =
-                      otherDistrictingVal[this.statsToCompare[key][1]];
-                  }
-                  let difference = StatUtilities.getPercentageChange(
-                    thisDistrictingVal,
-                    otherDistrictingVal
-                  );
-                  return (
-                    <ComparisonItem
-                      key={key}
-                      label={key}
-                      direction={
-                        difference == 0
-                          ? StatUtilities.COMPARISON_DIRECTIONS.NONE
-                          : difference > 0
+                    let thisDistrictingVal =
+                      this.props.ComparisonDistrictingA[
+                        this.statsToCompare[key][0]
+                      ];
+                    let otherDistrictingVal =
+                      this.props.ComparisonDistrictingB[
+                        this.statsToCompare[key][0]
+                      ];
+                    if (this.statsToCompare[key].length == 2) {
+                      thisDistrictingVal =
+                        thisDistrictingVal[this.statsToCompare[key][1]];
+                      otherDistrictingVal =
+                        otherDistrictingVal[this.statsToCompare[key][1]];
+                    }
+                    let difference = StatUtilities.getPercentageChange(
+                      thisDistrictingVal,
+                      otherDistrictingVal
+                    );
+                    return (
+                      <ComparisonItem
+                        key={key}
+                        label={key}
+                        direction={
+                          difference == 0
+                            ? StatUtilities.COMPARISON_DIRECTIONS.NONE
+                            : difference > 0
                             ? StatUtilities.COMPARISON_DIRECTIONS.UP
                             : StatUtilities.COMPARISON_DIRECTIONS.DOWN
-                      }
-                      value={thisDistrictingVal.toFixed(2)}
-                      pct={difference + "%"}
-                    />
-                  );
-                })}
+                        }
+                        value={thisDistrictingVal.toFixed(2)}
+                        pct={difference + "%"}
+                      />
+                    );
+                  })}
             </div>
             <div className="DistrictingBStats">
               <h5 className="adjust-padding">
@@ -146,40 +142,40 @@ class CompareSection extends Component {
               {!this.readyToCompare()
                 ? ""
                 : Object.keys(this.statsToCompare).map((key) => {
-                  let thisDistrictingVal =
-                    this.props.ComparisonDistrictingB[
-                    this.statsToCompare[key][0]
-                    ];
-                  let otherDistrictingVal =
-                    this.props.ComparisonDistrictingA[
-                    this.statsToCompare[key][0]
-                    ];
-                  if (this.statsToCompare[key].length == 2) {
-                    thisDistrictingVal =
-                      thisDistrictingVal[this.statsToCompare[key][1]];
-                    otherDistrictingVal =
-                      otherDistrictingVal[this.statsToCompare[key][1]];
-                  }
-                  let difference = StatUtilities.getPercentageChange(
-                    thisDistrictingVal,
-                    otherDistrictingVal
-                  );
-                  return (
-                    <ComparisonItem
-                      key={key}
-                      label={key}
-                      direction={
-                        difference == 0
-                          ? StatUtilities.COMPARISON_DIRECTIONS.NONE
-                          : difference > 0
+                    let thisDistrictingVal =
+                      this.props.ComparisonDistrictingB[
+                        this.statsToCompare[key][0]
+                      ];
+                    let otherDistrictingVal =
+                      this.props.ComparisonDistrictingA[
+                        this.statsToCompare[key][0]
+                      ];
+                    if (this.statsToCompare[key].length == 2) {
+                      thisDistrictingVal =
+                        thisDistrictingVal[this.statsToCompare[key][1]];
+                      otherDistrictingVal =
+                        otherDistrictingVal[this.statsToCompare[key][1]];
+                    }
+                    let difference = StatUtilities.getPercentageChange(
+                      thisDistrictingVal,
+                      otherDistrictingVal
+                    );
+                    return (
+                      <ComparisonItem
+                        key={key}
+                        label={key}
+                        direction={
+                          difference == 0
+                            ? StatUtilities.COMPARISON_DIRECTIONS.NONE
+                            : difference > 0
                             ? StatUtilities.COMPARISON_DIRECTIONS.UP
                             : StatUtilities.COMPARISON_DIRECTIONS.DOWN
-                      }
-                      value={thisDistrictingVal.toFixed(2)}
-                      pct={difference + "%"}
-                    />
-                  );
-                })}
+                        }
+                        value={thisDistrictingVal.toFixed(2)}
+                        pct={difference + "%"}
+                      />
+                    );
+                  })}
             </div>
           </div>
         </div>

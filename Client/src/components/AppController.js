@@ -16,7 +16,9 @@ class AppController extends Component {
   }
 
   render() {
-    if (this.props.CurrentState === ViewportUtilities.STATE_OPTIONS.UNSELECTED) {
+    if (
+      this.props.CurrentState === ViewportUtilities.STATE_OPTIONS.UNSELECTED
+    ) {
       return <StateSelection />;
     } else if (this.props.CurrentJob == null) {
       return <JobSelection />;

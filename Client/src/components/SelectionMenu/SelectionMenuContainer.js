@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import { Col, Row, Button } from "react-materialize";  // Make sure Button is imported
+import { Col, Row, Button } from "react-materialize"; // Make sure Button is imported
 import FilterSection from "./FilterSection/FilterSection";
 import ListingSection from "./ListingSection/ListingSection";
-import { Link } from "react-router-dom";  // Import Link for navigation
+import { Link } from "react-router-dom"; // Import Link for navigation
 
 export default class SelectionMenuContainer extends Component {
   render() {
