@@ -91,7 +91,7 @@ class JobSelection extends Component {
           </Col>
           <Col>
             <h5 className="text-left">
-              <b>{SelectionMenuUtilities.LABELS.SELECT_A_JOB}</b>
+              <b>MGGG</b>
             </h5>
           </Col>
         </Row>
@@ -109,28 +109,28 @@ class JobSelection extends Component {
                 <CollapsibleItem
                   expanded={false}
                   key={key}
-                  header={<div>Job {job.id}</div>}
+                  header={<div>MGGG Parameters {job.id}</div>}
                   icon={<Icon>archive</Icon>}
                   node="div"
                 >
                   <Row>
                     <h5 className="text-left underline heading">
-                      Districtings in this Job
+                      Districtings
                     </h5>
                   </Row>
                   <Row className="text-left heading">
                     <b>{job.size}</b>
                   </Row>
                   <Row>
-                    <h5 className="text-left underline heading">
-                      Job Description
-                    </h5>
+                    <h5 className="text-left underline heading">Description</h5>
                   </Row>
-                  <Row className="text-left heading">{job.description}</Row>
+                  <Row className="text-left heading">
+                    New York 10% max population difference.
+                  </Row>
                   <Row>
-                    <h5 className="text-left underline heading">
+                    {/* <h5 className="text-left underline heading">
                       MGGG Parameters
-                    </h5>
+                    </h5> */}
                   </Row>
                   {Object.keys(job.params).map((key) => {
                     if (key == "id") {
