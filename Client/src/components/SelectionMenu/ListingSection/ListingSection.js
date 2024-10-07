@@ -8,6 +8,8 @@ import {
 } from "../../../redux/actions/settingActions";
 import * as SelectionMenuUtilities from "../../../utilities/SelectionMenuUtilities";
 import SummaryListing from "./SummaryListing";
+import ToggleButtonListing from "./ToggleButtonListing";
+import ReturnToMapButton from "../CompareSection/ReturnToMapButton";
 
 class ListingSection extends Component {
   /* Once this loads, it's at first false until something is chosen*/
@@ -20,20 +22,20 @@ class ListingSection extends Component {
   }
 
   isAnalysisEmpty() {
-    return this.props.AnalysisDistrictings.length === 0
+    return this.props.AnalysisDistrictings.length === 0;
   }
 
   render() {
     return (
-      <div className="SelectionMenuSection ListingSection">
+      <div id="listing_1" className="SelectionMenuSection ListingSection">
         <Row>
           <div className="DistrictingResultsHeader">
-            <h5>
-              {SelectionMenuUtilities.LABELS.ANALYSIS_RESULTS}
-            </h5>
+            <h5>{SelectionMenuUtilities.LABELS.ANALYSIS_RESULTS}</h5>
           </div>
         </Row>
-        {this.isAnalysisEmpty() ? <div/> : <SummaryListing />}
+        {this.isAnalysisEmpty() ? <div /> : <SummaryListing />}
+        <ToggleButtonListing />
+        <ReturnToMapButton />
       </div>
     );
   }
@@ -52,7 +54,7 @@ const mapDispatchToProps = (dispatch) => {
 
 const mapStateToProps = (state, ownProps) => {
   return {
-    AnalysisDistrictings : state.AnalysisDistrictings
+    AnalysisDistrictings: state.AnalysisDistrictings,
   };
 };
 

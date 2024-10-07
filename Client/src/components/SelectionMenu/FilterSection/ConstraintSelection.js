@@ -37,7 +37,7 @@ class ConstraintSelection extends Component {
           }
         />
         <Select
-          icon={<Icon>people</Icon>}
+          icon={<Icon>ballot</Icon>}
           id="Select-9"
           multiple={false}
           onChange={(e) =>
@@ -105,7 +105,7 @@ class ConstraintSelection extends Component {
           }
         />
         <Select
-          icon={<Icon>people</Icon>}
+          icon={<Icon>accessibility</Icon>}
           id="Select-9"
           multiple={false}
           onChange={(e) => this.props.updateMinorityConstraint(e.target.value)}

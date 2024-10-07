@@ -31,14 +31,14 @@ class ToolbarTabsManager extends Component {
               topMode={ToolbarUtilities.MODES.SETTINGS}
             />
           </Tab>
-          <Tab
+          {/* <Tab
             active={this.props.CurrentTab == ToolbarUtilities.MODES.STATS}
             options={TabOptions}
             title={ToolbarUtilities.MODES.STATS}
             disabled={this.props.CurrentDistrictingSummary == null}
           >
             <ToolbarContentContainer topMode={ToolbarUtilities.MODES.STATS} />
-          </Tab>
+          </Tab> */}
         </Tabs>
       </div>
     );

@@ -9,6 +9,7 @@ import * as MapUtilities from "../../../utilities/MapUtilities";
 import * as StatUtilities from "../../../utilities/StatUtilities";
 import ComparisonItem from "./ComparisonItem";
 import ReturnToMapButton from "./ReturnToMapButton";
+import ToggleButtonCompare from "./ToggleButtonCompare";
 
 class CompareSection extends Component {
   constructor(props) {
@@ -47,7 +48,10 @@ class CompareSection extends Component {
 
   render() {
     return (
-      <div className="SelectionMenuSection CompareSection centerWithinMe space-between">
+      <div
+        id="compare_1"
+        className="SelectionMenuSection CompareSection centerWithinMe space-between"
+      >
         <div>
           <h5>
             <b>Compare Districtings</b>
@@ -90,7 +94,9 @@ class CompareSection extends Component {
           </div>
           <div className="comparedStatsDiv centerWithinMe">
             <div className="DistrictingAStats">
-              <h5>Districting A</h5>
+              <h5 className="adjust-padding">
+                <b>Districting A</b>
+              </h5>
               {!this.readyToCompare()
                 ? ""
                 : Object.keys(this.statsToCompare).map((key) => {
@@ -130,7 +136,9 @@ class CompareSection extends Component {
                   })}
             </div>
             <div className="DistrictingBStats">
-              <h5>Districting B</h5>
+              <h5 className="adjust-padding">
+                <b>Districting B</b>
+              </h5>
               {!this.readyToCompare()
                 ? ""
                 : Object.keys(this.statsToCompare).map((key) => {
@@ -171,6 +179,7 @@ class CompareSection extends Component {
             </div>
           </div>
         </div>
+        <ToggleButtonCompare />
         <ReturnToMapButton />
       </div>
     );

@@ -27,6 +27,7 @@
     "react-scripts": "4.0.2",
     "react-scrollbars-custom": "^4.0.25",
     "redux": "^4.0.5",
+    "styled-components": "^6.1.13",
     "web-vitals": "^1.1.0"
   },
   "scripts": {

@@ -4,9 +4,11 @@ import App from "./App";
 import reportWebVitals from "./utilities/reportWebVitals";
 import { Provider } from "react-redux";
 import store from "./redux/store";
+import NavBar from "./components/NavBar/NavBar";
 
 ReactDOM.render(
   <Provider store={store}>
+    <NavBar />
     <App />
   </Provider>,
   document.getElementById("root")

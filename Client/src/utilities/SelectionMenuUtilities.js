@@ -8,15 +8,18 @@ export const LABELS = {
   LOAD_THIS_DISTRICTING: "Load This Districting",
   INCUMBENT_PROTECTION_OPTIONS: "Incumbent Protection Options",
   POPULATION_CONSTRAINT_OPTIONS: "Population Constraint Options",
-  VOTING_POPULATION_TO_CONSTRAIN: "Voting Population to Constrain",
-  MINORITY_POPULATION_TO_CONSTRAIN: "Minority Population to Constrain",
+  VOTING_POPULATION_TO_CONSTRAIN: "Voting Population",
+  MINORITY_POPULATION_TO_CONSTRAIN: "Minority Population",
   COMPACTNESS_TYPE: "Type of Compactness",
   CHOOSE_A_MINORITY_POPULATION: "Choose a Minority Population",
   CHOOSE_A_VOTING_POPULATION: "Choose a Voting Population",
   CHOOSE_A_TYPE_OF_COMPACTNESS: "Choose a Method of Compactness",
-  ANALYSIS_RESULTS : "Top Scoring Objective Function Districtings",
+  ANALYSIS_RESULTS: "Top Scoring Objective Function Districtings",
   SELECT_A_JOB: "Select a Job",
   CONTINUE_WITH_THIS_JOB: "Continue with this Job",
+  SWITCH_TO_COMPARE: "Go to Comparisons",
+  SWITCH_TO_FILTER: "Go to Constraints",
+  SWITCH_TO_LISTING: "Go to Diagrmas",
 };
 
 export const DESCRIPTIONS = {
@@ -62,14 +65,14 @@ export const CONSTRAINT_KEYS = {
 };
 
 export const TAGS = {
-  CLOSE_TO_ENACTED : "Closest to Enacted",
-  CLOSE_TO_AVERAGE : "Closest to Average",
-  MAJORITY_MINORITY : "Top Majority Minority",
-  AREA_PAIR_DEVIATION : "Top Area Pair Deviation",
-}
+  CLOSE_TO_ENACTED: "Closest to Enacted",
+  CLOSE_TO_AVERAGE: "Closest to Average",
+  MAJORITY_MINORITY: "Top Majority Minority",
+  AREA_PAIR_DEVIATION: "Top Area Pair Deviation",
+};
 
 export const IDEAL_POPULATIONS = {
-  NORTH_CAROLINA : 733499,
-  LOUISIANA : 0,
-  ALABAMA : 0,
-}
+  NORTH_CAROLINA: 733499,
+  LOUISIANA: 0,
+  ALABAMA: 0,
+};

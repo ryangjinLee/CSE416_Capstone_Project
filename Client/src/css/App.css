@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #f7efd7;
+  --primary-color: #ffffff;
   --secondary-color: #c5513a;
   --tertiary-color: white;
   --fourthary-color: #c96135;
@@ -17,11 +17,21 @@
   flex-grow: 1;
 }
 
+.map-limiter {
+  overflow: hidden;
+  height: 855px;
+}
+
+.hide {
+  display: none;
+}
+
 /* Toolbar Settings*/
 .toolbar {
   background: var(--primary-color);
   border-color: var(--secondary-color);
   width: 500px;
+  height: 855px;
   border-style: solid;
   border-width: 10px;
   border-radius: 5px;
@@ -85,6 +95,7 @@ Ex. You only want one content box, set size of top to 100%, bottom to 0% or some
 
 .input-field {
   float: none !important;
+  margin: 0;
 }
 
 .stat-window {
@@ -219,16 +230,25 @@ Ex. You only want one content box, set size of top to 100%, bottom to 0% or some
   flex-grow: 1;
 }
 
+.text-left {
+  text-align: left;
+}
+
 .ListingSection {
 }
 
 .FilterSection {
 }
 
+.heading {
+  font-family: "Times New Roman", Times, serif;
+}
+
 /* Whenever you want to center text */
 .center-title {
   text-align: center;
   padding-bottom: 5px;
+  margin: 0;
 }
 
 .DistrictingResultsHeader {
@@ -356,22 +376,27 @@ button:focus {
 .comparedStatsDiv {
   display: flex;
   padding-top: 0px;
+  justify-content: space-evenly;
 }
 
 .DistrictingAStats {
-  width: 210px;
+  width: 800px;
+  display: flex;
+  align-items: self-end;
 }
 
 .DistrictingBStats {
-  width: 210px;
+  width: 800px;
+  display: flex;
+  align-items: self-end;
 }
 
 .redCompare {
-  color: rgb(201, 80, 80);
+  color: rgb(255, 0, 0);
 }
 
 .greenCompare {
-  color: rgb(79, 163, 79);
+  color: rgb(0, 255, 0);
 }
 
 .districtingCountDiv {
@@ -426,6 +451,7 @@ button:focus {
 
 .flex {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .returnToStateSelectionBtn {
@@ -466,7 +492,7 @@ button:focus {
   flex-wrap: wrap;
   flex-direction: column;
   align-content: space-around;
-  height: 66.5%;
+  height: 64%;
 }
 
 .default-button {
@@ -497,6 +523,14 @@ button:focus {
   font-weight: bold;
 }
 
+.margin-10 {
+  margin-left: 10px;
+}
+
+.adjust-padding {
+  padding-bottom: 60px;
+}
+
 .underline {
   text-decoration: underline;
 }
@@ -510,4 +544,18 @@ button:focus {
   text-shadow: -1px -1px 0 black, /* Top-left shadow */ 1px -1px 0 black,
     /* Top-right shadow */ -1px 1px 0 black,
     /* Bottom-left shadow */ 1px 1px 0 black; /* Bottom-right shadow */
+}
+#filter_1 {
+  width: 1920px;
+  height: 855px;
+}
+#listing_1 {
+  width: 1920px;
+  height: 855px;
+  display: none;
+}
+#compare_1 {
+  width: 1920px;
+  height: 855px;
+  display: none;
 }

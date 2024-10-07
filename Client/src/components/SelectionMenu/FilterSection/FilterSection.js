@@ -24,6 +24,9 @@ import Typography from "@material-ui/core/Typography";
 import ConstraintSelection from "./ConstraintSelection";
 import WeightSelection from "./WeightSelection";
 import * as NetworkingUtilities from "../../../network/NetworkingUtilities";
+import ToggleButtonFilter from "./ToggleButtonFilter";
+import "../../../css/App.css";
+import ReturnToMapButton from "../CompareSection/ReturnToMapButton";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -163,7 +166,7 @@ function FilterSection(props) {
     setCompleted(newCompleted);
   };
   return (
-    <div className="SelectionMenuSection FilterSection">
+    <div id="filter_1" className="SelectionMenuSection FilterSection">
       {/* Button for returning to map */}
       <div className={classes.root}>
         <Stepper nonLinear activeStep={activeStep} className="stepInStepper">
@@ -192,10 +195,11 @@ function FilterSection(props) {
               </div>
               <div className="flex center">
                 {" "}
+                <ReturnToMapButton />
                 <Button
                   disabled={activeStep === 0}
                   onClick={handleBack}
-                  className={classes.button + " redBrownBtn"}
+                  className={classes.button + " redBrownBtn margin-10"}
                 >
                   Back
                 </Button>
@@ -217,6 +221,7 @@ function FilterSection(props) {
                 >
                   {getStepCompleteMsg(activeStep)}
                 </Button>
+                <ToggleButtonFilter />
               </div>
             </div>
           </div>

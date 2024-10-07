@@ -76,7 +76,7 @@ class JobSelection extends Component {
   render() {
     return (
       <div className="job-selection-screen centered skew-top">
-        <Row>
+        <Row className="text-left heading">
           <Col s={5}>
             <Button
               className="redBrownBtn returnToStateSelectionBtn"
@@ -90,7 +90,7 @@ class JobSelection extends Component {
             </Button>
           </Col>
           <Col>
-            <h5 className="align-text">
+            <h5 className="text-left">
               <b>{SelectionMenuUtilities.LABELS.SELECT_A_JOB}</b>
             </h5>
           </Col>
@@ -114,24 +114,30 @@ class JobSelection extends Component {
                   node="div"
                 >
                   <Row>
-                    <h5 className="underline">Districtings in this Job</h5>
+                    <h5 className="text-left underline heading">
+                      Districtings in this Job
+                    </h5>
                   </Row>
-                  <Row>
+                  <Row className="text-left heading">
                     <b>{job.size}</b>
                   </Row>
                   <Row>
-                    <h5 className="underline">Job Description</h5>
+                    <h5 className="text-left underline heading">
+                      Job Description
+                    </h5>
                   </Row>
-                  <Row>{job.description}</Row>
+                  <Row className="text-left heading">{job.description}</Row>
                   <Row>
-                    <h5 className="underline">MGGG Parameters</h5>
+                    <h5 className="text-left underline heading">
+                      MGGG Parameters
+                    </h5>
                   </Row>
                   {Object.keys(job.params).map((key) => {
                     if (key == "id") {
                       return <div key={key}></div>;
                     }
                     return (
-                      <Row key={key}>
+                      <Row className="text-left heading" key={key}>
                         <b>{key}</b> : {job.params[key]}
                       </Row>
                     );

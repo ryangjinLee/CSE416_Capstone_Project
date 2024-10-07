@@ -12,12 +12,12 @@ import {
 import * as ViewportUtilities from "../../utilities/ViewportUtilities";
 import * as MapUtilities from "../../utilities/MapUtilities";
 import * as NetworkingUtilities from "../../network/NetworkingUtilities";
+import "../../css/App.css";
 
 //temp
-import NYCountiesGeoData from '../../data/NY/CountiesGeoData.json';
-import CACountiesGeoData from '../../data/CA/CountiesGeoData.json';
-import MSCountiesGeoData from '../../data/MS/CountiesGeoData.json';
-
+import NYCountiesGeoData from "../../data/NY/CountiesGeoData.json";
+import CACountiesGeoData from "../../data/CA/CountiesGeoData.json";
+import MSCountiesGeoData from "../../data/MS/CountiesGeoData.json";
 
 class StateSelectionMap extends Component {
   componentDidMount() {
@@ -66,15 +66,21 @@ class StateSelectionMap extends Component {
         //   break;
         case "ny-counties-fill":
           this.props.setViewport(ViewportUtilities.NEW_YORK.Maximized);
-          this.props.setTentativeState(ViewportUtilities.STATE_OPTIONS.NEW_YORK);
+          this.props.setTentativeState(
+            ViewportUtilities.STATE_OPTIONS.NEW_YORK
+          );
           break;
         case "ca-counties-fill":
           this.props.setViewport(ViewportUtilities.CALIFORNIA.Maximized);
-          this.props.setTentativeState(ViewportUtilities.STATE_OPTIONS.CALIFORNIA);
+          this.props.setTentativeState(
+            ViewportUtilities.STATE_OPTIONS.CALIFORNIA
+          );
           break;
         case "ms-counties-fill":
           this.props.setViewport(ViewportUtilities.MISSISSIPPI.Maximized);
-          this.props.setTentativeState(ViewportUtilities.STATE_OPTIONS.MISSISSIPPI);
+          this.props.setTentativeState(
+            ViewportUtilities.STATE_OPTIONS.MISSISSIPPI
+          );
           break;
         default:
           this.props.setViewport(ViewportUtilities.UNSELECTED.Maximized);
@@ -111,12 +117,10 @@ class StateSelectionMap extends Component {
       // const TXCountyGeoData = this.props.StateCounties[
       //   ViewportUtilities.STATE_OPTIONS.ALABAMA
       // ];
-      const NYCountyGeoData = this.props.StateCounties[
-        ViewportUtilities.STATE_OPTIONS.NEW_YORK
-      ];
-      const CACountyGeoData = this.props.StateCounties[
-        ViewportUtilities.STATE_OPTIONS.CALIFORNIA
-      ];
+      const NYCountyGeoData =
+        this.props.StateCounties[ViewportUtilities.STATE_OPTIONS.NEW_YORK];
+      const CACountyGeoData =
+        this.props.StateCounties[ViewportUtilities.STATE_OPTIONS.CALIFORNIA];
       return (
         <div>
           <ReactMapGL
@@ -189,135 +193,185 @@ class StateSelectionMap extends Component {
               }}
             /> */}
 
-              {/* temp */}
-          <Source
-            id="ny-counties"
-            type="geojson"
-            data={NYCountiesGeoData}
-          >
-            <Layer
-              id="ny-counties-fill"
-              type="fill"
-              source="ny-counties"
-              paint={{
-                'fill-color': [
-                  'match',
-                  ['get', 'name'],
-                  'Hamilton County', 'purple',
-                  'Chenango County', 'purple',
-                  'Livingston County', 'purple',
-                  'Schuyler County', 'Red',
-                  'Schoharie County', 'Blue',
-                  'Rensselaer County', 'Red',
-                  'Oneida County', 'Blue',
-                  'Wayne County', 'Red',
-                  'Suffolk County', 'Blue',
-                  'Tioga County', 'Red',
-                  'Rockland County', 'Blue',
-                  'Wyoming County', 'Red',
-                  'Oswego County', 'Blue',
-                  'Orleans County', 'Red',
-                  'Steuben County', 'Blue',
-                  'Washington County', 'Red',
-                  'St. Lawrence County', 'Blue',
-                  'Warren County', 'Red',
-                  'Westchester County', 'Blue',
-                  'Tompkins County', 'Red',
-                  'Otsego County', 'Blue',
-                  'Chautauqua County', 'Red',
-                  'Seneca County', 'Blue',
-                  'Cayuga County', 'Red',
-                  'Queens County', 'Blue',
-                  'Essex County', 'Red',
-                  'Ulster County', 'Blue',
-                  'Sullivan County', 'Red',
-                  'Chemung County', 'Blue',
-                  'New York County', 'Blue',
-                  'Monroe County', 'Red',
-                  'Nassau County', 'Red',
-                  'Onondaga County', 'Blue',
-                  'Columbia County', 'Red',
-                  'Dutchess County', 'Blue',
-                  'Schenectady County', 'Red',
-                  'Saratoga County', 'Blue',
-                  'Greene County', 'Red',
-                  'Ontario County', 'Blue',
-                  'Delaware County', 'Red',
-                  'Allegany County', 'Blue',
-                  'Albany County', 'Blue',
-                  'Bronx County', 'Red',
-                  'Broome County', 'Blue',
-                  'Clinton County', 'Red',
-                  'Erie County', 'Blue',
-                  'Jefferson County', 'Blue',
-                  'Fulton County', 'Red',
-                  'Madison County', 'Blue',
-                  'Kings County', 'Red',
-                  'Genesee County', 'Blue',
-                  'Lewis County', 'Red',
-                  'Franklin County', 'Blue',
-                  'Montgomery County', 'Red',
-                  'Orange County', 'Red',
-                  'Yates County', 'Blue',
-                  'Cortland County', 'Red',
-                  'Richmond County', 'Blue',
-                  'Cattaraugus County', 'Red',
-                  'Herkimer County', 'Blue',
-                  'Niagara County', 'Red',
-                  'Putnam County', 'Blue',
+            {/* temp */}
+            <Source id="ny-counties" type="geojson" data={NYCountiesGeoData}>
+              <Layer
+                id="ny-counties-fill"
+                type="fill"
+                source="ny-counties"
+                paint={{
+                  "fill-color": [
+                    "match",
+                    ["get", "name"],
+                    "Hamilton County",
+                    "purple",
+                    "Chenango County",
+                    "purple",
+                    "Livingston County",
+                    "purple",
+                    "Schuyler County",
+                    "Red",
+                    "Schoharie County",
+                    "Blue",
+                    "Rensselaer County",
+                    "Red",
+                    "Oneida County",
+                    "Blue",
+                    "Wayne County",
+                    "Red",
+                    "Suffolk County",
+                    "Blue",
+                    "Tioga County",
+                    "Red",
+                    "Rockland County",
+                    "Blue",
+                    "Wyoming County",
+                    "Red",
+                    "Oswego County",
+                    "Blue",
+                    "Orleans County",
+                    "Red",
+                    "Steuben County",
+                    "Blue",
+                    "Washington County",
+                    "Red",
+                    "St. Lawrence County",
+                    "Blue",
+                    "Warren County",
+                    "Red",
+                    "Westchester County",
+                    "Blue",
+                    "Tompkins County",
+                    "Red",
+                    "Otsego County",
+                    "Blue",
+                    "Chautauqua County",
+                    "Red",
+                    "Seneca County",
+                    "Blue",
+                    "Cayuga County",
+                    "Red",
+                    "Queens County",
+                    "Blue",
+                    "Essex County",
+                    "Red",
+                    "Ulster County",
+                    "Blue",
+                    "Sullivan County",
+                    "Red",
+                    "Chemung County",
+                    "Blue",
+                    "New York County",
+                    "Blue",
+                    "Monroe County",
+                    "Red",
+                    "Nassau County",
+                    "Red",
+                    "Onondaga County",
+                    "Blue",
+                    "Columbia County",
+                    "Red",
+                    "Dutchess County",
+                    "Blue",
+                    "Schenectady County",
+                    "Red",
+                    "Saratoga County",
+                    "Blue",
+                    "Greene County",
+                    "Red",
+                    "Ontario County",
+                    "Blue",
+                    "Delaware County",
+                    "Red",
+                    "Allegany County",
+                    "Blue",
+                    "Albany County",
+                    "Blue",
+                    "Bronx County",
+                    "Red",
+                    "Broome County",
+                    "Blue",
+                    "Clinton County",
+                    "Red",
+                    "Erie County",
+                    "Blue",
+                    "Jefferson County",
+                    "Blue",
+                    "Fulton County",
+                    "Red",
+                    "Madison County",
+                    "Blue",
+                    "Kings County",
+                    "Red",
+                    "Genesee County",
+                    "Blue",
+                    "Lewis County",
+                    "Red",
+                    "Franklin County",
+                    "Blue",
+                    "Montgomery County",
+                    "Red",
+                    "Orange County",
+                    "Red",
+                    "Yates County",
+                    "Blue",
+                    "Cortland County",
+                    "Red",
+                    "Richmond County",
+                    "Blue",
+                    "Cattaraugus County",
+                    "Red",
+                    "Herkimer County",
+                    "Blue",
+                    "Niagara County",
+                    "Red",
+                    "Putnam County",
+                    "Blue",
 
+                    "Blue", // default color for other counties
+                  ],
+                  "fill-opacity": 0.7,
+                }}
+              />
+            </Source>
 
-                  
-                  'Blue'  // default color for other counties
-                ],
-                'fill-opacity': 0.7
-              }}
-            />
-          </Source>
+            {/* For CA */}
+            <Source id="ca-counties" type="geojson" data={CACountiesGeoData}>
+              <Layer
+                id="ca-counties-fill"
+                type="fill"
+                source="ca-counties"
+                paint={{
+                  "fill-color": [
+                    "match",
+                    ["get", "name"],
+                    "Nevada",
+                    "red",
+                    "Monterey",
+                    "green",
+                    "San Benito",
+                    "blue",
 
-          {/* For CA */}
-          <Source
-            id="ca-counties"
-            type="geojson"
-            data={CACountiesGeoData}
-          >
-            <Layer
-              id="ca-counties-fill"
-              type="fill"
-              source="ca-counties"
-              paint={{
-                'fill-color': [
-                  'match',
-                  ['get', 'name'],
-                  'Nevada', 'red',
-                  'Monterey', 'green',
-                  'San Benito', 'blue',
-                
-                  
-                  'yellow'  // default color for other counties
-                ],
-                'fill-opacity': 0.7
-              }}
-            />
-          </Source>
+                    "yellow", // default color for other counties
+                  ],
+                  "fill-opacity": 0.7,
+                }}
+              />
+            </Source>
 
-          {/* For MS */}
-          <Source
-            id="ms-counties"
-            type="geojson"
-            data={MSCountiesGeoData}
-          >
-            <Layer
-              id="ms-counties-fill"
-              type="fill"
-              source="ms-counties"
-              paint={{
-                'fill-color': 'orange',
-                'fill-opacity': 0.7
-              }}
-            />
-          </Source>
-              {/* temp end */}
+            {/* For MS */}
+            <Source id="ms-counties" type="geojson" data={MSCountiesGeoData}>
+              <Layer
+                id="ms-counties-fill"
+                type="fill"
+                source="ms-counties"
+                paint={{
+                  "fill-color": "orange",
+                  "fill-opacity": 0.7,
+                }}
+              />
+            </Source>
+            {/* temp end */}
 
             <Source
               id={MapUtilities.IDs.COUNTY_SOURCE_ID + "NY"}
@@ -332,7 +386,7 @@ class StateSelectionMap extends Component {
               paint={{
                 "fill-color": "#ff9900",
                 "fill-opacity": 0.6,
-                "fill-outline-color": "#000000"
+                "fill-outline-color": "#000000",
               }}
             />
 
@@ -347,17 +401,20 @@ class StateSelectionMap extends Component {
               type="fill"
               source={MapUtilities.IDs.COUNTY_SOURCE_ID + "CA"}
               paint={{
-                'fill-color': [
-                  'match',
-                  ['get', 'name'],
-                  'Nevada County', 'red',
-                  'Monterey County', 'green',
-                  'San Benito County', 'blue',
-                  
-                  'yellow'  // default color for other counties
+                "fill-color": [
+                  "match",
+                  ["get", "name"],
+                  "Nevada County",
+                  "red",
+                  "Monterey County",
+                  "green",
+                  "San Benito County",
+                  "blue",
+
+                  "yellow", // default color for other counties
                 ],
-                'fill-opacity': 0.6,
-                'fill-outline-color': '#000000'
+                "fill-opacity": 0.6,
+                "fill-outline-color": "#000000",
               }}
             />
           </ReactMapGL>

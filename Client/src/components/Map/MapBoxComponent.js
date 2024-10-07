@@ -23,6 +23,7 @@ import PrecinctTooltip from "./PrecinctTooltip";
 import MapIcon from "@material-ui/icons/Map";
 import { Icon } from "react-materialize";
 import * as ViewportUtilities from "../../utilities/ViewportUtilities";
+import "../../css/App.css";
 
 class MapBoxComponent extends Component {
   constructor(props) {
@@ -187,13 +188,14 @@ class MapBoxComponent extends Component {
       this.highlightFeatures();
     }
     return (
-      <div
-        onMouseMove={(e) => this.props.moveMouse(e)}
-        onMouseEnter={(e) => this.props.setMouseEntered(true)}
-        onMouseLeave={(e) => this.props.setMouseEntered(false)}
-      >
-        {/* Tooltip on the top left to show what's currently being viewed. */}
+      <div className="map-limiter">
         <div
+          onMouseMove={(e) => this.props.moveMouse(e)}
+          onMouseEnter={(e) => this.props.setMouseEntered(true)}
+          onMouseLeave={(e) => this.props.setMouseEntered(false)}
+        >
+          {/* Tooltip on the top left to show what's currently being viewed. */}
+          {/* <div
           className="currentDistrictingNameSidebar"
           onClick={(e) => this.recenterMap()}
         >
@@ -207,196 +209,204 @@ class MapBoxComponent extends Component {
                 : "Loading districting..."}
             </span>
           </div>
-        </div>
-        {/* Option to enter the selection menu */}
-        <div
-          className={
-            this.props.JobLoaded
-              ? "viewAndFilterDistrictingsOption"
-              : "disabledViewAndFilterDistrictingsOption"
-          }
-          onClick={(e) => {
-            this.props.setInSelectionMenu(true);
-          }}
-        >
-          <div className="iconAndLabel">
-            <Icon>code</Icon>
-            <span className="default-button">
-              {this.props.JobLoaded
-                ? MapUtilities.MESSAGES.ViewAndFilterDistrictingsMsg
-                : "Loading Job..."}
-            </span>
+        </div> */}
+          {/* Option to enter the selection menu */}
+          <div
+            className={
+              this.props.JobLoaded
+                ? "viewAndFilterDistrictingsOption"
+                : "disabledViewAndFilterDistrictingsOption"
+            }
+            onClick={(e) => {
+              this.props.setInSelectionMenu(true);
+            }}
+          >
+            <div className="iconAndLabel">
+              <Icon>code</Icon>
+              <span className="default-button">
+                {this.props.JobLoaded
+                  ? MapUtilities.MESSAGES.ViewAndFilterDistrictingsMsg
+                  : "Loading Job..."}
+              </span>
+            </div>
           </div>
-        </div>
-        {/* Option to return to state selection */}
-        <div
-          className="returnToStateSelectionOption"
-          onClick={(e) => {
-            this.props.returnToStateSelection();
-          }}
-        >
-          <div className="iconAndLabel">
-            <Icon>arrow_back</Icon>
-            <span className="default-button">
-              {MapUtilities.MESSAGES.ReturnToStateSelectionMsg}
-            </span>
+          {/* Option to return to state selection */}
+          <div
+            className="returnToStateSelectionOption"
+            onClick={(e) => {
+              this.props.returnToStateSelection();
+            }}
+          >
+            <div className="iconAndLabel">
+              <Icon>arrow_back</Icon>
+              <span className="default-button">
+                {MapUtilities.MESSAGES.ReturnToStateSelectionMsg}
+              </span>
+            </div>
           </div>
-        </div>
-        <ReactMapGL
-          className="map-display"
-          {...this.props.MapViewport}
-          mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
-          onViewportChange={(viewport) => {
-            this.props.setViewport(viewport);
-          }}
-          onHover={this._onHover.bind(this)}
-          onClick={(e) => {
-            this._onClick(e);
-          }}
-          // Tie this reference to the one in the state
-          ref={this.props.MapRef}
-        >
-          {this._renderTooltip()}
-          {this.props.PrecinctsGeoJson != null ? (
-            <div>
-              <Source
-                id={MapUtilities.IDs.PRECINCT_SOURCE_ID}
-                type="geojson"
-                data={this.props.PrecinctsGeoJson}
-                generateId={true}
-              />
+          <ReactMapGL
+            className="map-display"
+            {...this.props.MapViewport}
+            mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
+            onViewportChange={(viewport) => {
+              this.props.setViewport(viewport);
+            }}
+            onHover={this._onHover.bind(this)}
+            onClick={(e) => {
+              this._onClick(e);
+            }}
+            // Tie this reference to the one in the state
+            ref={this.props.MapRef}
+          >
+            {this._renderTooltip()}
+            {this.props.PrecinctsGeoJson != null ? (
+              <div>
+                <Source
+                  id={MapUtilities.IDs.PRECINCT_SOURCE_ID}
+                  type="geojson"
+                  data={this.props.PrecinctsGeoJson}
+                  generateId={true}
+                />
 
-              <Layer
-                id={MapUtilities.IDs.PRECINCT_FILL_LAYER_ID}
-                type="fill"
-                source={MapUtilities.IDs.PRECINCT_SOURCE_ID}
-                layout={{
-                  visibility:
-                    this.props.DisplayPrecincts && !this.props.DisplayDistricts
+                <Layer
+                  id={MapUtilities.IDs.PRECINCT_FILL_LAYER_ID}
+                  type="fill"
+                  source={MapUtilities.IDs.PRECINCT_SOURCE_ID}
+                  layout={{
+                    visibility:
+                      this.props.DisplayPrecincts &&
+                      !this.props.DisplayDistricts
+                        ? "visible"
+                        : "none",
+                  }}
+                  paint={{
+                    "fill-color": [
+                      "rgb",
+                      ["get", "rgb-R"],
+                      ["get", "rgb-G"],
+                      ["get", "rgb-B"],
+                    ],
+                    "fill-opacity": [
+                      "case",
+                      ["boolean", ["feature-state", "hover"], false],
+                      1,
+                      MapUtilities.VALUES.UNHIGHLIGHTED_DISTRICT_OPACITY,
+                    ],
+                  }}
+                />
+                <Layer
+                  id={MapUtilities.IDs.PRECINCT_LINE_LAYER_ID}
+                  type="line"
+                  source={MapUtilities.IDs.PRECINCT_SOURCE_ID}
+                  layout={{
+                    visibility: this.props.DisplayPrecincts
                       ? "visible"
                       : "none",
-                }}
-                paint={{
-                  "fill-color": [
-                    "rgb",
-                    ["get", "rgb-R"],
-                    ["get", "rgb-G"],
-                    ["get", "rgb-B"],
-                  ],
-                  "fill-opacity": [
-                    "case",
-                    ["boolean", ["feature-state", "hover"], false],
-                    1,
-                    MapUtilities.VALUES.UNHIGHLIGHTED_DISTRICT_OPACITY,
-                  ],
-                }}
-              />
-              <Layer
-                id={MapUtilities.IDs.PRECINCT_LINE_LAYER_ID}
-                type="line"
-                source={MapUtilities.IDs.PRECINCT_SOURCE_ID}
-                layout={{
-                  visibility: this.props.DisplayPrecincts ? "visible" : "none",
-                }}
-                paint={{
-                  "line-opacity": 0.5,
-                }}
-              />
-            </div>
-          ) : (
-            <div></div>
-          )}
-          {this.props.CountiesGeoJson != null ? (
-            <div>
-              <Source
-                id={MapUtilities.IDs.COUNTY_SOURCE_ID}
-                type="geojson"
-                data={this.props.CountiesGeoJson}
-                generateId={true}
-              />
-              <Layer
-                id={MapUtilities.IDs.COUNTY_FILL_LAYER_ID}
-                type="fill"
-                source={MapUtilities.IDs.COUNTY_SOURCE_ID}
-                layout={{
-                  visibility: this.props.DisplayCounties ? "visible" : "none",
-                }}
-                paint={{
-                  "fill-color": [
-                    "rgb",
-                    ["get", "rgb-R"],
-                    ["get", "rgb-G"],
-                    ["get", "rgb-B"],
-                  ],
-                  "fill-opacity": [
-                    "case",
-                    ["boolean", ["feature-state", "hover"], false],
-                    0.6,
-                    0.3,
-                  ],
-                }}
-              />
-              <Layer
-                id={MapUtilities.IDs.COUNTY_LINE_LAYER_ID}
-                type="line"
-                source={MapUtilities.IDs.COUNTY_SOURCE_ID}
-                layout={{
-                  visibility: this.props.DisplayCounties ? "visible" : "none",
-                }}
-                paint={{
-                  "line-opacity": 1,
-                }}
-              />
-            </div>
-          ) : (
-            <div></div>
-          )}
-          {this.props.CurrentDistrictingGeoJson != null ? (
-            <div>
-              <Source
-                id={MapUtilities.IDs.DISTRICT_SOURCE_ID}
-                type="geojson"
-                data={this.props.CurrentDistrictingGeoJson}
-                generateId={true}
-              />
-              <Layer
-                id={MapUtilities.IDs.DISTRICT_FILL_LAYER_ID}
-                type="fill"
-                source={MapUtilities.IDs.DISTRICT_SOURCE_ID}
-                layout={{
-                  visibility: this.props.DisplayDistricts ? "visible" : "none",
-                }}
-                paint={{
-                  "fill-color": [
-                    "rgb",
-                    ["get", "rgb-R"],
-                    ["get", "rgb-G"],
-                    ["get", "rgb-B"],
-                  ],
-                  "fill-opacity": [
-                    "case",
-                    ["boolean", ["feature-state", "hover"], false],
-                    1.0,
-                    0.5,
-                  ],
-                }}
-              />
-              <Layer
-                id={MapUtilities.IDs.DISTRICT_LINE_LAYER_ID}
-                type="line"
-                source={MapUtilities.IDs.DISTRICT_SOURCE_ID}
-                layout={{
-                  visibility: this.props.DisplayDistricts ? "visible" : "none",
-                }}
-                paint={{
-                  "line-opacity": 1,
-                }}
-              />{" "}
-            </div>
-          ) : (
-            <div />
-          )}
-        </ReactMapGL>
+                  }}
+                  paint={{
+                    "line-opacity": 0.5,
+                  }}
+                />
+              </div>
+            ) : (
+              <div></div>
+            )}
+            {this.props.CountiesGeoJson != null ? (
+              <div>
+                <Source
+                  id={MapUtilities.IDs.COUNTY_SOURCE_ID}
+                  type="geojson"
+                  data={this.props.CountiesGeoJson}
+                  generateId={true}
+                />
+                <Layer
+                  id={MapUtilities.IDs.COUNTY_FILL_LAYER_ID}
+                  type="fill"
+                  source={MapUtilities.IDs.COUNTY_SOURCE_ID}
+                  layout={{
+                    visibility: this.props.DisplayCounties ? "visible" : "none",
+                  }}
+                  paint={{
+                    "fill-color": [
+                      "rgb",
+                      ["get", "rgb-R"],
+                      ["get", "rgb-G"],
+                      ["get", "rgb-B"],
+                    ],
+                    "fill-opacity": [
+                      "case",
+                      ["boolean", ["feature-state", "hover"], false],
+                      0.6,
+                      0.3,
+                    ],
+                  }}
+                />
+                <Layer
+                  id={MapUtilities.IDs.COUNTY_LINE_LAYER_ID}
+                  type="line"
+                  source={MapUtilities.IDs.COUNTY_SOURCE_ID}
+                  layout={{
+                    visibility: this.props.DisplayCounties ? "visible" : "none",
+                  }}
+                  paint={{
+                    "line-opacity": 1,
+                  }}
+                />
+              </div>
+            ) : (
+              <div></div>
+            )}
+            {this.props.CurrentDistrictingGeoJson != null ? (
+              <div>
+                <Source
+                  id={MapUtilities.IDs.DISTRICT_SOURCE_ID}
+                  type="geojson"
+                  data={this.props.CurrentDistrictingGeoJson}
+                  generateId={true}
+                />
+                <Layer
+                  id={MapUtilities.IDs.DISTRICT_FILL_LAYER_ID}
+                  type="fill"
+                  source={MapUtilities.IDs.DISTRICT_SOURCE_ID}
+                  layout={{
+                    visibility: this.props.DisplayDistricts
+                      ? "visible"
+                      : "none",
+                  }}
+                  paint={{
+                    "fill-color": [
+                      "rgb",
+                      ["get", "rgb-R"],
+                      ["get", "rgb-G"],
+                      ["get", "rgb-B"],
+                    ],
+                    "fill-opacity": [
+                      "case",
+                      ["boolean", ["feature-state", "hover"], false],
+                      1.0,
+                      0.5,
+                    ],
+                  }}
+                />
+                <Layer
+                  id={MapUtilities.IDs.DISTRICT_LINE_LAYER_ID}
+                  type="line"
+                  source={MapUtilities.IDs.DISTRICT_SOURCE_ID}
+                  layout={{
+                    visibility: this.props.DisplayDistricts
+                      ? "visible"
+                      : "none",
+                  }}
+                  paint={{
+                    "line-opacity": 1,
+                  }}
+                />{" "}
+              </div>
+            ) : (
+              <div />
+            )}
+          </ReactMapGL>
+        </div>
       </div>
     );
   }
