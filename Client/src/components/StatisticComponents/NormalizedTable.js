@@ -18,7 +18,7 @@ import { connect } from 'react-redux'
 /* If forDistricting is true, then this is for a districting, otherwise it's for an individual district and will display different values*/
 class NormalizedTable extends Component {
   mapCompactnessTypeToJsonKey(compactnessType) {
-    switch (compactnessType) {
+    switch(compactnessType) {
       case SelectionMenuUtilities.COMPACTNESS_TYPES.GRAPH_COMPACTNESS:
         return "graphCompactness"
       case SelectionMenuUtilities.COMPACTNESS_TYPES.POPULATION_FATNESS:
@@ -40,22 +40,22 @@ class NormalizedTable extends Component {
           <TableHead>
             <TableRow>
               <TableCell>
-                {"Population Equality"}
+                    {"Population Equality"}
               </TableCell>
               <TableCell>{
-                "Split County Score"}
+                      "Split County Score"}
               </TableCell>
               <TableCell>
                 {"Deviation from Average"}
               </TableCell>
               <TableCell>
                 {
-                  "Deviation from Enacted"
-                }
+                      "Deviation from Enacted"
+                  }
               </TableCell>
               <TableCell>
-
-                {"Compactness"}
+                
+                      {"Compactness"}
               </TableCell>
             </TableRow>
           </TableHead>
@@ -65,17 +65,17 @@ class NormalizedTable extends Component {
                 {this.props.DistrictingToDisplay.normalizedMeasures.populationEquality.toFixed(3)}
               </TableCell>
               <TableCell>
-                {this.props.DistrictingToDisplay.normalizedMeasures.splitCountyScore.toFixed(3)}
+              {this.props.DistrictingToDisplay.normalizedMeasures.splitCountyScore.toFixed(3)}
               </TableCell>
-              <TableCell>
+                <TableCell>
                 {this.props.DistrictingToDisplay.normalizedMeasures.deviationFromAverage.toFixed(3)}
               </TableCell>
               <TableCell>
-                {this.props.DistrictingToDisplay.normalizedMeasures.deviationFromEnacted.toFixed(3)}
+              {this.props.DistrictingToDisplay.normalizedMeasures.deviationFromEnacted.toFixed(3)}
               </TableCell>
               <TableCell>
-                {this.props.DistrictingToDisplay.normalizedMeasures.compactness.toFixed(3)}
-              </TableCell>
+              {this.props.DistrictingToDisplay.normalizedMeasures.compactness.toFixed(3)} 
+            </TableCell>
             </TableRow>
           </TableBody>
         </Table>
@@ -87,7 +87,7 @@ class NormalizedTable extends Component {
 
 const mapStateToProps = (state, ownProps) => {
   return {
-
+    
   };
 };
 

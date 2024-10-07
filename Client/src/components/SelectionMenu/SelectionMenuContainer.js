@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import { Col, Row, Button } from "react-materialize";  // Make sure Button is imported
+import { Col, Row } from "react-materialize";
 import FilterSection from "./FilterSection/FilterSection";
 import ListingSection from "./ListingSection/ListingSection";
-import { Link } from "react-router-dom";  // Import Link for navigation
+import CompareSection from "./CompareSection/CompareSection";
 
 export default class SelectionMenuContainer extends Component {
   render() {
@@ -10,10 +10,7 @@ export default class SelectionMenuContainer extends Component {
       <div className="SelectionMenuContainer">
         <FilterSection />
         <ListingSection />
-        {/* Button that links to the ComparePage */}
-        <Link to="/compare">
-          <Button>Go to Compare Section</Button>
-        </Link>
+        <CompareSection />
       </div>
     );
   }
