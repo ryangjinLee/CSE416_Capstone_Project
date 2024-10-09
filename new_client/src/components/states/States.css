@@ -1,0 +1,71 @@
+.selected-state-container {
+  display: flex;
+  height: 100vh; /* Full screen height */
+}
+
+/* Map container on the left */
+.map-container {
+  flex: 3; /* 60% of the screen */
+  height: 100%;
+}
+
+/* Information container on the right */
+.info-container {
+  flex: 2; /* 40% of the screen */
+  padding: 20px;
+  background-color: #f5f5f5; /* Light grey background */
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1); /* Add slight shadow */
+  overflow-y: auto; /* Make it scrollable if content overflows */
+}
+
+.info-container h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.info-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.info-container li {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+/* Styling for the select dropdowns */
+.select-container {
+  margin-top: 20px;
+}
+
+.option-selector-dropdown {
+  width: 200px;
+  padding: 8px;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.state-selector-dropdown {
+  width: 150px;
+  padding: 8px;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.select-label {
+  font-size: 1rem;
+  margin-right: 10px;
+  color: #333;
+}
+
+.redBrownBtn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #a52a2a;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
