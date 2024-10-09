@@ -107,3 +107,5 @@ dist
 Scripts/input/NC_VOTER_DATA_FILTERED.csv
 Scripts/input/NC_VOTER_NEW_FILTERED.csv
 Scripts/input/NC_VOTER_NEW_FILTERED.txt
+
+.DS_Store

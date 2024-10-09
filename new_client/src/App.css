@@ -1,7 +1,9 @@
 /* src/App.css */
 .map-display {
-  width: 100vw; /* 전체 화면 너비 */
-  height: 100vh; /* 전체 화면 높이 */
+  width: 100vw;
+  /* 전체 화면 너비 */
+  height: 100vh;
+  /* 전체 화면 높이 */
   position: relative;
   background-color: red;
 }
