@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Map, Layer, Source } from "react-map-gl";
-import NYCountiesGeoData from "../../../data/NY/CountiesGeoData.json";
+import NYCountiesGeoData from "../../../data/NY/NYS_Congressional_Districts_1248143431698889131.geojson";
 import "./NY.css";
 
 const NY_Map = () => {
