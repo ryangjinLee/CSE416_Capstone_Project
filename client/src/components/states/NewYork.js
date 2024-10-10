@@ -1,9 +1,12 @@
 import React, { useState } from "react";
 import StateSelectionToolbar from "../main_map/StateSelectionToolbar";
-import "./States.css"; // Ensure styles are in a separate CSS file
+import "./States.css"; 
 import NY_SMD from "./NY_components/NY_SMD";
 import NY_MMD from "./NY_components/NY_MMD";
 import NY_Map from "./NY_components/NY_Map";
+import NY_PieChart from "./NY_components/NY_PieChart";
+import NY_PieChartRace from "./NY_components/NY_PieChartRace";
+import NY_Table from "./NY_components/NY_Table";
 
 const NewYork = () => {
   const [selectedOptionMap, setSelectedOptionMap] = useState("SMD"); // State for the selected option
@@ -85,7 +88,9 @@ const NewYork = () => {
             </div>
             <div className="second-half">
               {/* 여기 NY_SMD지우고 Race Popularity */}
-              <NY_SMD />
+              {/* <NY_SMD /> */}
+              {/* <NY_PieChart district={selectedD} /> */}
+              <NY_PieChartRace />
             </div>
           </div>
         </div>
@@ -103,7 +108,7 @@ const NewYork = () => {
       <div className="whole-page">
         <div className="third-page">
           {/* 여기에 Comparison Table 넣으면 됨 */}
-          <NY_SMD />
+          <NY_Table />
         </div>
       </div>
     </>
