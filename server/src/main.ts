@@ -13,6 +13,11 @@ async function bootstrap() {
     .addTag('API')
     .build();
 
+  // allow localhost client server
+  app.enableCors({
+    origin: 'http://localhost:3000',
+  });
+
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('docs', app, document); // Swagger UI가 'http://localhost:3001/api-docs'에 표시됨
 

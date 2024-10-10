@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, {useEffect, useState} from "react";
 import { Map, Layer, Source } from "react-map-gl";
-import NYCountiesGeoData from "../../../data/NY/NYS_Congressional_Districts_1248143431698889131.geojson";
 import "./NY.css";
+import {getData} from "../../../api";
 
 const NY_Map = () => {
   const [selectedDistrict, setSelectedDistrict] = useState("Click on District");
@@ -10,6 +10,22 @@ const NY_Map = () => {
     longitude: -75.5268,
     zoom: 6,
   });
+  const [stateData, setStateData] = useState()
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const { value } = await getData('/states/NY');
+        setStateData(value);
+      } catch (error) {
+        console.log('error fetching data', error);
+        throw new Error('Failed to fetch data');
+      }
+    };
+
+    fetchData();
+  }, []);
+
 
   const handleClick = (event) => {
     const feature = event.features[0]; // Get the first clicked feature
@@ -40,7 +56,7 @@ const NY_Map = () => {
         onZoom={(evt) => handleViewStateChange(evt.viewState)} // Handle zooming
       >
         {/* Source for the counties */}
-        <Source id="ny-counties" type="geojson" data={NYCountiesGeoData}>
+        <Source id="ny-counties" type="geojson" data={stateData}>
           {/* Layer to color fill counties */}
           <Layer
             id="ny-counties-fill"
