@@ -1,3 +1,6 @@
+
+REACT_APP_MAPBOX_TOKEN=pk.eyJ1IjoieWh3YW5jaGEiLCJhIjoiY20xczhhaHJ2MDNvMjJpb2Y5a25paHh5MiJ9.epgrKgUZnAZJCHX_xGa4Qg
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
