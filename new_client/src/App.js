@@ -9,8 +9,8 @@ import California from "./components/states/California";
 const App = () => {
   return (
     <>
-      <Header />
       <Router>
+        <Header />
         <Routes>
           <Route path="/" element={<StateSelectionMap />} />
           <Route path="/NewYork" element={<NewYork />} />
