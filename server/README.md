@@ -1,3 +1,8 @@
+1. Run docker
+```
+ docker run --name my-mongo -d -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=root -e MONGO_INITDB_ROOT_PASSWORD=1234 -v ./docker-entrypoint/init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js mongo
+```
+
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
 </p>
