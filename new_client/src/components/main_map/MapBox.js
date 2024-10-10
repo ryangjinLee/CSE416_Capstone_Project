@@ -14,35 +14,38 @@ const MapBox = ({ selectedState }) => {
     zoom: 3.75,
   });
   const [geoData, setGeoData] = useState(null);
+  const handlemapViewportChange = (NewMapViewport) => {
+    setMapViewport(NewMapViewport); // Update view state to handle dragging and zooming
+  };
 
   useEffect(() => {
     switch (selectedState) {
-      case "CALIFORNIA":
+      case "California":
         setMapViewport({
           latitude: 36.7783,
           longitude: -119.4179,
           zoom: 5.5,
-          width: "75vw",
+          //   width: "75vw",
           height: window.innerHeight,
         });
         setGeoData(CACountiesGeoData);
         break;
-      case "NEW_YORK":
+      case "NewYork":
         setMapViewport({
           latitude: 42.9538,
           longitude: -75.5268,
           zoom: 6.5,
-          width: "75vw",
+          //   width: "75vw",
           height: window.innerHeight,
         });
         setGeoData(NYCountiesGeoData);
         break;
-      case "MISSISSIPPI":
+      case "Mississippi":
         setMapViewport({
           latitude: 32.3547,
           longitude: -89.3985,
           zoom: 6,
-          width: "75vw",
+          //   width: "75vw",
           height: window.innerHeight,
         });
         setGeoData(MSCountiesGeoData);
@@ -52,7 +55,7 @@ const MapBox = ({ selectedState }) => {
           latitude: 40.29091544906472,
           longitude: -97.44332861851478,
           zoom: 3.75,
-          width: "75vw",
+          //   width: "75vw",
           height: window.innerHeight,
         });
         setGeoData(null);
@@ -67,6 +70,8 @@ const MapBox = ({ selectedState }) => {
         {...mapViewport}
         mapStyle="mapbox://styles/mapbox/light-v9"
         style={{ width: "90vw", height: "100vh" }}
+        onMove={(evt) => handlemapViewportChange(evt.viewState)} // Handle dragging
+        onZoom={(evt) => handlemapViewportChange(evt.viewState)} // Handle zooming
       >
         <Source id="ca-counties" type="geojson" data={CACountiesGeoData}>
           <Layer
