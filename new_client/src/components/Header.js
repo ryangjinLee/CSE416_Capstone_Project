@@ -1,6 +1,7 @@
 import React from "react";
 import { PageHeader } from "@ant-design/pro-layout";
 import { Button } from "antd";
+import "./main_map/Components.css";
 
 const Header = () => (
   <PageHeader

@@ -1,57 +1,112 @@
 import React, { useState } from "react";
 import StateSelectionToolbar from "../main_map/StateSelectionToolbar";
 import "./States.css"; // Ensure styles are in a separate CSS file
-import NY_SMD from "./NY_chart/NY_SMD";
+import NY_SMD from "./NY_components/NY_SMD";
+import NY_MMD from "./NY_components/NY_MMD";
+import NY_Map from "./NY_components/NY_Map";
 
-const NewYork = ({ onStateChange, tentativeState }) => {
-  const [selectedOption, setSelectedOption] = useState(""); // State for the selected option
-  const [selectedState, setSelectedState] = useState("");
+const NewYork = () => {
+  const [selectedOptionMap, setSelectedOptionMap] = useState("SMD"); // State for the selected option
 
-  const handleChange = (e) => {
-    const selectedState = e.target.value;
-    onStateChange(selectedState); // Pass selected state back to parent component
-  };
-
-  const handleSelectChange = (e) => {
-    setSelectedOption(e.target.value); // Update selected option
-  };
-
-  const handleClick = () => {
-    console.log("State selected:", tentativeState);
-    console.log("Option selected:", selectedOption);
+  const handleSelectChangeMap = (event) => {
+    setSelectedOptionMap(event.target.value);
   };
 
   return (
-    <div className="container">
-      {/* State selection toolbar */}
-      <StateSelectionToolbar
-        onStateChange={setSelectedState}
-        tentativeState={selectedState}
-      />
-      <div className="map-visual">
-        <div className="select-container centerWithinMe">
-          <label className="select-label">Select an Option:</label>
-          <select
-            id="option-selector"
-            value={selectedOption}
-            onChange={handleSelectChange}
-            className="option-selector-dropdown"
-          >
-            <option disabled value="">
-              -District Options-
-            </option>
-            <option value="SMD">SMD</option>
-            <option value="MMD2">MMD/2</option>
-            <option value="MMD3">MMD/3</option>
-            <option value="MMD4">MMD/4</option>
-            <option value="MMD5">MMD/5</option>
-          </select>
+    <>
+      <div className="container">
+        <div className="whole-page">
+          <div className="first-page">
+            <div className="first-half">
+              <div className="outer-container">
+                <div className="select-container centerWithinMe">
+                  <label className="select-label">
+                    <b>Select District Method</b>
+                  </label>
+                  <div>
+                    <label>
+                      <input
+                        type="radio"
+                        name="districtMethodMap"
+                        value="SMD"
+                        checked={selectedOptionMap === "SMD"}
+                        onChange={handleSelectChangeMap}
+                      />
+                      SMD
+                    </label>
+
+                    <label className="radio-margin">
+                      <input
+                        type="radio"
+                        name="districtMethodMap"
+                        value="MMD2"
+                        checked={selectedOptionMap === "MMD2"}
+                        onChange={handleSelectChangeMap}
+                      />
+                      MMD:2
+                    </label>
+
+                    <label className="radio-margin">
+                      <input
+                        type="radio"
+                        name="districtMethodMap"
+                        value="MMD3"
+                        checked={selectedOptionMap === "MMD3"}
+                        onChange={handleSelectChangeMap}
+                      />
+                      MMD:3
+                    </label>
+
+                    <label className="radio-margin">
+                      <input
+                        type="radio"
+                        name="districtMethodMap"
+                        value="MMD4"
+                        checked={selectedOptionMap === "MMD4"}
+                        onChange={handleSelectChangeMap}
+                      />
+                      MMD:4
+                    </label>
+
+                    <label className="radio-margin">
+                      <input
+                        type="radio"
+                        name="districtMethodMap"
+                        value="MMD5"
+                        checked={selectedOptionMap === "MMD5"}
+                        onChange={handleSelectChangeMap}
+                      />
+                      MMD:5
+                    </label>
+                  </div>
+                </div>
+                <NY_Map />
+              </div>
+            </div>
+            <div className="second-half">
+              {/* 여기 NY_SMD지우고 Race Popularity */}
+              <NY_SMD />
+            </div>
+          </div>
         </div>
       </div>
-      <div className="chart-visual">
-        <NY_SMD />
+      <div className="whole-page">
+        <div className="second-page">
+          <div className="first-half">
+            <NY_SMD />
+          </div>
+          <div className="second-half">
+            <NY_MMD />
+          </div>
+        </div>
       </div>
-    </div>
+      <div className="whole-page">
+        <div className="third-page">
+          {/* 여기에 Comparison Table 넣으면 됨 */}
+          <NY_SMD />
+        </div>
+      </div>
+    </>
   );
 };
 
