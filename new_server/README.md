@@ -1,1 +1,0 @@
-docker run --name my-mongo -d -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=root -e MONGO_INITDB_ROOT_PASSWORD=1234 -v ~/mongo-data:/data/db -v ./docker-entrypoint/init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js mongo
