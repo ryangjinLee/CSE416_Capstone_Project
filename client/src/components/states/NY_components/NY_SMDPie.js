@@ -1,9 +1,21 @@
 import React, { useState, useEffect } from 'react';
 import { PieChart, Pie, Cell, ResponsiveContainer, Legend, Tooltip } from 'recharts';
 import EthnicityData from '../../../data/NY/EthnicityData.json';
+import {getData} from "../../../api";
 
 const NY_SMDPieChart = () => {
   const [partyData, setPartyData] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const NYEthnicityData = await getData('/ethnicity/NY');
+        console.log(NYEthnicityData)
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
+  });
 
   useEffect(() => {
     const calculatePartyTotals = () => {
@@ -28,6 +40,9 @@ const NY_SMDPieChart = () => {
 
     calculatePartyTotals();
   }, []);
+
+
+
 
   const COLORS = ['#FF0000', '#0000FF'];
 
