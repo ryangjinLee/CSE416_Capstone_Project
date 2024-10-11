@@ -1,6 +1,8 @@
 import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
 import { BoxplotService } from './boxplot.service';
+import { ApiTags } from "@nestjs/swagger";
 
+@ApiTags('Boxplot')
 @Controller('boxplot')
 export class BoxplotController {
   constructor(private readonly boxplotService: BoxplotService) {}

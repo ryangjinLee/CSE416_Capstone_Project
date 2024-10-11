@@ -1,6 +1,8 @@
 import { Controller, Get, Param } from '@nestjs/common';
 import { CountyGeoService } from './county-geo.service';
+import { ApiTags } from "@nestjs/swagger";
 
+@ApiTags('CountyGeo')
 @Controller('county-geo')
 export class CountyGeoController {
   constructor(private readonly countyGeoService: CountyGeoService) {}
