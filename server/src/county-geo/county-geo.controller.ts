@@ -16,7 +16,7 @@ export class CountyGeoController {
   }
 
   // TODO: NY, MS, CA 만 받도록 수정
-  @Get('/:county')
+  @Get('/:state')
   async getCountyData(@Param('county') countyName: string) {
     const countyData = await this.countyGeoService.getCountyData('countyGeo', {
       name: countyName,
