@@ -132,19 +132,20 @@ const NewYork = () => {
         </div>
       </div>
       <div className="whole-page">
-        <h1 style={{ textAlign: 'center', marginTop: '100px' }}>Party Win Breakdown For SMD and MMD Scenarios</h1>
         <div className="secondP-page">
           <div className="first-half Chart">
-            <NY_SMDPieChart/>
+            <NY_SMDPieChart />
           </div>
           <div className="second-half Chart">
-            <NY_MMDPie/>
+            <NY_MMDPie />
           </div>
         </div>
       </div>
       <div className="whole-page">
-        <div className="third-page">
-          {/* 여기에 Comparison Table 넣으면 됨 */}
+        <h className="page-header">
+          Party Win Breakdown For SMD and MMD Scenarios
+        </h>
+        <div className="third-page Table">
           <NY_Table />
         </div>
       </div>
