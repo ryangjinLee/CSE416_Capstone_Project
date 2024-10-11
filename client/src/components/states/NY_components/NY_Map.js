@@ -36,7 +36,22 @@ const NY_Map = (props) => {
             "match",
             ["get", "name"],
             districtId.toString(), "blue",
-            (districtId + 1).toString(), "blue",
+            (districtId === 9 || districtId === 10)
+              ? (districtId + 2).toString()
+              : (districtId === 11 || districtId === 12)
+                ? (districtId - 2).toString()
+                : (districtId === 26)
+                  ? (districtId - 3).toString()
+                  : (districtId === 23)
+                    ? (districtId + 3).toString()
+                    : (districtId === 25)
+                      ? (districtId - 1).toString()
+                      : (districtId === 24)
+                        ? (districtId + 1).toString()
+                          : (districtId % 2 === 0)
+                            ? (districtId - 1).toString()
+                            : (districtId + 1).toString(),
+            "blue",
             "orange"
           ]);
           break;
@@ -57,9 +72,28 @@ const NY_Map = (props) => {
             "match",
             ["get", "name"],
             districtId.toString(), "blue",
-            (districtId + 1).toString(), "blue",
-            (districtId + 2).toString(), "blue",
-            (districtId + 3).toString(), "blue",
+            (districtId === 1 || districtId === 5 || districtId === 9 || districtId === 13 || districtId === 17)
+              ? [(districtId + 1).toString(), (districtId + 2).toString(), (districtId + 3).toString()]
+              : (districtId === 2 || districtId === 6 || districtId === 10 || districtId === 14 || districtId === 18 )
+                ? [(districtId - 1).toString(), (districtId + 1).toString(), (districtId + 2).toString()]
+                : (districtId === 3 || districtId === 7 || districtId === 11 || districtId === 15 || districtId === 19)
+                  ? [(districtId - 1).toString(), (districtId + 1).toString(), (districtId - 2).toString()]
+                  : (districtId === 4 || districtId === 8 || districtId === 12 || districtId === 16 || districtId === 20)
+                    ? [(districtId - 1).toString(), (districtId - 2).toString(), (districtId - 3).toString()]
+                    : (districtId === 21)
+                      ? [(districtId + 1).toString(), (districtId + 3).toString(), (districtId + 4).toString()]
+                      : (districtId === 22)
+                        ? [(districtId - 1).toString(), (districtId + 2).toString(), (districtId + 3).toString()]
+                        : (districtId === 23)
+                          ? [(districtId + 3).toString()]
+                          : (districtId === 24)
+                            ? [(districtId - 3).toString(), (districtId - 2).toString(), (districtId + 1).toString()]
+                            : (districtId === 25)
+                              ? [(districtId - 4).toString(), (districtId - 3).toString(), (districtId - 1).toString()]
+                              : (districtId === 26)
+                                ? [(districtId - 3).toString()]
+                                : [(districtId + 1).toString(), (districtId + 2).toString(), (districtId + 3).toString()],
+            "blue",
             "orange"
           ]);
           break;
