@@ -10,6 +10,7 @@
     "ag-charts-enterprise": "^10.2.0",
     "ag-charts-react": "^10.2.0",
     "antd": "^5.21.2",
+    "axios": "^1.7.7",
     "bootstrap": "^5.3.3",
     "mapbox-gl": "^3.7.0",
     "mongodb": "^6.9.0",
