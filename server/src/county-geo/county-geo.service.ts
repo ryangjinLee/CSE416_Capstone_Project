@@ -11,8 +11,8 @@ export class CountyGeoService {
     return countyGeoData;
   }
 
-  async getCountyData(countyName: string, whereQuery: any) {
-    const stateInfo = await this.mongoDBService.findOne(countyName, whereQuery);
+  async getCountyData(stateName: string, whereQuery: any) {
+    const stateInfo = await this.mongoDBService.findOne(stateName, whereQuery);
 
     return stateInfo;
   }
