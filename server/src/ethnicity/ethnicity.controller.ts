@@ -2,9 +2,7 @@ import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/commo
 import { EthnicityService } from './ethnicity.service';
 import { CreateEthnicityDto } from './dto/create-ethnicity.dto';
 import { UpdateEthnicityDto } from './dto/update-ethnicity.dto';
-import { ApiTags } from "@nestjs/swagger";
 
-@ApiTags('Ethnicity')
 @Controller('ethnicity')
 export class EthnicityController {
   constructor(private readonly ethnicityService: EthnicityService) {}

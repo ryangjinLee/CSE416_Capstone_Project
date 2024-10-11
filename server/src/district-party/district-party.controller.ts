@@ -2,9 +2,7 @@ import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/commo
 import { DistrictPartyService } from './district-party.service';
 import { CreateDistrictPartyDto } from './dto/create-district-party.dto';
 import { UpdateDistrictPartyDto } from './dto/update-district-party.dto';
-import { ApiTags } from "@nestjs/swagger";
 
-@ApiTags('District Party')
 @Controller('district-party')
 export class DistrictPartyController {
   constructor(private readonly districtPartyService: DistrictPartyService) {}
