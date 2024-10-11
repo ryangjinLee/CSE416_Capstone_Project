@@ -4,6 +4,7 @@ import NYCountiesGeoData from "../../data/NY/CountiesGeoData.json";
 import CACountiesGeoData from "../../data/CA/CountiesGeoData.json";
 import MSCountiesGeoData from "../../data/MS/CountiesGeoData.json";
 import "./Components.css";
+import { getData } from "../../api";
 
 const MapBox = ({ selectedState }) => {
   const [mapViewport, setMapViewport] = useState({
@@ -17,6 +18,17 @@ const MapBox = ({ selectedState }) => {
   const handlemapViewportChange = (NewMapViewport) => {
     setMapViewport(NewMapViewport); // Update view state to handle dragging and zooming
   };
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const NYCountyGeoData = await getData('/county-geo/NY');
+        console.log(NYCountyGeoData)
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
+  });
 
   useEffect(() => {
     switch (selectedState) {
