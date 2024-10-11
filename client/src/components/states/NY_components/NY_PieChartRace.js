@@ -1,39 +1,96 @@
 import React, { useState, useEffect } from 'react';
 import { PieChart, Pie, Cell, ResponsiveContainer, Legend, Tooltip } from 'recharts';
-import EthnicityData from '../../../data/NY/EthnicityData.json';
+// endpoint: "/race/ny/"
+import RaceData from '../../../data/NY/pie_race.json'
 
 const NY_PieChartRace = (props) => {
-  const [raceData, setRaceData] = useState([
-    { name: 'White', value: 56 },
-    { name: 'Hispanic', value: 19 },
-    { name: 'Black', value: 15 },
-    { name: 'Asian', value: 10 },
-  ]);
+  const [raceData, setRaceData] = useState(() => {
+    // Default to total values from RaceData
+    const defaultTotals = RaceData[props.selectedOptionMap]?.total || {};
+    return [
+      { name: 'White', value: defaultTotals.White || 0 },
+      { name: 'Hispanic', value: defaultTotals.Hispanic || 0 },
+      { name: 'Black', value: defaultTotals.Black || 0 },
+      { name: 'Asian', value: defaultTotals.Asian || 0 },
+    ];
+  });
 
   useEffect(() => {
-    const jsonData = EthnicityData;
-    const selectedDistrictData = jsonData[Number(props.selectedDistrict) - 1];
+    const totalData = RaceData[props.selectedOptionMap]?.total || {}; // Default to "total" data
+    const districtData = RaceData[props.selectedOptionMap]?.district || []; // District data array
 
-    const calculateRaceTotals = async () => {
-      let White = selectedDistrictData?.White || 0;
-      let Hispanic = selectedDistrictData?.Hispanic || 0;
-      let Black = selectedDistrictData?.Black || 0;
-      let Asian = selectedDistrictData?.Asian || 0;
+    const calculateRaceTotalsForAllDistricts = async () => {
+      let totalWhite = 0;
+      let totalHispanic = 0;
+      let totalBlack = 0;
+      let totalAsian = 0;
 
-      const WhitePercentage = Math.round(White * 100);
-      const HispanicPercentage = Math.round(Hispanic * 100);
-      const BlackPercentage = Math.round(Black * 100);
-      const AsianPercentage = Math.round(Asian * 100);
+      // Sum up the totals for all districts
+      districtData.forEach((district) => {
+        totalWhite += district.White || 0;
+        totalHispanic += district.Hispanic || 0;
+        totalBlack += district.Black || 0;
+        totalAsian += district.Asian || 0;
+      });
 
+      const total = totalWhite + totalHispanic + totalBlack + totalAsian;
+
+      // Calculate percentages for all districts combined
+      const whitePercentage = Math.round((totalWhite / total) * 100);
+      const hispanicPercentage = Math.round((totalHispanic / total) * 100);
+      const blackPercentage = Math.round((totalBlack / total) * 100);
+      const asianPercentage = Math.round((totalAsian / total) * 100);
+
+      // Set the race data with the totals across all districts
       await setRaceData([
-        { name: 'White', value: WhitePercentage },
-        { name: 'Hispanic', value: HispanicPercentage },
-        { name: 'Black', value: BlackPercentage },
-        { name: 'Asian', value: AsianPercentage },
+        { name: 'White', value: whitePercentage },
+        { name: 'Hispanic', value: hispanicPercentage },
+        { name: 'Black', value: blackPercentage },
+        { name: 'Asian', value: asianPercentage },
       ]);
     };
-    props.selectedDistrict && calculateRaceTotals();
-  }, [props.selectedDistrict]);
+
+    const calculateSelectedDistrictRaceTotals = async () => {
+      const selectedDistrictIndex = Number(props.selectedDistrict) - 1;
+      const selectedDistrictData = districtData[selectedDistrictIndex]; // Get the selected district's data
+
+      if (selectedDistrictData) {
+        let whiteTotal = selectedDistrictData.White || 0;
+        let hispanicTotal = selectedDistrictData.Hispanic || 0;
+        let blackTotal = selectedDistrictData.Black || 0;
+        let asianTotal = selectedDistrictData.Asian || 0;
+
+        const total = whiteTotal + hispanicTotal + blackTotal + asianTotal;
+
+        // Calculate percentages for the selected district
+        const whitePercentage = Math.round((whiteTotal / total) * 100);
+        const hispanicPercentage = Math.round((hispanicTotal / total) * 100);
+        const blackPercentage = Math.round((blackTotal / total) * 100);
+        const asianPercentage = Math.round((asianTotal / total) * 100);
+
+        // Update race data with the selected district's values
+        await setRaceData([
+          { name: 'White', value: whitePercentage },
+          { name: 'Hispanic', value: hispanicPercentage },
+          { name: 'Black', value: blackPercentage },
+          { name: 'Asian', value: asianPercentage },
+        ]);
+      }
+    };
+
+    // If a district is selected, calculate the totals for that district; otherwise, use totals for all districts
+    if (props.selectedDistrict) {
+      calculateSelectedDistrictRaceTotals();
+    } else {
+      // Use total values if no district is selected
+      setRaceData([
+        { name: 'White', value: Math.round(totalData.White * 100) || 0 },
+        { name: 'Hispanic', value: Math.round(totalData.Hispanic * 100) || 0 },
+        { name: 'Black', value: Math.round(totalData.Black * 100) || 0 },
+        { name: 'Asian', value: Math.round(totalData.Asian * 100) || 0 },
+      ]);
+    }
+  }, [props.selectedDistrict, props.selectedOptionMap]);
 
   // Update this line to use vivid colors
   const COLORS = ['#FF4136', '#FF851B', '#2ECC40', '#0074D9'];
