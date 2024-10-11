@@ -1,7 +1,14 @@
-import React, { useState, useEffect } from 'react';
-import { PieChart, Pie, Cell, ResponsiveContainer, Legend, Tooltip } from 'recharts';
+import React, { useState, useEffect } from "react";
+import {
+  PieChart,
+  Pie,
+  Cell,
+  ResponsiveContainer,
+  Legend,
+  Tooltip,
+} from "recharts";
 // Endpoint: "/party/ny"
-import PartyData from '../../../data/NY/pie_party.json';
+import PartyData from "../../../data/NY/pie_party.json";
 
 const NY_PieChart = (props) => {
   const [partyData, setPartyData] = useState([]);
@@ -14,7 +21,7 @@ const NY_PieChart = (props) => {
       let totalConservatives = 0;
 
       // Calculate the total for all districts
-      jsonData.forEach(district => {
+      jsonData.forEach((district) => {
         totalRepublicans += district.Republicans || 0;
         totalConservatives += district.Conservatives || 0;
       });
@@ -23,12 +30,14 @@ const NY_PieChart = (props) => {
 
       // Calculate percentages
       const republicanPercentage = Math.round((totalRepublicans / total) * 100);
-      const conservativePercentage = Math.round((totalConservatives / total) * 100);
+      const conservativePercentage = Math.round(
+        (totalConservatives / total) * 100
+      );
 
       // Set the initial party data with the totals across all districts
       await setPartyData([
-        { name: 'Republican', value: republicanPercentage },
-        { name: 'Conservative', value: conservativePercentage }
+        { name: "Republican", value: republicanPercentage },
+        { name: "Conservative", value: conservativePercentage },
       ]);
     };
 
@@ -43,13 +52,17 @@ const NY_PieChart = (props) => {
         const total = republicanTotal + conservativeTotal;
 
         // Calculate percentages for the selected district
-        const republicanPercentage = Math.round((republicanTotal / total) * 100);
-        const conservativePercentage = Math.round((conservativeTotal / total) * 100);
+        const republicanPercentage = Math.round(
+          (republicanTotal / total) * 100
+        );
+        const conservativePercentage = Math.round(
+          (conservativeTotal / total) * 100
+        );
 
         // Update party data with the selected district values
         await setPartyData([
-          { name: 'Republican', value: republicanPercentage },
-          { name: 'Conservative', value: conservativePercentage }
+          { name: "Republican", value: republicanPercentage },
+          { name: "Conservative", value: conservativePercentage },
         ]);
       }
     };
@@ -62,13 +75,19 @@ const NY_PieChart = (props) => {
     }
   }, [props.selectedDistrict, props.selectedOptionMap]);
 
-  const COLORS = ['#FF0000', '#0000FF'];
+  const COLORS = ["#FF0000", "#0000FF"];
 
   // Custom tooltip function
   const customTooltip = ({ active, payload }) => {
     if (active && payload && payload.length) {
       return (
-        <div style={{ backgroundColor: '#fff', padding: '5px', border: '1px solid #ccc' }}>
+        <div
+          style={{
+            backgroundColor: "#fff",
+            padding: "5px",
+            border: "1px solid #ccc",
+          }}
+        >
           <p>{`${payload[0].name}: ${payload[0].value}%`}</p>
         </div>
       );
@@ -77,10 +96,10 @@ const NY_PieChart = (props) => {
   };
 
   return (
-    <div style={{ width: '100%', height: 300 }}>
+    <div style={{ width: "100%", height: 300 }}>
       {partyData.length > 0 && (
         <ResponsiveContainer>
-          <h3 className='center'> Party Information</h3>
+          <h3 className="center"> Party Information</h3>
           <PieChart>
             <Pie
               data={partyData}
@@ -93,7 +112,10 @@ const NY_PieChart = (props) => {
               label={({ name, value }) => `${name} ${value}%`}
             >
               {partyData.map((entry, index) => (
-                <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                <Cell
+                  key={`cell-${index}`}
+                  fill={COLORS[index % COLORS.length]}
+                />
               ))}
             </Pie>
             <Tooltip content={customTooltip} />

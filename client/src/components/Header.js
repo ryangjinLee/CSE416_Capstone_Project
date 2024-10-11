@@ -12,19 +12,12 @@ const Header = () => {
   };
 
   return (
-    <PageHeader
-      className="site-page-header"
-      title="Team Bills"
-      subTitle="This is a subtitle"
-      extra={[
-        <Button key="2" onClick={handleClick}>
-          Go to Title
-        </Button>,
-        <Button key="1" type="primary">
-          Contact Us
-        </Button>,
-      ]}
-    />
+    <div className="navBar">
+      <PageHeader title="Team Bills" />
+      <Button key="1" type="primary" onClick={handleClick}>
+        Go to State Selection
+      </Button>
+    </div>
   );
 };
 

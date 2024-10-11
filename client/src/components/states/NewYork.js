@@ -84,27 +84,36 @@ const NewYork = () => {
                     </label>
                   </div>
                 </div>
-                <NY_Map selectedDistrict={selectedDistrict} setSelectedDistrict={setSelectedDistrict} />
+                <NY_Map
+                  selectedDistrict={selectedDistrict}
+                  setSelectedDistrict={setSelectedDistrict}
+                />
               </div>
             </div>
-            <div >
+            <div>
               <div style={{ marginBottom: 50 }}>
                 {selectedDistrict && (
                   <h1 className="center"> District: {selectedDistrict}</h1>
                 )}
-                <div className="center">Click on a state to see district information</div>
+                <div className="center">
+                  Click on a state to see district information
+                </div>
               </div>
               <div className="second-half">
                 <div className="pie-chart-container">
-                  <NY_PieChart selectedOptionMap={selectedOptionMap} selectedDistrict={selectedDistrict} />
+                  <NY_PieChart
+                    selectedOptionMap={selectedOptionMap}
+                    selectedDistrict={selectedDistrict}
+                  />
                 </div>
                 <div className="pie-chart-container">
-                  <NY_PieChartRace selectedOptionMap={selectedOptionMap} selectedDistrict={selectedDistrict} />
+                  <NY_PieChartRace
+                    selectedOptionMap={selectedOptionMap}
+                    selectedDistrict={selectedDistrict}
+                  />
                 </div>
               </div>
-
             </div>
-
           </div>
         </div>
       </div>
@@ -119,8 +128,10 @@ const NewYork = () => {
         </div>
       </div>
       <div className="whole-page">
-        <div className="third-page">
-          {/* 여기에 Comparison Table 넣으면 됨 */}
+        <div className="third-page Table">
+          <h className="page-header">
+            Party Breakdown for SMD and MMD Scenarios
+          </h>
           <NY_Table />
         </div>
       </div>

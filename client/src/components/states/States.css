@@ -117,9 +117,9 @@
 
 .third-page {
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .first-half {
@@ -130,6 +130,12 @@
 .Chart {
   display: flex;
   justify-content: center;
+}
+.Table {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .second-half {
@@ -146,7 +152,6 @@
   height: 100vh;
 }
 
-
 .second-half {
   display: flex;
   /* Enables flexbox */
@@ -161,4 +166,9 @@
   /* This will make both pie charts take equal width */
   margin: 0 10px;
   /* Adds some spacing between the pie charts */
+}
+.page-header {
+  margin-bottom: 20px;
+  font-family: sans-serif;
+  font-size: 30px;
 }

@@ -1,3 +1,25 @@
+/* Components.css */
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #9ed725; /* Dark blue background */
+}
+
+.navBar .ant-page-header-heading-title {
+  color: #000000; /* White text color */
+}
+.navBar .ant-btn-primary {
+  background-color: #0077ff; /* Red button background */
+  border-color: #0077ff; /* Red border */
+  margin-right: 10px;
+}
+
+.navBar .ant-btn-primary:hover {
+  background-color: #ffffff; /* Tomato color on hover */
+  border-color: #ffffff;
+}
+
 .container {
   display: flex;
   height: 95vh;
