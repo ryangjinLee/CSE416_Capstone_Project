@@ -7,6 +7,8 @@ import NY_Map from "./NY_components/NY_Map";
 import NY_PieChart from "./NY_components/NY_PieChart";
 import NY_PieChartRace from "./NY_components/NY_PieChartRace";
 import NY_Table from "./NY_components/NY_Table";
+import NY_MMDPie from "./NY_components/NY_MMDPie";
+import NY_SMDPieChart from "./NY_components/NY_SMDPie";
 
 const NewYork = () => {
   const [selectedOptionMap, setSelectedOptionMap] = useState("SMD"); // State for the selected option
@@ -128,10 +130,19 @@ const NewYork = () => {
         </div>
       </div>
       <div className="whole-page">
-        <div className="third-page Table">
-          <h className="page-header">
-            Party Breakdown for SMD and MMD Scenarios
-          </h>
+        <h1 style={{ textAlign: 'center', marginTop: '100px' }}>Party Win Breakdown For SMD and MMD Scenarios</h1>
+        <div className="secondP-page">
+          <div className="first-half Chart">
+            <NY_SMDPieChart/>
+          </div>
+          <div className="second-half Chart">
+            <NY_MMDPie/>
+          </div>
+        </div>
+      </div>
+      <div className="whole-page">
+        <div className="third-page">
+          {/* 여기에 Comparison Table 넣으면 됨 */}
           <NY_Table />
         </div>
       </div>
