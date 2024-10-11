@@ -1,75 +1,89 @@
-import json
+from json import load, JSONEncoder
+from argparse import ArgumentParser, FileType
+from shapely.geometry import Polygon, mapping
+from shapely.ops import unary_union
+import sys
 
-def merge_features(geojson_file, output_file):
-    # Load the GeoJSON file
-    with open(geojson_file, 'r') as f:
-        geojson_data = json.load(f)
+parser = ArgumentParser(description="Group (merge) the GeoJSON geometries based on predefined groupings.")
 
+defaults = dict(outfile=sys.stdout)
+
+parser.set_defaults(**defaults)
+
+parser.add_argument('infile', type=FileType('r'), help='GeoJSON file whose features will be merged')
+parser.add_argument('-o', '--outfile', dest='outfile', type=FileType('w'), help='Outfile')
+
+# Define the custom groupings by feature IDs
+groupings = [
+    [1, 2, 3, 4, 5],
+    [6, 7, 8, 9, 11],
+    [10, 12, 13, 14, 15],
+    [16, 17, 18, 19, 20],
+    [21, 22, 24, 25],
+    [23, 26]
+]
+
+
+
+
+def extract_polygons(geometry):
+    """Helper function to extract Polygons from both Polygon and MultiPolygon geometries."""
+    if geometry['type'] == 'Polygon':
+        return [Polygon(geometry['coordinates'][0])]
+    elif geometry['type'] == 'MultiPolygon':
+        polygons = []
+        for polygon_coords in geometry['coordinates']:
+            polygons.append(Polygon(polygon_coords[0]))  # Exterior ring
+        return polygons
+    else:
+        return []
+
+def find_feature_by_id(features, feature_id):
+    """Helper function to find a feature by its ID."""
+    return next((feature for feature in features if feature["id"] == feature_id), None)
+
+if __name__ == '__main__':
+    args = parser.parse_args()
+    infile = args.infile
+    outfile = args.outfile
+
+    file = load(infile)
     merged_features = []
-    features = geojson_data["features"]
+    feature_counter = 1  # Start the feature counter at 1
 
-    # Define the custom groupings
-
-    groupings = [
-        [1 ,2 ,3 ,4],
-        [5, 6, 7, 8],
-        [9, 10, 11, 12],
-        [13 ,14, 15, 16],
-        [17 ,18, 19, 20 ],
-        [21 ,22, 24, 25],
-        [23 ,26]
-    ]
-
-    # Helper function to find a feature by its ID
-    def find_feature_by_id(feature_id):
-        return next((feature for feature in features if feature["id"] == feature_id), None)
-
-    # Iterate over each group and merge features
-    name_counter = 1
+    # Iterate through each group of feature IDs and merge them
     for group in groupings:
-        # Initialize the merged geometry
-        merged_geometry = {
-            "type": "MultiPolygon",
-            "coordinates": []
-        }
+        polygons = []
 
-        # For each feature ID in the group, merge its geometry
+        # Collect polygons from all features in the group
         for feature_id in group:
-            feature = find_feature_by_id(feature_id)
+            feature = find_feature_by_id(file['features'], feature_id)
             if feature:
-                print("merging ", feature_id)
-                merged_geometry["coordinates"].extend(feature["geometry"]["coordinates"])
-                print(len(merged_geometry["coordinates"]))
+                geom = feature['geometry']
+                polygons.extend(extract_polygons(geom))  # Extract and add polygons
 
-        # Create the new merged feature
-        merged_feature = {
-            "type": "Feature",
-            "id": name_counter,  # Use the incremental name counter as the ID
-            "properties": {
-                "name": str(name_counter)  # Incremental name starting from 1
-            },
-            "geometry": merged_geometry
-        }
+        # Merge the polygons within the group
+        new_geometry = mapping(unary_union(polygons))
 
-        # Add the merged feature to the list
-        merged_features.append(merged_feature)
+        # Create a new merged feature
+        new_feature = dict(
+            type='Feature',
+            id=feature_counter,  # Increment the ID for each merged feature
+            properties=dict(name=str(feature_counter)),  # Incrementing name property
+            geometry=dict(type=new_geometry['type'], coordinates=new_geometry['coordinates'])
+        )
 
-        # Increment the name counter
-        name_counter += 1
+        merged_features.append(new_feature)
+        feature_counter += 1  # Increment the feature counter
 
-    # Create a new GeoJSON object with the merged features
-    merged_geojson = {
-        "type": "FeatureCollection",
-        "crs": geojson_data["crs"],
-        "features": merged_features
-    }
+    # Create the output GeoJSON structure
+    outjson = dict(type='FeatureCollection', features=merged_features)
 
-    # Save the merged GeoJSON to a new file
-    with open(output_file, 'w') as f:
-        json.dump(merged_geojson, f, indent=4)
+    # Write the merged features to the output file
+    encoder = JSONEncoder(separators=(',', ':'))
+    encoded = encoder.iterencode(outjson)
 
-# Example usage
-geojson_file = 'output.json'  # Replace with your input geojson file path
-output_file = 'output4.json'  # Replace with the desired output file path
+    output = outfile
 
-merge_features(geojson_file, output_file)
+    for token in encoded:
+        output.write(token)

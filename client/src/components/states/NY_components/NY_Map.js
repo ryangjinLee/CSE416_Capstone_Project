@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { Map, Layer, Source } from "react-map-gl";
-import NYCountiesGeoData_SMD from "../../../data/NY/output_SMD.json";
+import NYCountiesGeoData_SMD from "../../../data/NY/output5.json";
 import "./NY.css";
 
 const NY_Map = (props) => {
+  const [geoData, setGeoData] = useState(null); // State to store dynamically loaded GeoJSON data
+
   const [layerOption, setLayerOption] = useState([
     "match",
     ["get", "name"],
@@ -146,18 +148,18 @@ const NY_Map = (props) => {
             districtId === 9 || districtId === 10
               ? (districtId + 2).toString()
               : districtId === 11 || districtId === 12
-              ? (districtId - 2).toString()
-              : districtId === 26
-              ? (districtId - 3).toString()
-              : districtId === 23
-              ? (districtId + 3).toString()
-              : districtId === 25
-              ? (districtId - 1).toString()
-              : districtId === 24
-              ? (districtId + 1).toString()
-              : districtId % 2 === 0
-              ? (districtId - 1).toString()
-              : (districtId + 1).toString(),
+                ? (districtId - 2).toString()
+                : districtId === 26
+                  ? (districtId - 3).toString()
+                  : districtId === 23
+                    ? (districtId + 3).toString()
+                    : districtId === 25
+                      ? (districtId - 1).toString()
+                      : districtId === 24
+                        ? (districtId + 1).toString()
+                        : districtId % 2 === 0
+                          ? (districtId - 1).toString()
+                          : (districtId + 1).toString(),
             "black",
             "orange",
           ]);
@@ -284,78 +286,78 @@ const NY_Map = (props) => {
             districtId.toString(),
             "black",
             districtId === 1 ||
-            districtId === 5 ||
-            districtId === 9 ||
-            districtId === 13 ||
-            districtId === 17
+              districtId === 5 ||
+              districtId === 9 ||
+              districtId === 13 ||
+              districtId === 17
               ? [
-                  (districtId + 1).toString(),
-                  (districtId + 2).toString(),
-                  (districtId + 3).toString(),
-                ]
+                (districtId + 1).toString(),
+                (districtId + 2).toString(),
+                (districtId + 3).toString(),
+              ]
               : districtId === 2 ||
                 districtId === 6 ||
                 districtId === 10 ||
                 districtId === 14 ||
                 districtId === 18
-              ? [
+                ? [
                   (districtId - 1).toString(),
                   (districtId + 1).toString(),
                   (districtId + 2).toString(),
                 ]
-              : districtId === 3 ||
-                districtId === 7 ||
-                districtId === 11 ||
-                districtId === 15 ||
-                districtId === 19
-              ? [
-                  (districtId - 1).toString(),
-                  (districtId + 1).toString(),
-                  (districtId - 2).toString(),
-                ]
-              : districtId === 4 ||
-                districtId === 8 ||
-                districtId === 12 ||
-                districtId === 16 ||
-                districtId === 20
-              ? [
-                  (districtId - 1).toString(),
-                  (districtId - 2).toString(),
-                  (districtId - 3).toString(),
-                ]
-              : districtId === 21
-              ? [
-                  (districtId + 1).toString(),
-                  (districtId + 3).toString(),
-                  (districtId + 4).toString(),
-                ]
-              : districtId === 22
-              ? [
-                  (districtId - 1).toString(),
-                  (districtId + 2).toString(),
-                  (districtId + 3).toString(),
-                ]
-              : districtId === 23
-              ? [(districtId + 3).toString()]
-              : districtId === 24
-              ? [
-                  (districtId - 3).toString(),
-                  (districtId - 2).toString(),
-                  (districtId + 1).toString(),
-                ]
-              : districtId === 25
-              ? [
-                  (districtId - 4).toString(),
-                  (districtId - 3).toString(),
-                  (districtId - 1).toString(),
-                ]
-              : districtId === 26
-              ? [(districtId - 3).toString()]
-              : [
-                  (districtId + 1).toString(),
-                  (districtId + 2).toString(),
-                  (districtId + 3).toString(),
-                ],
+                : districtId === 3 ||
+                  districtId === 7 ||
+                  districtId === 11 ||
+                  districtId === 15 ||
+                  districtId === 19
+                  ? [
+                    (districtId - 1).toString(),
+                    (districtId + 1).toString(),
+                    (districtId - 2).toString(),
+                  ]
+                  : districtId === 4 ||
+                    districtId === 8 ||
+                    districtId === 12 ||
+                    districtId === 16 ||
+                    districtId === 20
+                    ? [
+                      (districtId - 1).toString(),
+                      (districtId - 2).toString(),
+                      (districtId - 3).toString(),
+                    ]
+                    : districtId === 21
+                      ? [
+                        (districtId + 1).toString(),
+                        (districtId + 3).toString(),
+                        (districtId + 4).toString(),
+                      ]
+                      : districtId === 22
+                        ? [
+                          (districtId - 1).toString(),
+                          (districtId + 2).toString(),
+                          (districtId + 3).toString(),
+                        ]
+                        : districtId === 23
+                          ? [(districtId + 3).toString()]
+                          : districtId === 24
+                            ? [
+                              (districtId - 3).toString(),
+                              (districtId - 2).toString(),
+                              (districtId + 1).toString(),
+                            ]
+                            : districtId === 25
+                              ? [
+                                (districtId - 4).toString(),
+                                (districtId - 3).toString(),
+                                (districtId - 1).toString(),
+                              ]
+                              : districtId === 26
+                                ? [(districtId - 3).toString()]
+                                : [
+                                  (districtId + 1).toString(),
+                                  (districtId + 2).toString(),
+                                  (districtId + 3).toString(),
+                                ],
             "black",
             "orange",
           ]);
@@ -469,11 +471,47 @@ const NY_Map = (props) => {
     }
   };
 
-  useEffect(() => {}, [layerOption]);
+
+  // Dynamically import the appropriate GeoJSON file based on selectedOptionMap
+  useEffect(() => {
+    const loadGeoData = async () => {
+      try {
+        let data;
+        switch (props.selectedOptionMap) {
+          case "MMD2":
+            data = await import("../../../data/NY/output2.json");
+            break;
+          case "MMD3":
+            data = await import("../../../data/NY/output3.json");
+            break;
+          case "MMD4":
+            data = await import("../../../data/NY/output4.json");
+            break;
+          case "MMD5":
+            data = await import("../../../data/NY/output5.json");
+            break;
+          default:
+            data = await import("../../../data/NY/output_SMD.json"); // Default to SMD
+            break;
+        }
+        setGeoData(data.default); // Update geoData state with the loaded GeoJSON
+      } catch (error) {
+        console.error("Error loading GeoJSON data:", error);
+      }
+    };
+
+    loadGeoData();
+  }, [props.selectedOptionMap]); // Re-run effect when selectedOptionMap changes
+
 
   const handleViewStateChange = (newViewState) => {
     setViewState(newViewState); // Update view state to handle dragging and zooming
   };
+
+
+  if (!geoData) {
+    return <div>Loading Map...</div>; // Display a loading message while data is being fetched
+  }
 
   return (
     <>
@@ -489,7 +527,7 @@ const NY_Map = (props) => {
         onZoom={(evt) => handleViewStateChange(evt.viewState)} // Handle zooming
       >
         {/* Source for the counties */}
-        <Source id="ny-counties" type="geojson" data={NYCountiesGeoData_SMD}>
+        <Source id="ny-counties" type="geojson" data={geoData}>
           {/* Layer to color fill counties */}
           <Layer
             id="ny-counties-fill"
