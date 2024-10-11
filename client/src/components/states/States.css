@@ -115,6 +115,13 @@
   align-items: flex-start;
 }
 
+.secondP-page {
+  width: 100vw;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+}
+
 .third-page {
   width: 100vw;
   height: 90vh;
