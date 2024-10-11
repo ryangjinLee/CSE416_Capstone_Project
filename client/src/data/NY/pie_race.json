@@ -201,185 +201,94 @@
     "district": [
       {
         "District": 1,
-        "White": 0.716,
-        "Hispanic": 0.155,
-        "Black": 0.043,
-        "Asian": 0.052
+        "White": 0.6597617814603832,
+        "Hispanic": 0.22371828068358365,
+        "Black": 0.07250129466597618,
+        "Asian": 0.04401864319005696
       },
       {
         "District": 2,
-        "White": 0.558,
-        "Hispanic": 0.277,
-        "Black": 0.097,
-        "Asian": 0.033
+        "White": 0.5524402907580478,
+        "Hispanic": 0.1874350986500519,
+        "Black": 0.10228452751817238,
+        "Asian": 0.15784008307372793
       },
       {
         "District": 3,
-        "White": 0.557,
-        "Hispanic": 0.14,
-        "Black": 0.034,
-        "Asian": 0.234
+        "White": 0.19967620075553158,
+        "Hispanic": 0.2385321100917431,
+        "Black": 0.2363734484619536,
+        "Asian": 0.3254182406907717
       },
       {
         "District": 4,
-        "White": 0.507,
-        "Hispanic": 0.221,
-        "Black": 0.163,
-        "Asian": 0.07
+        "White": 0.3366754617414248,
+        "Hispanic": 0.274934036939314,
+        "Black": 0.27387862796833773,
+        "Asian": 0.1145118733509235
       },
       {
         "District": 5,
-        "White": 0.128,
-        "Hispanic": 0.206,
-        "Black": 0.402,
-        "Asian": 0.149
+        "White": 0.44082062072593375,
+        "Hispanic": 0.15623356128353497,
+        "Black": 0.24671225670699634,
+        "Asian": 0.15623356128353497
       },
       {
         "District": 6,
-        "White": 0.242,
-        "Hispanic": 0.236,
-        "Black": 0.036,
-        "Asian": 45.4
+        "White": 0.5983175604626708,
+        "Hispanic": 0.1598317560462671,
+        "Black": 0.05415352260778129,
+        "Asian": 0.18769716088328076
       },
       {
         "District": 7,
-        "White": 0.362,
-        "Hispanic": 0.353,
-        "Black": 0.101,
-        "Asian": 0.132
+        "White": 0.17185877466251295,
+        "Hispanic": 0.5379023883696781,
+        "Black": 0.20404984423676015,
+        "Asian": 0.08618899273104881
       },
       {
         "District": 8,
-        "White": 0.276,
-        "Hispanic": 0.168,
-        "Black": 0.418,
-        "Asian": 0.085
+        "White": 0.2537623248572911,
+        "Hispanic": 0.4338349766476388,
+        "Black": 0.26102750389206014,
+        "Asian": 0.051375194603009856
       },
       {
         "District": 9,
-        "White": 0.324,
-        "Hispanic": 0.114,
-        "Black": 0.404,
-        "Asian": 0.091
+        "White": 0.6680672268907564,
+        "Hispanic": 0.20063025210084034,
+        "Black": 0.08928571428571429,
+        "Asian": 0.04201680672268908
       },
       {
         "District": 10,
-        "White": 0.486,
-        "Hispanic": 0.192,
-        "Black": 0.056,
-        "Asian": 0.216
+        "White": 0.8121341138903672,
+        "Hispanic": 0.06918573709419903,
+        "Black": 0.0702501330494944,
+        "Asian": 0.04843001596593932
       },
       {
         "District": 11,
-        "White": 0.514,
-        "Hispanic": 0.183,
-        "Black": 0.065,
-        "Asian": 0.206
+        "White": 0.8609936575052854,
+        "Hispanic": 0.05126849894291755,
+        "Black": 0.060782241014799156,
+        "Asian": 0.02695560253699789
       },
       {
         "District": 12,
-        "White": 0.652,
-        "Hispanic": 0.112,
-        "Black": 0.047,
-        "Asian": 0.141
+        "White": 0.8108250131371518,
+        "Hispanic": 0.07199159222280609,
+        "Black": 0.09090909090909088,
+        "Asian": 0.02627430373095113
       },
       {
         "District": 13,
-        "White": 0.154,
-        "Hispanic": 0.523,
-        "Black": 0.234,
-        "Asian": 0.051
-      },
-      {
-        "District": 14,
-        "White": 0.177,
-        "Hispanic": 0.513,
-        "Black": 0.159,
-        "Asian": 0.115
-      },
-      {
-        "District": 15,
-        "White": 0.093,
-        "Hispanic": 0.547,
-        "Black": 0.298,
-        "Asian": 0.032
-      },
-      {
-        "District": 16,
-        "White": 0.396,
-        "Hispanic": 0.289,
-        "Black": 0.205,
-        "Asian": 0.067
-      },
-      {
-        "District": 17,
-        "White": 0.644,
-        "Hispanic": 0.199,
-        "Black": 0.071,
-        "Asian": 0.05
-      },
-      {
-        "District": 18,
-        "White": 0.628,
-        "Hispanic": 0.183,
-        "Black": 0.099,
-        "Asian": 0.03
-      },
-      {
-        "District": 19,
-        "White": 0.802,
-        "Hispanic": 0.066,
-        "Black": 0.041,
-        "Asian": 0.035
-      },
-      {
-        "District": 20,
-        "White": 0.724,
-        "Hispanic": 0.064,
-        "Black": 0.091,
-        "Asian": 0.056
-      },
-      {
-        "District": 21,
-        "White": 0.87,
-        "Hispanic": 0.041,
-        "Black": 0.024,
-        "Asian": 0.011
-      },
-      {
-        "District": 22,
-        "White": 0.759,
-        "Hispanic": 0.056,
-        "Black": 0.091,
-        "Asian": 0.04
-      },
-      {
-        "District": 23,
-        "White": 0.88,
-        "Hispanic": 0.038,
-        "Black": 0.023,
-        "Asian": 0.012
-      },
-      {
-        "District": 24,
-        "White": 0.872,
-        "Hispanic": 0.042,
-        "Black": 0.028,
-        "Asian": 0.008
-      },
-      {
-        "District": 25,
-        "White": 0.671,
-        "Hispanic": 0.095,
-        "Black": 0.145,
-        "Asian": 0.042
-      },
-      {
-        "District": 26,
-        "White": 0.648,
-        "Hispanic": 0.071,
-        "Black": 0.177,
-        "Asian": 0.057
+        "White": 0.801678908709339,
+        "Hispanic": 0.05718782791185729,
+        "Black": 0.1049317943336831,
+        "Asian": 0.03620146904512068
       }
     ]
   },
@@ -393,185 +302,66 @@
     "district": [
       {
         "District": 1,
-        "White": 0.716,
-        "Hispanic": 0.155,
-        "Black": 0.043,
-        "Asian": 0.052
+        "White": 0.6322513812154696,
+        "Hispanic": 0.19751381215469616,
+        "Black": 0.0600828729281768,
+        "Asian": 0.11015193370165746
       },
       {
         "District": 2,
-        "White": 0.558,
-        "Hispanic": 0.277,
-        "Black": 0.097,
-        "Asian": 0.033
+        "White": 0.31165600568585644,
+        "Hispanic": 0.23560767590618337,
+        "Black": 0.21357498223169868,
+        "Asian": 0.23916133617626156
       },
       {
         "District": 3,
-        "White": 0.557,
-        "Hispanic": 0.14,
-        "Black": 0.034,
-        "Asian": 0.234
+        "White": 0.34016973125884015,
+        "Hispanic": 0.22454031117397452,
+        "Black": 0.32637906647807635,
+        "Asian": 0.10891089108910892
       },
       {
         "District": 4,
-        "White": 0.507,
-        "Hispanic": 0.221,
-        "Black": 0.163,
-        "Asian": 0.07
+        "White": 0.575609756097561,
+        "Hispanic": 0.16968641114982577,
+        "Black": 0.05853658536585365,
+        "Asian": 0.19616724738675956
       },
       {
         "District": 5,
-        "White": 0.128,
-        "Hispanic": 0.206,
-        "Black": 0.402,
-        "Asian": 0.149
+        "White": 0.14640883977900548,
+        "Hispanic": 0.5466160220994475,
+        "Black": 0.2386049723756906,
+        "Asian": 0.06837016574585635
       },
       {
         "District": 6,
-        "White": 0.242,
-        "Hispanic": 0.236,
-        "Black": 0.036,
-        "Asian": 45.4
+        "White": 0.5830129325410695,
+        "Hispanic": 0.2345333799370849,
+        "Black": 0.1310730513806361,
+        "Asian": 0.051380636141209364
       },
       {
         "District": 7,
-        "White": 0.362,
-        "Hispanic": 0.353,
-        "Black": 0.101,
-        "Asian": 0.132
+        "White": 0.8481415929203541,
+        "Hispanic": 0.06053097345132744,
+        "Black": 0.0552212389380531,
+        "Asian": 0.036106194690265485
       },
       {
         "District": 8,
-        "White": 0.276,
-        "Hispanic": 0.168,
-        "Black": 0.418,
-        "Asian": 0.085
+        "White": 0.808002808002808,
+        "Hispanic": 0.06774306774306774,
+        "Black": 0.09266409266409266,
+        "Asian": 0.031590031590031584
       },
       {
         "District": 9,
-        "White": 0.324,
-        "Hispanic": 0.114,
-        "Black": 0.404,
-        "Asian": 0.091
-      },
-      {
-        "District": 10,
-        "White": 0.486,
-        "Hispanic": 0.192,
-        "Black": 0.056,
-        "Asian": 0.216
-      },
-      {
-        "District": 11,
-        "White": 0.514,
-        "Hispanic": 0.183,
-        "Black": 0.065,
-        "Asian": 0.206
-      },
-      {
-        "District": 12,
-        "White": 0.652,
-        "Hispanic": 0.112,
-        "Black": 0.047,
-        "Asian": 0.141
-      },
-      {
-        "District": 13,
-        "White": 0.154,
-        "Hispanic": 0.523,
-        "Black": 0.234,
-        "Asian": 0.051
-      },
-      {
-        "District": 14,
-        "White": 0.177,
-        "Hispanic": 0.513,
-        "Black": 0.159,
-        "Asian": 0.115
-      },
-      {
-        "District": 15,
-        "White": 0.093,
-        "Hispanic": 0.547,
-        "Black": 0.298,
-        "Asian": 0.032
-      },
-      {
-        "District": 16,
-        "White": 0.396,
-        "Hispanic": 0.289,
-        "Black": 0.205,
-        "Asian": 0.067
-      },
-      {
-        "District": 17,
-        "White": 0.644,
-        "Hispanic": 0.199,
-        "Black": 0.071,
-        "Asian": 0.05
-      },
-      {
-        "District": 18,
-        "White": 0.628,
-        "Hispanic": 0.183,
-        "Black": 0.099,
-        "Asian": 0.03
-      },
-      {
-        "District": 19,
-        "White": 0.802,
-        "Hispanic": 0.066,
-        "Black": 0.041,
-        "Asian": 0.035
-      },
-      {
-        "District": 20,
-        "White": 0.724,
-        "Hispanic": 0.064,
-        "Black": 0.091,
-        "Asian": 0.056
-      },
-      {
-        "District": 21,
-        "White": 0.87,
-        "Hispanic": 0.041,
-        "Black": 0.024,
-        "Asian": 0.011
-      },
-      {
-        "District": 22,
-        "White": 0.759,
-        "Hispanic": 0.056,
-        "Black": 0.091,
-        "Asian": 0.04
-      },
-      {
-        "District": 23,
-        "White": 0.88,
-        "Hispanic": 0.038,
-        "Black": 0.023,
-        "Asian": 0.012
-      },
-      {
-        "District": 24,
-        "White": 0.872,
-        "Hispanic": 0.042,
-        "Black": 0.028,
-        "Asian": 0.008
-      },
-      {
-        "District": 25,
-        "White": 0.671,
-        "Hispanic": 0.095,
-        "Black": 0.145,
-        "Asian": 0.042
-      },
-      {
-        "District": 26,
-        "White": 0.648,
-        "Hispanic": 0.071,
-        "Black": 0.177,
-        "Asian": 0.057
+        "White": 0.801678908709339,
+        "Hispanic": 0.05718782791185729,
+        "Black": 0.1049317943336831,
+        "Asian": 0.03620146904512068
       }
     ]
   },
@@ -585,185 +375,52 @@
     "district": [
       {
         "District": 1,
-        "White": 0.716,
-        "Hispanic": 0.155,
-        "Black": 0.043,
-        "Asian": 0.052
+        "White": 0.6061705989110707,
+        "Hispanic": 0.20560020741508944,
+        "Black": 0.08737360642986777,
+        "Asian": 0.10085558724397199
       },
       {
         "District": 2,
-        "White": 0.558,
-        "Hispanic": 0.277,
-        "Black": 0.097,
-        "Asian": 0.033
+        "White": 0.2689434364994664,
+        "Hispanic": 0.25693703308431165,
+        "Black": 0.25533617929562435,
+        "Asian": 0.21878335112059766
       },
       {
         "District": 3,
-        "White": 0.557,
-        "Hispanic": 0.14,
-        "Black": 0.034,
-        "Asian": 0.234
+        "White": 0.5195897975282672,
+        "Hispanic": 0.1580331317381015,
+        "Black": 0.15040757296870894,
+        "Asian": 0.17196949776492243
       },
       {
         "District": 4,
-        "White": 0.507,
-        "Hispanic": 0.221,
-        "Black": 0.163,
-        "Asian": 0.07
+        "White": 0.21282117830262132,
+        "Hispanic": 0.4858551777835453,
+        "Black": 0.23254606799896185,
+        "Asian": 0.06877757591487153
       },
       {
         "District": 5,
-        "White": 0.128,
-        "Hispanic": 0.206,
-        "Black": 0.402,
-        "Asian": 0.149
+        "White": 0.7396246365318531,
+        "Hispanic": 0.13534232090933124,
+        "Black": 0.07983082209886333,
+        "Asian": 0.045202220459952425
       },
       {
         "District": 6,
-        "White": 0.242,
-        "Hispanic": 0.236,
-        "Black": 0.036,
-        "Asian": 45.4
+        "White": 0.835836627140975,
+        "Hispanic": 0.06166007905138341,
+        "Black": 0.07588932806324111,
+        "Asian": 0.02661396574440053
       },
       {
         "District": 7,
-        "White": 0.362,
-        "Hispanic": 0.353,
-        "Black": 0.101,
-        "Asian": 0.132
-      },
-      {
-        "District": 8,
-        "White": 0.276,
-        "Hispanic": 0.168,
-        "Black": 0.418,
-        "Asian": 0.085
-      },
-      {
-        "District": 9,
-        "White": 0.324,
-        "Hispanic": 0.114,
-        "Black": 0.404,
-        "Asian": 0.091
-      },
-      {
-        "District": 10,
-        "White": 0.486,
-        "Hispanic": 0.192,
-        "Black": 0.056,
-        "Asian": 0.216
-      },
-      {
-        "District": 11,
-        "White": 0.514,
-        "Hispanic": 0.183,
-        "Black": 0.065,
-        "Asian": 0.206
-      },
-      {
-        "District": 12,
-        "White": 0.652,
-        "Hispanic": 0.112,
-        "Black": 0.047,
-        "Asian": 0.141
-      },
-      {
-        "District": 13,
-        "White": 0.154,
-        "Hispanic": 0.523,
-        "Black": 0.234,
-        "Asian": 0.051
-      },
-      {
-        "District": 14,
-        "White": 0.177,
-        "Hispanic": 0.513,
-        "Black": 0.159,
-        "Asian": 0.115
-      },
-      {
-        "District": 15,
-        "White": 0.093,
-        "Hispanic": 0.547,
-        "Black": 0.298,
-        "Asian": 0.032
-      },
-      {
-        "District": 16,
-        "White": 0.396,
-        "Hispanic": 0.289,
-        "Black": 0.205,
-        "Asian": 0.067
-      },
-      {
-        "District": 17,
-        "White": 0.644,
-        "Hispanic": 0.199,
-        "Black": 0.071,
-        "Asian": 0.05
-      },
-      {
-        "District": 18,
-        "White": 0.628,
-        "Hispanic": 0.183,
-        "Black": 0.099,
-        "Asian": 0.03
-      },
-      {
-        "District": 19,
-        "White": 0.802,
-        "Hispanic": 0.066,
-        "Black": 0.041,
-        "Asian": 0.035
-      },
-      {
-        "District": 20,
-        "White": 0.724,
-        "Hispanic": 0.064,
-        "Black": 0.091,
-        "Asian": 0.056
-      },
-      {
-        "District": 21,
-        "White": 0.87,
-        "Hispanic": 0.041,
-        "Black": 0.024,
-        "Asian": 0.011
-      },
-      {
-        "District": 22,
-        "White": 0.759,
-        "Hispanic": 0.056,
-        "Black": 0.091,
-        "Asian": 0.04
-      },
-      {
-        "District": 23,
-        "White": 0.88,
-        "Hispanic": 0.038,
-        "Black": 0.023,
-        "Asian": 0.012
-      },
-      {
-        "District": 24,
-        "White": 0.872,
-        "Hispanic": 0.042,
-        "Black": 0.028,
-        "Asian": 0.008
-      },
-      {
-        "District": 25,
-        "White": 0.671,
-        "Hispanic": 0.095,
-        "Black": 0.145,
-        "Asian": 0.042
-      },
-      {
-        "District": 26,
-        "White": 0.648,
-        "Hispanic": 0.071,
-        "Black": 0.177,
-        "Asian": 0.057
+        "White": 0.801678908709339,
+        "Hispanic": 0.05718782791185729,
+        "Black": 0.1049317943336831,
+        "Asian": 0.03620146904512068
       }
     ]
   },
@@ -777,185 +434,45 @@
     "district": [
       {
         "District": 1,
-        "White": 0.716,
-        "Hispanic": 0.155,
-        "Black": 0.043,
-        "Asian": 0.052
+        "White": 0.5200337410375369,
+        "Hispanic": 0.21067060312104594,
+        "Black": 0.15584141712357655,
+        "Asian": 0.11345423871784056
       },
       {
         "District": 2,
-        "White": 0.558,
-        "Hispanic": 0.277,
-        "Black": 0.097,
-        "Asian": 0.033
+        "White": 0.3606213266162888,
+        "Hispanic": 0.22124265323257766,
+        "Black": 0.21494542401343408,
+        "Asian": 0.2031905961376994
       },
       {
         "District": 3,
-        "White": 0.557,
-        "Hispanic": 0.14,
-        "Black": 0.034,
-        "Asian": 0.234
+        "White": 0.3897596656217346,
+        "Hispanic": 0.3404388714733542,
+        "Black": 0.1464994775339603,
+        "Asian": 0.12330198537095093
       },
       {
         "District": 4,
-        "White": 0.507,
-        "Hispanic": 0.221,
-        "Black": 0.163,
-        "Asian": 0.07
+        "White": 0.6738396624472573,
+        "Hispanic": 0.1689873417721519,
+        "Black": 0.1069620253164557,
+        "Asian": 0.05021097046413502
       },
       {
         "District": 5,
-        "White": 0.128,
-        "Hispanic": 0.206,
-        "Black": 0.402,
-        "Asian": 0.149
+        "White": 0.835836627140975,
+        "Hispanic": 0.06166007905138341,
+        "Black": 0.07588932806324111,
+        "Asian": 0.02661396574440053
       },
       {
         "District": 6,
-        "White": 0.242,
-        "Hispanic": 0.236,
-        "Black": 0.036,
-        "Asian": 45.4
-      },
-      {
-        "District": 7,
-        "White": 0.362,
-        "Hispanic": 0.353,
-        "Black": 0.101,
-        "Asian": 0.132
-      },
-      {
-        "District": 8,
-        "White": 0.276,
-        "Hispanic": 0.168,
-        "Black": 0.418,
-        "Asian": 0.085
-      },
-      {
-        "District": 9,
-        "White": 0.324,
-        "Hispanic": 0.114,
-        "Black": 0.404,
-        "Asian": 0.091
-      },
-      {
-        "District": 10,
-        "White": 0.486,
-        "Hispanic": 0.192,
-        "Black": 0.056,
-        "Asian": 0.216
-      },
-      {
-        "District": 11,
-        "White": 0.514,
-        "Hispanic": 0.183,
-        "Black": 0.065,
-        "Asian": 0.206
-      },
-      {
-        "District": 12,
-        "White": 0.652,
-        "Hispanic": 0.112,
-        "Black": 0.047,
-        "Asian": 0.141
-      },
-      {
-        "District": 13,
-        "White": 0.154,
-        "Hispanic": 0.523,
-        "Black": 0.234,
-        "Asian": 0.051
-      },
-      {
-        "District": 14,
-        "White": 0.177,
-        "Hispanic": 0.513,
-        "Black": 0.159,
-        "Asian": 0.115
-      },
-      {
-        "District": 15,
-        "White": 0.093,
-        "Hispanic": 0.547,
-        "Black": 0.298,
-        "Asian": 0.032
-      },
-      {
-        "District": 16,
-        "White": 0.396,
-        "Hispanic": 0.289,
-        "Black": 0.205,
-        "Asian": 0.067
-      },
-      {
-        "District": 17,
-        "White": 0.644,
-        "Hispanic": 0.199,
-        "Black": 0.071,
-        "Asian": 0.05
-      },
-      {
-        "District": 18,
-        "White": 0.628,
-        "Hispanic": 0.183,
-        "Black": 0.099,
-        "Asian": 0.03
-      },
-      {
-        "District": 19,
-        "White": 0.802,
-        "Hispanic": 0.066,
-        "Black": 0.041,
-        "Asian": 0.035
-      },
-      {
-        "District": 20,
-        "White": 0.724,
-        "Hispanic": 0.064,
-        "Black": 0.091,
-        "Asian": 0.056
-      },
-      {
-        "District": 21,
-        "White": 0.87,
-        "Hispanic": 0.041,
-        "Black": 0.024,
-        "Asian": 0.011
-      },
-      {
-        "District": 22,
-        "White": 0.759,
-        "Hispanic": 0.056,
-        "Black": 0.091,
-        "Asian": 0.04
-      },
-      {
-        "District": 23,
-        "White": 0.88,
-        "Hispanic": 0.038,
-        "Black": 0.023,
-        "Asian": 0.012
-      },
-      {
-        "District": 24,
-        "White": 0.872,
-        "Hispanic": 0.042,
-        "Black": 0.028,
-        "Asian": 0.008
-      },
-      {
-        "District": 25,
-        "White": 0.671,
-        "Hispanic": 0.095,
-        "Black": 0.145,
-        "Asian": 0.042
-      },
-      {
-        "District": 26,
-        "White": 0.648,
-        "Hispanic": 0.071,
-        "Black": 0.177,
-        "Asian": 0.057
+        "White": 0.801678908709339,
+        "Hispanic": 0.05718782791185729,
+        "Black": 0.1049317943336831,
+        "Asian": 0.03620146904512068
       }
     ]
   }
