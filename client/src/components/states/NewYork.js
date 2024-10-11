@@ -89,6 +89,7 @@ const NewYork = () => {
                 <NY_Map
                   selectedDistrict={selectedDistrict}
                   setSelectedDistrict={setSelectedDistrict}
+                  selectedOptionMap={selectedOptionMap}
                 />
               </div>
             </div>

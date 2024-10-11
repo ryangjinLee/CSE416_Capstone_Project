@@ -20,13 +20,66 @@ const NY_Map = (props) => {
     const feature = event.features[0]; // Get the first clicked feature
     if (feature && feature.properties) {
       const districtId = feature.id;
-      props.setSelectedDistrict(districtId ? districtId : 'Unknown District');
-      setLayerOption([
-        "match",
-        ["get", "name"],
-        districtId.toString(), "blue",
-        "orange"
-      ])
+      props.setSelectedDistrict(districtId ? districtId : 'Unknoswn District');
+      switch (props.selectedOptionMap) {
+        case "SMD":
+          setLayerOption([
+            "match",
+            ["get", "name"],
+            districtId.toString(), "blue",
+            "orange"
+          ])
+          break;
+
+        case "MMD2":
+          setLayerOption([
+            "match",
+            ["get", "name"],
+            districtId.toString(), "blue",
+            (districtId + 1).toString(), "blue",
+            "orange"
+          ]);
+          break;
+
+        case "MMD3":
+          setLayerOption([
+            "match",
+            ["get", "name"],
+            districtId.toString(), "blue",
+            (districtId + 1).toString(), "blue",
+            (districtId + 2).toString(), "blue",
+            "orange"
+          ]);
+          break;
+
+        case "MMD4":
+          setLayerOption([
+            "match",
+            ["get", "name"],
+            districtId.toString(), "blue",
+            (districtId + 1).toString(), "blue",
+            (districtId + 2).toString(), "blue",
+            (districtId + 3).toString(), "blue",
+            "orange"
+          ]);
+          break;
+
+        case "MMD5":
+          setLayerOption([
+            "match",
+            ["get", "name"],
+            districtId.toString(), "blue",
+            (districtId + 1).toString(), "blue",
+            (districtId + 2).toString(), "blue",
+            (districtId + 3).toString(), "blue",
+            (districtId + 4).toString(), "blue",
+            "orange"
+          ]);
+          break;
+
+        default:
+          break;
+      }
     }
   };
 
