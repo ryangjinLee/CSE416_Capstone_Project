@@ -7,7 +7,7 @@ export class StatesController {
 
   @Get('/')
   async findAllStates() {
-    const states = await this.statesService.findAll('states');
+    const states = await this.statesService.getCountyGeoData('states');
 
     return states;
   }

@@ -5,10 +5,10 @@ import { MongoDBService } from '../mongo-db/mongo-db.service';
 export class StatesService {
   constructor(private readonly mongoDBService: MongoDBService) {}
 
-  async findAll(stateName: string) {
-    const stateInfoList = await this.mongoDBService.findAll(stateName);
+  async getCountyGeoData(countyName: string) {
+    const countyGeoData = await this.mongoDBService.findAll(countyName);
 
-    return stateInfoList;
+    return countyGeoData;
   }
 
   async findOne(stateName: string, whereQuery: any) {

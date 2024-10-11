@@ -1,7 +1,7 @@
 db = db.getSiblingDB('cse416');
 
-db.createCollection('states');
-db.states.insert({ name: 'CA', value: {
+db.createCollection('countyGeo');
+db.countyGeo.insert({ name: 'CA', value: {
         "type": "FeatureCollection",
         "features": [
             {
@@ -11434,7 +11434,7 @@ db.states.insert({ name: 'CA', value: {
     }
 });
 
-db.states.insert({ name: 'MS', value: {
+db.countyGeo.insert({ name: 'MS', value: {
         "_id": "mississippi",
         "type": "Feature",
         "properties": {
@@ -13878,7 +13878,7 @@ db.states.insert({ name: 'MS', value: {
     }
 });
 
-db.states.insert({ name: 'NY', value: {
+db.countyGeo.insert({ name: 'NY', value: {
         "type": "FeatureCollection",
         "features": [
             {
