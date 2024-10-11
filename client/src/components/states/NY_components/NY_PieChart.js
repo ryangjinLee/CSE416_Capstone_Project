@@ -5,15 +5,12 @@ import EthnicityData from '../../../data/NY/EthnicityData.json';
 const NY_PieChart = () => {
   const [partyData, setPartyData] = useState([]);
 
-
-
   useEffect(() => {
     const calculatePartyTotals = () => {
       let republicanTotal = 0;
       let democratTotal = 0;
 
       Object.values(EthnicityData).forEach(district => {
-        console.log(district);
         republicanTotal += district.Republicans || 0;
         democratTotal += district.Conservatives || 0;
       });

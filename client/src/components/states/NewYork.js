@@ -10,6 +10,7 @@ import NY_Table from "./NY_components/NY_Table";
 
 const NewYork = () => {
   const [selectedOptionMap, setSelectedOptionMap] = useState("SMD"); // State for the selected option
+  const [selectedDistrict, setSelectedDistrict] = useState(null);
 
   const handleSelectChangeMap = (event) => {
     setSelectedOptionMap(event.target.value);
@@ -83,14 +84,12 @@ const NewYork = () => {
                     </label>
                   </div>
                 </div>
-                <NY_Map />
+                <NY_Map selectedDistrict={selectedDistrict} setSelectedDistrict={setSelectedDistrict}/>
               </div>
             </div>
             <div className="second-half">
-              {/* 여기 NY_SMD지우고 Race Popularity */}
-              {/* <NY_SMD /> */}
-              {/* <NY_PieChart district={selectedD} /> */}
-              <NY_PieChartRace />
+              <NY_PieChart />
+              <NY_PieChartRace selectedDistrict={selectedDistrict}/>
             </div>
           </div>
         </div>

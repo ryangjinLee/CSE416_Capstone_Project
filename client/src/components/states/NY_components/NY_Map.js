@@ -4,8 +4,7 @@ import NYCountiesGeoData from "../../../data/NY/NYS_Congressional_Districts_1248
 import NY_PieChartRace from "./NY_PieChartRace";  // Add this import
 import "./NY.css";
 
-const NY_Map = () => {
-  const [selectedDistrict, setSelectedDistrict] = useState(null);
+const NY_Map = (props) => {
   const [viewState, setViewState] = useState({
     latitude: 42.9538,
     longitude: -75.5268,
@@ -16,7 +15,7 @@ const NY_Map = () => {
     const feature = event.features[0]; // Get the first clicked feature
     if (feature && feature.properties) {
       const districtId = feature.id;
-      setSelectedDistrict(districtId ? districtId : 'Unknown District');
+        props.setSelectedDistrict(districtId ? districtId : 'Unknown District');
     }
   };
 
@@ -47,7 +46,7 @@ const NY_Map = () => {
             paint={{
               "fill-color": [
                 "case",
-                ["==", ["get", "id"], selectedDistrict], // If selected, make green
+                ["==", ["get", "id"], props.selectedDistrict], // If selected, make green
                 "orange",
                 "orange", // Default color for unselected counties
               ],
@@ -67,11 +66,10 @@ const NY_Map = () => {
           />
         </Source>
       </Map>
-      {selectedDistrict && (
-        <div>
-          <h2>Selected District: District {selectedDistrict}</h2>
-          <NY_PieChartRace selectedDistrict={selectedDistrict} />
-        </div>
+      {props.selectedDistrict && (
+          <div>
+              <h2>Selected District: District {props.selectedDistrict}</h2>
+          </div>
       )}
     </>
   );
