@@ -5,11 +5,11 @@ import { MongoDBService } from '../mongo-db/mongo-db.service';
 export class BoxplotService {
   constructor(private readonly mongoDBService: MongoDBService) {}
 
-  async getCountyDistrictingBoxPlot(countyName: string, districting: string) {
+  async getStateDistrictingBoxPlot(stateName: string, districting: string) {
     const countyDistrictingBoxPlot = await this.mongoDBService.findOne(
       'boxplots',
       {
-        name: `${countyName}_${districting}`,
+        name: `${stateName}_${districting}`,
       },
     );
 
