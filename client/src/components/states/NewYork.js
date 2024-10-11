@@ -118,6 +118,7 @@ const NewYork = () => {
         </div>
       </div>
       <div className="whole-page">
+        <h className="page-header">Vote Distribution Across Districts</h>
         <div className="second-page">
           <div className="first-half Chart">
             <NY_SMD />
