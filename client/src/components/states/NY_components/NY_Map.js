@@ -1,10 +1,15 @@
-import React, { useState } from "react";
+import React, {useEffect, useState} from "react";
 import { Map, Layer, Source } from "react-map-gl";
-import NYCountiesGeoData from "../../../data/NY/NYS_Congressional_Districts_1248143431698889131.geojson";
-import NY_PieChartRace from "./NY_PieChartRace";  // Add this import
+import NYCountiesGeoData from "../../../data/NY/output.json";
 import "./NY.css";
 
 const NY_Map = (props) => {
+  const [layerOption, setLayerOption] = useState([
+    "match",
+    ["get", "name"],
+    "0", "blue",
+    "orange"
+  ]);
   const [viewState, setViewState] = useState({
     latitude: 42.9538,
     longitude: -75.5268,
@@ -16,8 +21,19 @@ const NY_Map = (props) => {
     if (feature && feature.properties) {
       const districtId = feature.id;
       props.setSelectedDistrict(districtId ? districtId : 'Unknown District');
+      setLayerOption([
+        "match",
+        ["get", "name"],
+        districtId.toString(), "blue",
+        "orange"
+      ])
     }
   };
+
+  useEffect(() => {
+    console.log('hello')
+    console.log(layerOption)
+  }, [layerOption]);
 
   const handleViewStateChange = (newViewState) => {
     setViewState(newViewState); // Update view state to handle dragging and zooming
@@ -40,18 +56,13 @@ const NY_Map = (props) => {
         <Source id="ny-counties" type="geojson" data={NYCountiesGeoData}>
           {/* Layer to color fill counties */}
           <Layer
-            id="ny-counties-fill"
-            type="fill"
-            source="ny-counties"
-            paint={{
-              "fill-color": [
-                "case",
-                ["==", ["get", "id"], props.selectedDistrict], // If selected, make green
-                "orange",
-                "orange", // Default color for unselected counties
-              ],
-              "fill-opacity": 0.7,
-            }}
+              id="ny-counties-fill"
+              type="fill"
+              source="ny-counties"
+              paint={{
+                "fill-color": layerOption,
+                "fill-opacity": 0.7,
+              }}
           />
 
           {/* Layer for the county borders */}
@@ -61,7 +72,7 @@ const NY_Map = (props) => {
             source="ny-counties"
             paint={{
               "line-color": "black", // Black borders for the counties
-              "line-width": 2, // Thickness of the borders
+              "line-width": 1, // Thickness of the borders
             }}
           />
         </Source>
