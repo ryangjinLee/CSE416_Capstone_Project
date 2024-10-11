@@ -92,10 +92,10 @@ const NewYork = () => {
       </div>
       <div className="whole-page">
         <div className="second-page">
-          <div className="first-half">
+          <div className="first-half Chart">
             <NY_SMD />
           </div>
-          <div className="second-half">
+          <div className="second-half Chart">
             <NY_MMD />
           </div>
         </div>
