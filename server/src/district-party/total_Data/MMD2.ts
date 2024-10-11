@@ -1,9 +1,17 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
-import { DistrictPartyService } from './district-party.service';
-import { CreateDistrictPartyDto } from './dto/create-district-party.dto';
-import { UpdateDistrictPartyDto } from './dto/update-district-party.dto';
+import {
+  Controller,
+  Get,
+  Post,
+  Body,
+  Patch,
+  Param,
+  Delete,
+} from '@nestjs/common';
+import { DistrictPartyService } from '../district-party.service';
+import { CreateDistrictPartyDto } from '../dto/create-district-party.dto';
+import { UpdateDistrictPartyDto } from '../dto/update-district-party.dto';
 
-@Controller('district-party')
+@Controller('district-party/total_Data')
 export class DistrictPartyController {
   constructor(private readonly districtPartyService: DistrictPartyService) {}
 
@@ -17,13 +25,21 @@ export class DistrictPartyController {
     return this.districtPartyService.findAll();
   }
 
+  @Get('mmd2')
+  getMMD2Data() {
+    return this.districtPartyService.findOne(1); // Fetch MMD 2 data
+  }
+
   @Get(':id')
   findOne(@Param('id') id: string) {
     return this.districtPartyService.findOne(+id);
   }
 
   @Patch(':id')
-  update(@Param('id') id: string, @Body() updateDistrictPartyDto: UpdateDistrictPartyDto) {
+  update(
+    @Param('id') id: string,
+    @Body() updateDistrictPartyDto: UpdateDistrictPartyDto,
+  ) {
     return this.districtPartyService.update(+id, updateDistrictPartyDto);
   }
 

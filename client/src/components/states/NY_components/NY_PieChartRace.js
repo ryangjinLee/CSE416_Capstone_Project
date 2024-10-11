@@ -1,17 +1,38 @@
-import React, { useState, useEffect } from 'react';
-import { PieChart, Pie, Cell, ResponsiveContainer, Legend, Tooltip } from 'recharts';
+import React, { useState, useEffect } from "react";
+import {
+  PieChart,
+  Pie,
+  Cell,
+  ResponsiveContainer,
+  Legend,
+  Tooltip,
+} from "recharts";
 // endpoint: "/race/ny/"
-import RaceData from '../../../data/NY/pie_race.json'
+import RaceData from "../../../data/NY/pie_race.json";
 
 const NY_PieChartRace = (props) => {
+  const [EthnicityData, setEthnicityData] = useState(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const EthnicityData_response = await getData(
+          "/ethnicity/population_data.ts"
+        );
+        setEthnicityData(EthnicityData_response);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+  });
   const [raceData, setRaceData] = useState(() => {
     // Default to total values from RaceData
     const defaultTotals = RaceData[props.selectedOptionMap]?.total || {};
     return [
-      { name: 'White', value: defaultTotals.White || 0 },
-      { name: 'Hispanic', value: defaultTotals.Hispanic || 0 },
-      { name: 'Black', value: defaultTotals.Black || 0 },
-      { name: 'Asian', value: defaultTotals.Asian || 0 },
+      { name: "White", value: defaultTotals.White || 0 },
+      { name: "Hispanic", value: defaultTotals.Hispanic || 0 },
+      { name: "Black", value: defaultTotals.Black || 0 },
+      { name: "Asian", value: defaultTotals.Asian || 0 },
     ];
   });
 
@@ -43,10 +64,10 @@ const NY_PieChartRace = (props) => {
 
       // Set the race data with the totals across all districts
       await setRaceData([
-        { name: 'White', value: whitePercentage },
-        { name: 'Hispanic', value: hispanicPercentage },
-        { name: 'Black', value: blackPercentage },
-        { name: 'Asian', value: asianPercentage },
+        { name: "White", value: whitePercentage },
+        { name: "Hispanic", value: hispanicPercentage },
+        { name: "Black", value: blackPercentage },
+        { name: "Asian", value: asianPercentage },
       ]);
     };
 
@@ -70,10 +91,10 @@ const NY_PieChartRace = (props) => {
 
         // Update race data with the selected district's values
         await setRaceData([
-          { name: 'White', value: whitePercentage },
-          { name: 'Hispanic', value: hispanicPercentage },
-          { name: 'Black', value: blackPercentage },
-          { name: 'Asian', value: asianPercentage },
+          { name: "White", value: whitePercentage },
+          { name: "Hispanic", value: hispanicPercentage },
+          { name: "Black", value: blackPercentage },
+          { name: "Asian", value: asianPercentage },
         ]);
       }
     };
@@ -84,22 +105,29 @@ const NY_PieChartRace = (props) => {
     } else {
       // Use total values if no district is selected
       setRaceData([
-        { name: 'White', value: Math.round(totalData.White * 100) || 0 },
-        { name: 'Hispanic', value: Math.round(totalData.Hispanic * 100) || 0 },
-        { name: 'Black', value: Math.round(totalData.Black * 100) || 0 },
-        { name: 'Asian', value: Math.round(totalData.Asian * 100) || 0 },
+        { name: "White", value: Math.round(totalData.White * 100) || 0 },
+        { name: "Hispanic", value: Math.round(totalData.Hispanic * 100) || 0 },
+        { name: "Black", value: Math.round(totalData.Black * 100) || 0 },
+        { name: "Asian", value: Math.round(totalData.Asian * 100) || 0 },
       ]);
     }
   }, [props.selectedDistrict, props.selectedOptionMap]);
 
   // Update this line to use vivid colors
-  const COLORS = ['#FF4136', '#FF851B', '#2ECC40', '#0074D9'];
+  const COLORS = ["#FF4136", "#FF851B", "#2ECC40", "#0074D9"];
+  const getData = () => {};
 
   // Add this custom tooltip function
   const customTooltip = ({ active, payload }) => {
     if (active && payload && payload.length) {
       return (
-        <div style={{ backgroundColor: '#fff', padding: '5px', border: '1px solid #ccc' }}>
+        <div
+          style={{
+            backgroundColor: "#fff",
+            padding: "5px",
+            border: "1px solid #ccc",
+          }}
+        >
           <p>{`${payload[0].name}: ${payload[0].value}%`}</p>
         </div>
       );
@@ -108,12 +136,11 @@ const NY_PieChartRace = (props) => {
   };
 
   return (
-    <div style={{ width: '100%', height: 300 }}>
-
-
+    <div style={{ width: "100%", height: 300 }}>
       <ResponsiveContainer>
-        <h3 className='center'>Racial Information</h3>
+        <h3 className="center">Racial Information</h3>
         <PieChart>
+          {EthnicityData}
           <Pie
             data={raceData}
             cx="50%"
@@ -125,7 +152,10 @@ const NY_PieChartRace = (props) => {
             label={({ name, value }) => `${name} ${value}%`}
           >
             {raceData.map((entry, index) => (
-              <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+              <Cell
+                key={`cell-${index}`}
+                fill={COLORS[index % COLORS.length]}
+              />
             ))}
           </Pie>
           <Tooltip content={customTooltip} />

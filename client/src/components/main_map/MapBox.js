@@ -19,13 +19,15 @@ const MapBox = ({ selectedState }) => {
     setMapViewport(NewMapViewport); // Update view state to handle dragging and zooming
   };
 
+  const [mapData, setMapData] = useState(null);
+
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const NYCountyGeoData = await getData('/county-geo/NY');
-        console.log(NYCountyGeoData)
+        const mapData_response = await getData("/map_data/new_york");
+        setMapData(mapData_response);
       } catch (error) {
-        console.error('Error fetching data:', error);
+        console.error("Error fetching data:", error);
       }
     };
   });

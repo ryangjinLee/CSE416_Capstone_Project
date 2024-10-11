@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { Map, Layer, Source } from "react-map-gl";
-import NYCountiesGeoData_SMD from "../../../data/NY/output5.json";
 import "./NY.css";
 
 const NY_Map = (props) => {

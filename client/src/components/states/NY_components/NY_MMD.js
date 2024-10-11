@@ -1,33 +1,89 @@
 import React, { useEffect, useState } from "react";
 import { AgCharts } from "ag-charts-react";
 import "ag-charts-enterprise";
-import ny_mmd_2_data from "../../../data/NY/box_mmd_2.json";
-import ny_mmd_3_data from "../../../data/NY/box_mmd_3.json";
-import ny_mmd_4_data from "../../../data/NY/box_mmd_4.json";
-import ny_mmd_5_data from "../../../data/NY/box_mmd_5.json";
+import _MMD_2_data from "../../../data/NY/box_mmd_2.json";
+import _MMD_3_data from "../../../data/NY/box_mmd_3.json";
+import _MMD_4_data from "../../../data/NY/box_mmd_4.json";
+import _MMD_5_data from "../../../data/NY/box_mmd_5.json";
 
-const NY_MMD = () => {
+const _MMD = () => {
+  const [MMD_2_data, setMMD_2_data] = useState(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const MMD_2_data_response = await getData(
+          "/districting/new_york/mmd_2"
+        );
+        setMMD_2_data(MMD_2_data_response);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+  });
+  const [MMD_3_data, setMMD_3_data] = useState(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const MMD_3_data_response = await getData(
+          "/districting/new_york/mmd_3"
+        );
+        setMMD_3_data(MMD_3_data_response);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+  });
+  const [MMD_4_data, setMMD_4_data] = useState(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const MMD_4_data_response = await getData(
+          "/districting/new_york/mmd_4"
+        );
+        setMMD_4_data(MMD_4_data_response);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+  });
+  const [MMD_5_data, setMMD_5_data] = useState(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const MMD_5_data_response = await getData(
+          "/districting/new_york/mmd_5"
+        );
+        setMMD_5_data(MMD_5_data_response);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+  });
   const [selectedOptionCompare, setSelectedOptionCompare] = useState("MMD2");
 
   const handleSelectChangeCompare = (event) => {
     setSelectedOptionCompare(event.target.value);
   };
 
-  const MMD2_total = ny_mmd_2_data.total;
-  const MMD2_Democratic = ny_mmd_2_data.democratic;
-  const MMD2_Republican = ny_mmd_2_data.republican;
+  const MMD2_total = _MMD_2_data.total;
+  const MMD2_Democratic = _MMD_2_data.democratic;
+  const MMD2_Republican = _MMD_2_data.republican;
 
-  const MMD3_total = ny_mmd_3_data.total;
-  const MMD3_Democratic = ny_mmd_3_data.democratic;
-  const MMD3_Republican = ny_mmd_3_data.republican;
+  const MMD3_total = _MMD_3_data.total;
+  const MMD3_Democratic = _MMD_3_data.democratic;
+  const MMD3_Republican = _MMD_3_data.republican;
 
-  const MMD4_total = ny_mmd_4_data.total;
-  const MMD4_Democratic = ny_mmd_4_data.democratic;
-  const MMD4_Republican = ny_mmd_4_data.republican;
+  const MMD4_total = _MMD_4_data.total;
+  const MMD4_Democratic = _MMD_4_data.democratic;
+  const MMD4_Republican = _MMD_4_data.republican;
 
-  const MMD5_total = ny_mmd_5_data.total;
-  const MMD5_Democratic = ny_mmd_5_data.democratic;
-  const MMD5_Republican = ny_mmd_5_data.republican;
+  const MMD5_total = _MMD_5_data.total;
+  const MMD5_Democratic = _MMD_5_data.democratic;
+  const MMD5_Republican = _MMD_5_data.republican;
 
   const [options, setOptions] = useState({
     title: {
@@ -94,7 +150,7 @@ const NY_MMD = () => {
       },
     ],
   });
-
+  const getData = () => {};
   const dataMapping = {
     MMD2: {
       data: MMD2_total,
@@ -189,4 +245,4 @@ const NY_MMD = () => {
   );
 };
 
-export default NY_MMD;
+export default _MMD;
