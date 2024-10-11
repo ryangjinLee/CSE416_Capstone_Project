@@ -8,6 +8,32 @@ const NY_Map = (props) => {
     "match",
     ["get", "name"],
     "0", "blue",
+    "1", "blue",
+    "2", "blue",
+    "3", "blue",
+    "4", "red",
+    "5", "red",
+    "6", "red",
+    "7", "red",
+    "8", "red",
+    "9", "red",
+    "10", "red",
+    "11", "red",
+    "12", "red",
+    "13", "red",
+    "14", "red",
+    "15", "red",
+    "16", "red",
+    "17", "red",
+    "18", "red",
+    "19", "red",
+    "20", "red",
+    "21", "blue",
+    "22", "red",
+    "23", "blue",
+    "24", "blue",
+    "25", "red",
+    "26", "red",
     "orange"
   ]);
   const [viewState, setViewState] = useState({
@@ -36,7 +62,9 @@ const NY_Map = (props) => {
             "match",
             ["get", "name"],
             districtId.toString(), "blue",
-            (districtId + 1).toString(), "blue",
+            (districtId === 25 || districtId === 22)
+              ? (districtId - 1).toString()
+              : (districtId + 1).toString(), "blue",
             "orange"
           ]);
           break;
@@ -57,9 +85,14 @@ const NY_Map = (props) => {
             "match",
             ["get", "name"],
             districtId.toString(), "blue",
-            (districtId + 1).toString(), "blue",
-            (districtId + 2).toString(), "blue",
-            (districtId + 3).toString(), "blue",
+            (districtId === 11)
+              ? [(districtId - 1).toString(), (districtId - 2).toString(), (districtId - 3).toString()]
+              : (districtId === 20)
+                ? [(districtId - 1).toString(), (districtId + 1).toString(), (districtId + 2).toString()]
+                : (districtId === 25)
+                  ? [(districtId - 1).toString(), (districtId + 1).toString(), (districtId - 2).toString()]
+                  : [(districtId + 1).toString(), (districtId + 2).toString(), (districtId + 3).toString()],
+            "blue",
             "orange"
           ]);
           break;

@@ -51,7 +51,7 @@ const NY_PieChart = (props) => {
       // Set the initial party data with the totals across all districts
       await setPartyData([
         { name: "Republican", value: republicanPercentage },
-        { name: "Conservative", value: conservativePercentage },
+        { name: "Democrat", value: conservativePercentage },
       ]);
     };
 
