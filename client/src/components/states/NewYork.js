@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import StateSelectionToolbar from "../main_map/StateSelectionToolbar";
-import "./States.css"; 
+import "./States.css";
 import NY_SMD from "./NY_components/NY_SMD";
 import NY_MMD from "./NY_components/NY_MMD";
 import NY_Map from "./NY_components/NY_Map";
@@ -25,7 +25,7 @@ const NewYork = () => {
               <div className="outer-container">
                 <div className="select-container centerWithinMe">
                   <label className="select-label">
-                    <b>Select District Method</b>
+                    <h1>Select Districting Method</h1>
                   </label>
                   <div>
                     <label>
@@ -84,13 +84,27 @@ const NewYork = () => {
                     </label>
                   </div>
                 </div>
-                <NY_Map selectedDistrict={selectedDistrict} setSelectedDistrict={setSelectedDistrict}/>
+                <NY_Map selectedDistrict={selectedDistrict} setSelectedDistrict={setSelectedDistrict} />
               </div>
             </div>
-            <div className="second-half">
-              <NY_PieChart />
-              <NY_PieChartRace selectedDistrict={selectedDistrict}/>
+            <div >
+              <div style={{ marginBottom: 50 }}>
+                {selectedDistrict && (
+                  <h1 className="center"> District: {selectedDistrict}</h1>
+                )}
+                <div className="center">Click on a state to see district information</div>
+              </div>
+              <div className="second-half">
+                <div className="pie-chart-container">
+                  <NY_PieChart selectedOptionMap={selectedOptionMap} selectedDistrict={selectedDistrict} />
+                </div>
+                <div className="pie-chart-container">
+                  <NY_PieChartRace selectedOptionMap={selectedOptionMap} selectedDistrict={selectedDistrict} />
+                </div>
+              </div>
+
             </div>
+
           </div>
         </div>
       </div>
