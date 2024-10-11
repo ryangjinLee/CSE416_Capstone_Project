@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Map, Layer, Source } from "react-map-gl";
-import NYCountiesGeoData from "../../../data/NY/output.json";
+import NYCountiesGeoData_SMD from "../../../data/NY/output_SMD.json";
 import "./NY.css";
 
 const NY_Map = (props) => {
@@ -140,7 +140,7 @@ const NY_Map = (props) => {
         onZoom={(evt) => handleViewStateChange(evt.viewState)} // Handle zooming
       >
         {/* Source for the counties */}
-        <Source id="ny-counties" type="geojson" data={NYCountiesGeoData}>
+        <Source id="ny-counties" type="geojson" data={NYCountiesGeoData_SMD}>
           {/* Layer to color fill counties */}
           <Layer
             id="ny-counties-fill"

@@ -132,6 +132,7 @@ const NewYork = () => {
         </div>
       </div>
       <div className="whole-page">
+        <h className="page-header">Party Win Breakdown For SMD Scenarios</h>
         <div className="secondP-page">
           <div className="first-half Chart">
             <NY_SMDPieChart />
@@ -142,9 +143,7 @@ const NewYork = () => {
         </div>
       </div>
       <div className="whole-page">
-        <h className="page-header">
-          Party Win Breakdown For SMD and MMD Scenarios
-        </h>
+        <h className="page-header">SMD Data</h>
         <div className="third-page Table">
           <NY_Table />
         </div>
