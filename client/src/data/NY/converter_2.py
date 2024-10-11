@@ -37,7 +37,9 @@ def merge_features(geojson_file, output_file):
         for feature_id in group:
             feature = find_feature_by_id(feature_id)
             if feature:
+                print("merging ", feature_id)
                 merged_geometry["coordinates"].extend(feature["geometry"]["coordinates"])
+                print(len(merged_geometry["coordinates"]))
 
         # Create the new merged feature
         merged_feature = {
