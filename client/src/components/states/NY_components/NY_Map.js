@@ -9,8 +9,6 @@ const NY_Map = (props) => {
     ["get", "name"],
     "0",
     "blue",
-<<<<<<< Updated upstream
-=======
     "1",
     "blue",
     "2",
@@ -63,7 +61,6 @@ const NY_Map = (props) => {
     "red",
     "26",
     "red",
->>>>>>> Stashed changes
     "orange",
   ]);
   const [viewState, setViewState] = useState({
@@ -82,44 +79,16 @@ const NY_Map = (props) => {
           setLayerOption([
             "match",
             ["get", "name"],
-<<<<<<< Updated upstream
-            districtId.toString(),
-            "blue",
-            "orange",
-          ]);
-=======
 
             districtId.toString(), "black",
             "orange"
           ])
->>>>>>> Stashed changes
           break;
 
         case "MMD2":
           setLayerOption([
             "match",
             ["get", "name"],
-<<<<<<< Updated upstream
-            districtId.toString(),
-            "blue",
-            districtId === 9 || districtId === 10
-              ? (districtId + 2).toString()
-              : districtId === 11 || districtId === 12
-              ? (districtId - 2).toString()
-              : districtId === 26
-              ? (districtId - 3).toString()
-              : districtId === 23
-              ? (districtId + 3).toString()
-              : districtId === 25
-              ? (districtId - 1).toString()
-              : districtId === 24
-              ? (districtId + 1).toString()
-              : districtId % 2 === 0
-              ? (districtId - 1).toString()
-              : (districtId + 1).toString(),
-            "blue",
-            "orange",
-=======
             districtId.toString(), "black",
             (districtId === 9 || districtId === 10)
               ? (districtId + 2).toString()
@@ -138,125 +107,10 @@ const NY_Map = (props) => {
                           : (districtId + 1).toString(),
             "black",
             "orange"
->>>>>>> Stashed changes
           ]);
           break;
 
         case "MMD3":
-<<<<<<< Updated upstream
-          if (districtId >= 1 && districtId <= 3) {
-            setLayerOption([
-              "match",
-              ["get", "name"],
-              "1",
-              "blue",
-              "2",
-              "blue",
-              "3",
-              "blue",
-              "orange",
-            ]);
-          } else if (districtId >= 4 && districtId <= 6) {
-            setLayerOption([
-              "match",
-              ["get", "name"],
-              "4",
-              "blue",
-              "5",
-              "blue",
-              "6",
-              "blue",
-              "orange",
-            ]);
-          } else if (districtId >= 7 && districtId <= 9) {
-            setLayerOption([
-              "match",
-              ["get", "name"],
-              "7",
-              "blue",
-              "8",
-              "blue",
-              "9",
-              "blue",
-              "orange",
-            ]);
-          } else if (districtId >= 10 && districtId <= 12) {
-            setLayerOption([
-              "match",
-              ["get", "name"],
-              "10",
-              "blue",
-              "11",
-              "blue",
-              "12",
-              "blue",
-              "orange",
-            ]);
-          } else if (districtId >= 13 && districtId <= 15) {
-            setLayerOption([
-              "match",
-              ["get", "name"],
-              "13",
-              "blue",
-              "14",
-              "blue",
-              "15",
-              "blue",
-              "orange",
-            ]);
-          } else if (districtId >= 16 && districtId <= 18) {
-            setLayerOption([
-              "match",
-              ["get", "name"],
-              "16",
-              "blue",
-              "17",
-              "blue",
-              "18",
-              "blue",
-              "orange",
-            ]);
-          } else if (districtId >= 19 && districtId <= 21) {
-            setLayerOption([
-              "match",
-              ["get", "name"],
-              "19",
-              "blue",
-              "20",
-              "blue",
-              "21",
-              "blue",
-              "orange",
-            ]);
-          } else if (
-            districtId === 22 ||
-            districtId === 24 ||
-            districtId === 25
-          ) {
-            setLayerOption([
-              "match",
-              ["get", "name"],
-              "22",
-              "blue",
-              "24",
-              "blue",
-              "25",
-              "blue",
-              "orange",
-            ]);
-          } else if (districtId >= 23 && districtId <= 26) {
-            setLayerOption([
-              "match",
-              ["get", "name"],
-              "23",
-              "blue",
-              "26",
-              "blue",
-              "orange",
-            ]);
-          }
-
-=======
           setLayerOption([
             "match",
             ["get", "name"],
@@ -265,208 +119,12 @@ const NY_Map = (props) => {
             (districtId + 2).toString(), "black",
             "orange"
           ]);
->>>>>>> Stashed changes
           break;
 
         case "MMD4":
           setLayerOption([
             "match",
             ["get", "name"],
-<<<<<<< Updated upstream
-            districtId.toString(),
-            "blue",
-            districtId === 1 ||
-            districtId === 5 ||
-            districtId === 9 ||
-            districtId === 13 ||
-            districtId === 17
-              ? [
-                  (districtId + 1).toString(),
-                  (districtId + 2).toString(),
-                  (districtId + 3).toString(),
-                ]
-              : districtId === 2 ||
-                districtId === 6 ||
-                districtId === 10 ||
-                districtId === 14 ||
-                districtId === 18
-              ? [
-                  (districtId - 1).toString(),
-                  (districtId + 1).toString(),
-                  (districtId + 2).toString(),
-                ]
-              : districtId === 3 ||
-                districtId === 7 ||
-                districtId === 11 ||
-                districtId === 15 ||
-                districtId === 19
-              ? [
-                  (districtId - 1).toString(),
-                  (districtId + 1).toString(),
-                  (districtId - 2).toString(),
-                ]
-              : districtId === 4 ||
-                districtId === 8 ||
-                districtId === 12 ||
-                districtId === 16 ||
-                districtId === 20
-              ? [
-                  (districtId - 1).toString(),
-                  (districtId - 2).toString(),
-                  (districtId - 3).toString(),
-                ]
-              : districtId === 21
-              ? [
-                  (districtId + 1).toString(),
-                  (districtId + 3).toString(),
-                  (districtId + 4).toString(),
-                ]
-              : districtId === 22
-              ? [
-                  (districtId - 1).toString(),
-                  (districtId + 2).toString(),
-                  (districtId + 3).toString(),
-                ]
-              : districtId === 23
-              ? [(districtId + 3).toString()]
-              : districtId === 24
-              ? [
-                  (districtId - 3).toString(),
-                  (districtId - 2).toString(),
-                  (districtId + 1).toString(),
-                ]
-              : districtId === 25
-              ? [
-                  (districtId - 4).toString(),
-                  (districtId - 3).toString(),
-                  (districtId - 1).toString(),
-                ]
-              : districtId === 26
-              ? [(districtId - 3).toString()]
-              : [
-                  (districtId + 1).toString(),
-                  (districtId + 2).toString(),
-                  (districtId + 3).toString(),
-                ],
-            "blue",
-            "orange",
-          ]);
-          break;
-
-        case "MMD3":
-          if (districtId >= 1 && districtId <= 3) {
-            setLayerOption([
-              "match",
-              ["get", "name"],
-              "1",
-              "blue",
-              "2",
-              "blue",
-              "3",
-              "blue",
-              "orange",
-            ]);
-          } else if (districtId >= 4 && districtId <= 6) {
-            setLayerOption([
-              "match",
-              ["get", "name"],
-              "4",
-              "blue",
-              "5",
-              "blue",
-              "6",
-              "blue",
-              "orange",
-            ]);
-          } else if (districtId >= 7 && districtId <= 9) {
-            setLayerOption([
-              "match",
-              ["get", "name"],
-              "7",
-              "blue",
-              "8",
-              "blue",
-              "9",
-              "blue",
-              "orange",
-            ]);
-          } else if (districtId >= 10 && districtId <= 12) {
-            setLayerOption([
-              "match",
-              ["get", "name"],
-              "10",
-              "blue",
-              "11",
-              "blue",
-              "12",
-              "blue",
-              "orange",
-            ]);
-          } else if (districtId >= 13 && districtId <= 15) {
-            setLayerOption([
-              "match",
-              ["get", "name"],
-              "13",
-              "blue",
-              "14",
-              "blue",
-              "15",
-              "blue",
-              "orange",
-            ]);
-          } else if (districtId >= 16 && districtId <= 18) {
-            setLayerOption([
-              "match",
-              ["get", "name"],
-              "16",
-              "blue",
-              "17",
-              "blue",
-              "18",
-              "blue",
-              "orange",
-            ]);
-          } else if (districtId >= 19 && districtId <= 21) {
-            setLayerOption([
-              "match",
-              ["get", "name"],
-              "19",
-              "blue",
-              "20",
-              "blue",
-              "21",
-              "blue",
-              "orange",
-            ]);
-          } else if (
-            districtId === 22 ||
-            districtId === 24 ||
-            districtId === 25
-          ) {
-            setLayerOption([
-              "match",
-              ["get", "name"],
-              "22",
-              "blue",
-              "24",
-              "blue",
-              "25",
-              "blue",
-              "orange",
-            ]);
-          } else if (districtId >= 23 && districtId <= 26) {
-            setLayerOption([
-              "match",
-              ["get", "name"],
-              "23",
-              "blue",
-              "26",
-              "blue",
-              "orange",
-            ]);
-          }
-
-=======
             districtId.toString(), "black",
             (districtId === 1 || districtId === 5 || districtId === 9 || districtId === 13 || districtId === 17)
               ? [(districtId + 1).toString(), (districtId + 2).toString(), (districtId + 3).toString()]
@@ -505,7 +163,6 @@ const NY_Map = (props) => {
             (districtId + 4).toString(), "black",
             "orange"
           ]);
->>>>>>> Stashed changes
           break;
 
         default:
@@ -515,11 +172,6 @@ const NY_Map = (props) => {
   };
 
   useEffect(() => {
-<<<<<<< Updated upstream
-    console.log("hello");
-    console.log(layerOption);
-=======
->>>>>>> Stashed changes
   }, [layerOption]);
 
   const handleViewStateChange = (newViewState) => {
