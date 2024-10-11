@@ -1,8 +1,20 @@
 db = db.getSiblingDB('cse416');
 
 db.createCollection('countyGeo');
+
+db.countyGeo.insert({ name: 'US', value: {
+  "location": {
+    "latitude": 40.29091544906472,
+    "longitude": -97.44332861851478
+  }
+}});
+
 db.countyGeo.insert({ name: 'CA', value: {
         "type": "FeatureCollection",
+        "location": {
+          "latitude": 36.7783,
+          "longitude": -119.4179
+        },
         "features": [
             {
                 "type": "Feature",
@@ -11437,6 +11449,10 @@ db.countyGeo.insert({ name: 'CA', value: {
 db.countyGeo.insert({ name: 'MS', value: {
         "_id": "mississippi",
         "type": "Feature",
+        "location": {
+          "latitude": 32.3547,
+          "longitude": -89.3985
+        },
         "properties": {
             "name": "Mississippi",
             "abbreviation": "MS",
@@ -13880,6 +13896,10 @@ db.countyGeo.insert({ name: 'MS', value: {
 
 db.countyGeo.insert({ name: 'NY', value: {
         "type": "FeatureCollection",
+        "location": {
+          "latitude": 42.9538,
+          "longitude": -75.5268
+        },
         "features": [
             {
                 "geometry": {
