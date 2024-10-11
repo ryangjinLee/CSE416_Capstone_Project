@@ -1,20 +1,33 @@
-import React, { useState } from "react";
-import { useEffect } from "react";
+import React, {useEffect, useState} from "react";
 import { AgCharts } from "ag-charts-react";
 import "ag-charts-enterprise";
-
-// endpoint: /box/ny/mmd/2
-import ny_mmd_2 from "../../../data/NY/box_mmd_2.json"
-// endpoint: /box/ny/mmd/3
-import ny_mmd_3 from "../../../data/NY/box_mmd_3.json"
-// endpoint: /box/ny/mmd/4
-import ny_mmd_4 from "../../../data/NY/box_mmd_4.json"
-// endpoint: /box/ny/mmd/5
-import ny_mmd_5 from "../../../data/NY/box_mmd_5.json"
-
+import { getData } from "../../../api";
 
 const NY_MMD = () => {
   const [selectedOptionCompare, setSelectedOptionCompare] = useState("MMD2");
+  const [ny_mmd_2, setNy_mmd_2] = useState({});
+  const [ny_mmd_3, setNy_mmd_3] = useState({});
+  const [ny_mmd_4, setNy_mmd_4] = useState({});
+  const [ny_mmd_5, setNy_mmd_5] = useState({});
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const mmd2 = await getData('/boxplot/ny/mmd2');
+        setNy_mmd_2(mmd2);
+        const mmd3 = await getData('/boxplot/ny/mmd3');
+        setNy_mmd_3(mmd3);
+        const mmd4 = await getData('/boxplot/ny/mmd4');
+        setNy_mmd_4(mmd4);
+        const mmd5 = await getData('/boxplot/ny/mmd5');
+        setNy_mmd_5(mmd5);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
+
+    fetchData();
+  }, []);
 
   const handleSelectChangeCompare = (event) => {
     setSelectedOptionCompare(event.target.value);
