@@ -9,7 +9,7 @@ const NY_PieChartRace = (props) => {
     { name: 'Black', value: 15 },
     { name: 'Asian', value: 10 },
   ]);
-  
+
   useEffect(() => {
     const jsonData = EthnicityData;
     const selectedDistrictData = jsonData[Number(props.selectedDistrict) - 1];
@@ -52,24 +52,27 @@ const NY_PieChartRace = (props) => {
 
   return (
     <div style={{ width: '100%', height: 300 }}>
+
+
       <ResponsiveContainer>
+        <h3 className='center'>Racial Information</h3>
         <PieChart>
           <Pie
-              data={raceData}
-              cx="50%"
-              cy="50%"
-              labelLine={false}
-              outerRadius={80}
-              fill="#8884d8"
-              dataKey="value"
-              label={({name, value}) => `${name} ${value}%`}
+            data={raceData}
+            cx="50%"
+            cy="50%"
+            labelLine={false}
+            outerRadius={80}
+            fill="#8884d8"
+            dataKey="value"
+            label={({ name, value }) => `${name} ${value}%`}
           >
             {raceData.map((entry, index) => (
-                <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+              <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
             ))}
           </Pie>
-          <Tooltip content={customTooltip}/>
-          <Legend/>
+          <Tooltip content={customTooltip} />
+          <Legend />
         </PieChart>
       </ResponsiveContainer>
     </div>

@@ -15,7 +15,7 @@ const NY_Map = (props) => {
     const feature = event.features[0]; // Get the first clicked feature
     if (feature && feature.properties) {
       const districtId = feature.id;
-        props.setSelectedDistrict(districtId ? districtId : 'Unknown District');
+      props.setSelectedDistrict(districtId ? districtId : 'Unknown District');
     }
   };
 
@@ -66,11 +66,7 @@ const NY_Map = (props) => {
           />
         </Source>
       </Map>
-      {props.selectedDistrict && (
-          <div>
-              <h2>Selected District: District {props.selectedDistrict}</h2>
-          </div>
-      )}
+
     </>
   );
 };
