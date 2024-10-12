@@ -7,79 +7,9 @@ import {
   Legend,
   Tooltip,
 } from "recharts";
+import EthnicityData from "../../../data/NY/EthnicityData.json";
 
 const NY_InteractivePie = () => {
-  var data_Total = [];
-  const [SMD_data_Total, setSMD_data_Total] = useState(null);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const SMD_data_Total_response = await getData(
-          "/district-party/total_Data/SMD"
-        );
-        setSMD_data_Total(SMD_data_Total_response);
-      } catch (error) {
-        console.error("Error fetching data:", error);
-      }
-    };
-  });
-  const [MMD2_data_Total, setMMD2_data_Total] = useState(null);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const MMD2_data_Total_response = await getData(
-          "/district-party/total_Data/MMD2"
-        );
-        setMMD2_data_Total(MMD2_data_Total_response);
-      } catch (error) {
-        console.error("Error fetching data:", error);
-      }
-    };
-  });
-  const [MMD3_data_Total, setMMD3_data_Total] = useState(null);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const MMD3_data_Total_response = await getData(
-          "/district-party/total_Data/MMD3"
-        );
-        setMMD3_data_Total(MMD3_data_Total_response);
-      } catch (error) {
-        console.error("Error fetching data:", error);
-      }
-    };
-  });
-  const [MMD4_data_Total, setMMD4_data_Total] = useState(null);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const MMD4_data_Total_response = await getData(
-          "/district-party/total_Data/MMD4"
-        );
-        setMMD4_data_Total(MMD4_data_Total_response);
-      } catch (error) {
-        console.error("Error fetching data:", error);
-      }
-    };
-  });
-  const [MMD5_data_Total, setMMD5_data_Total] = useState(null);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const MMD5_data_Total_response = await getData(
-          "/district-party/total_Data/MMD5"
-        );
-        setMMD5_data_Total(MMD5_data_Total_response);
-      } catch (error) {
-        console.error("Error fetching data:", error);
-      }
-    };
-  });
   const [chartData, setChartData] = useState([]);
   const [dataType, setDataType] = useState("MMD2");
 
@@ -90,30 +20,24 @@ const NY_InteractivePie = () => {
     let newData = [];
     switch (dataType) {
       case "MMD2":
-        data_Total = MMD2_data_Total;
         newData = calculateMMD2Data();
         break;
       case "MMD3":
-        data_Total = MMD3_data_Total;
         newData = calculateMMD3Data();
         break;
       case "MMD4":
-        data_Total = MMD4_data_Total;
         newData = calculateMMD4Data();
         break;
       case "MMD5":
-        data_Total = MMD5_data_Total;
         newData = calculateMMD5Data();
         break;
       default:
-        data_Total = SMD_data_Total;
         newData = calculateMMD2Data();
     }
     setChartData(newData);
   };
-  var totalVotes = data_Total;
 
-  const getOutcome = () => {
+  const generateRandomPercentages = () => {
     const republican = Math.floor(Math.random() * (71 - 40) + 40); // Random number between 40 and 70
     const democrat = 100 - republican;
     return [
@@ -123,19 +47,19 @@ const NY_InteractivePie = () => {
   };
 
   const calculateMMD2Data = () => {
-    return getOutcome();
+    return generateRandomPercentages();
   };
 
   const calculateMMD3Data = () => {
-    return getOutcome();
+    return generateRandomPercentages();
   };
 
   const calculateMMD4Data = () => {
-    return getOutcome();
+    return generateRandomPercentages();
   };
 
   const calculateMMD5Data = () => {
-    return getOutcome();
+    return generateRandomPercentages();
   };
 
   //   const calculateMMDData = (mmdSize) => {
@@ -201,7 +125,6 @@ const NY_InteractivePie = () => {
           <Tooltip content={customTooltip} />
           <Legend />
         </PieChart>
-        {totalVotes}
       </ResponsiveContainer>
       <div
         style={{ marginTop: "20px", display: "flex", justifyContent: "center" }}
@@ -220,7 +143,6 @@ const NY_InteractivePie = () => {
       </div>
     </div>
   );
-  const getData = () => {};
 };
 
 export default NY_InteractivePie;

@@ -1,38 +1,23 @@
 import React, { useState } from "react";
-import { useEffect } from "react";
 import { AgCharts } from "ag-charts-react";
 
 // endpoint: /box/ny/smd
-import ny_smd from "../../../data/NY/box_smd.json";
+import ny_smd from "../../../data/NY/box_smd.json"
 import "ag-charts-enterprise";
 
+
 function get_SMD_Data() {
-  return ny_smd.total;
+  return ny_smd.total
 }
 function get_SMD_Democratic() {
-  return ny_smd.democratic;
+  return ny_smd.democratic
 }
 
 function get_SMD_Republican() {
-  return ny_smd.republican;
+  return ny_smd.republican
 }
 
 const NY_Box = () => {
-  const [SMD_data_Total, setSMD_data_Total] = useState(null);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const SMD_data_Total_response = await getData(
-          "/district-party/total_Data/SMD"
-        );
-        setSMD_data_Total(SMD_data_Total_response);
-      } catch (error) {
-        console.error("Error fetching data:", error);
-      }
-    };
-  });
-  const getData = () => {};
   const [options, setOptions] = useState({
     title: {
       text: "New York Single Member District",
@@ -104,7 +89,6 @@ const NY_Box = () => {
 
   return (
     <div>
-      {SMD_data_Total}
       <AgCharts style={{ width: "45vw", height: "80vh" }} options={options} />
     </div>
   );
