@@ -1,28 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import { PieChart, Pie, Cell, ResponsiveContainer, Legend, Tooltip } from 'recharts';
-import EthnicityData from '../../../data/NY/EthnicityData.json';
-import {getData} from "../../../api";
+import PartyData from "../../../data/NY/pie_party.json";
+import { getData } from "../../../api";
 
 const NY_SMDPieChart = () => {
   const [partyData, setPartyData] = useState([]);
 
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const NYEthnicityData = await getData('/ethnicity/NY');
-        console.log(NYEthnicityData)
-      } catch (error) {
-        console.error('Error fetching data:', error);
-      }
-    };
-  });
+    const jsonData = PartyData["SMD"];
 
-  useEffect(() => {
     const calculatePartyTotals = () => {
       let republicanTotal = 0;
       let democratTotal = 0;
 
-      Object.values(EthnicityData).forEach(district => {
+      Object.values(jsonData).forEach(district => {
         republicanTotal += district.Republicans || 0;
         democratTotal += district.Conservatives || 0;
       });
