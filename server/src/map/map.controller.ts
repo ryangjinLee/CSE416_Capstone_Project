@@ -9,4 +9,9 @@ export class MapController {
   async getStateMapLocation(@Param('state') state: string) {
     return await this.mapService.getStateMapLocation(state);
   }
+
+  @Get('/:state/:districting')
+  async getStateDistricting(@Param('state') state: string, @Param('districting') districtingOption: string) {
+    return await this.mapService.getStateDistricting(state, districtingOption);
+  }
 }

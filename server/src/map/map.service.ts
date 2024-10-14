@@ -10,4 +10,10 @@ export class MapService {
       name: state,
     });
   }
+
+  async getStateDistricting(stateName: string, districtingOption: string) {
+    return await this.mongoDBService.findOne('map', {
+      name: `${stateName}_${districtingOption}`,
+    });
+  }
 }

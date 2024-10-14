@@ -1,4 +1,4 @@
-import { Controller, Get, Post, Body, Patch, Delete, Param } from "@nestjs/common";
+import { Controller, Get, Param } from '@nestjs/common';
 import { PartyService } from './party.service';
 
 @Controller('party')
@@ -7,6 +7,6 @@ export class PartyController {
 
   @Get('/:stateName')
   getDistrictPartyInfo(@Param('stateName') stateName: string) {
-    return this.partyService.getDistrictPartyInfo(createDistrictPartyDto);
+    return this.partyService.getDistrictPartyInfo(stateName);
   }
 }
