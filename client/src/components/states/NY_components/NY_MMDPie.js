@@ -7,7 +7,7 @@ import {
   Legend,
   Tooltip,
 } from "recharts";
-import EthnicityData from "../../../data/NY/EthnicityData.json";
+import EthnicityData from "../../../data/MS/EthnicityData.json";
 
 const NY_InteractivePie = () => {
   const [chartData, setChartData] = useState([]);

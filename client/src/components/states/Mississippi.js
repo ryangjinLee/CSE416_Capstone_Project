@@ -3,12 +3,12 @@ import StateSelectionToolbar from "../main_map/StateSelectionToolbar";
 import "./States.css";
 import NY_SMD from "./NY_components/NY_SMD";
 import NY_MMD from "./NY_components/NY_MMD";
-import NY_Map from "./MS_components/MS_Map";
-import NY_PieChart from "./MS_components/MS_PieChart";
-import NY_PieChartRace from "./MS_components/MS_PieChartRace";
-import NY_Table from "./NY_components/NY_Table";
-import NY_MMDPie from "./NY_components/NY_MMDPie";
-import NY_SMDPieChart from "./NY_components/NY_SMDPie";
+import MS_Map from "./MS_components/MS_Map";
+import MS_PieChart from "./MS_components/MS_PieChart";
+import MS_PieChartRace from "./MS_components/MS_PieChartRace";
+import NY_Table from "./MS_components/MS_Table";
+import MS_MMDPie from "./MS_components/MS_MMDPie";
+import MS_SMDPieChart from "./MS_components/MS_SMDPie";
 
 const NewYork = () => {
   const [selectedOptionMap, setSelectedOptionMap] = useState("SMD"); // State for the selected option
@@ -86,7 +86,7 @@ const NewYork = () => {
                     </label>
                   </div>
                 </div>
-                <NY_Map
+                <MS_Map
                   selectedDistrict={selectedDistrict}
                   setSelectedDistrict={setSelectedDistrict}
                   selectedOptionMap={selectedOptionMap}
@@ -104,13 +104,13 @@ const NewYork = () => {
               </div>
               <div className="second-half">
                 <div className="pie-chart-container">
-                  <NY_PieChart
+                  <MS_PieChart
                     selectedOptionMap={selectedOptionMap}
                     selectedDistrict={selectedDistrict}
                   />
                 </div>
                 <div className="pie-chart-container">
-                  <NY_PieChartRace
+                  <MS_PieChartRace
                     selectedOptionMap={selectedOptionMap}
                     selectedDistrict={selectedDistrict}
                   />
@@ -135,10 +135,10 @@ const NewYork = () => {
         <h className="page-header">Party Win Breakdown For SMD Scenarios</h>
         <div className="secondP-page">
           <div className="first-half Chart">
-            <NY_SMDPieChart />
+            <MS_SMDPieChart />
           </div>
           <div className="second-half Chart">
-            <NY_MMDPie />
+            <MS_MMDPie />
           </div>
         </div>
       </div>

@@ -1,0 +1,34 @@
+{
+    "total": [
+      { "district": "1", "min": 9, "q1": 23, "median": 32, "q3": 36, "max": 40 },
+      { "district": "2", "min": 9, "q1": 16, "median": 18, "q3": 36, "max": 55 },
+      { "district": "3", "min": 2, "q1": 15, "median": 26, "q3": 43, "max": 55 },
+      { "district": "4", "min": 6, "q1": 15, "median": 32, "q3": 45, "max": 57 }
+    ],
+    "republican": [
+      {
+        "district": "1",
+        "percentage": 68
+      },
+      {
+        "district": "2",
+        "percentage": 66
+      },
+      {
+        "district": "3",
+        "percentage": 64
+      },
+      {
+        "district": "4",
+        "percentage": 96
+      }
+    ],
+  
+    "democratic": [
+      { "district": "1", "percentage": 31 },
+      { "district": "2", "percentage": 33 },
+      { "district": "3", "percentage": 35 },
+      { "district": "4", "percentage": 0 }
+    ]
+  }
+  

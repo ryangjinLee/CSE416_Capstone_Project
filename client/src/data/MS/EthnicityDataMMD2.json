@@ -1,0 +1,38 @@
+[
+    {
+        "District": 1,
+        "Republicans": 425011,
+        "Conservatives": 205018,
+        "Total": 630332,
+        "White": 705531,
+        "Hispanic": 44470,
+        "Black": 644107,
+        "Asian": 10919,
+        "Rep W": 582062,
+        "Rep H": 15563,
+        "Rep B": 48307,
+        "Rep A": 3547,
+        "Con W": 123468,
+        "Con H": 28905,
+        "Con B": 595798,
+        "Con A": 7370
+    },
+    {
+        "District": 2,
+        "Republicans": 477035,
+        "Conservatives": 120782,
+        "Total": 606381,
+        "White": 933148,
+        "Hispanic": 60578,
+        "Black": 414339,
+        "Asian": 100909,
+        "Rep W": 769846,
+        "Rep H": 21202,
+        "Rep B": 31075,
+        "Rep A": 32795,
+        "Con W": 163301,
+        "Con H": 39375,
+        "Con B": 383262,
+        "Con A": 68112
+    }
+]
