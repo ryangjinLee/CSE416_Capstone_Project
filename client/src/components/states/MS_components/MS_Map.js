@@ -31,7 +31,7 @@ const MS_Map = (props) => {
   const handleClick = (event) => {
     const feature = event.features[0]; // Get the first clicked feature
     if (feature && feature.properties) {
-      const districtId = feature.properties.District.toString();
+      const districtId = feature.properties.id.toString();
 
       // Update the selected district state
       setSelectedDistrict(districtId);
@@ -44,7 +44,7 @@ const MS_Map = (props) => {
         "match",
         ["get", "name"],
         ...Object.entries(initialColors)
-          .map(([District, color]) => [District, District === districtId ? "black" : color])
+           .map(([id, color]) => [id, id === districtId ? "black" : color])
           .flat(),
         "orange",
       ];
@@ -59,18 +59,9 @@ const MS_Map = (props) => {
       try {
         let data;
         switch (props.selectedOptionMap) {
-        //   case "MMD2":
-        //     data = await import("../../../data/NY/output2.json");
-        //     break;
-        //   case "MMD3":
-        //     data = await import("../../../data/NY/output3.json");
-        //     break;
-        //   case "MMD4":
-        //     data = await import("../../../data/NY/output4.json");
-        //     break;
-        //   case "MMD5":
-        //     data = await import("../../../data/NY/output5.json");
-            // break;
+          case "MMD2":
+            data = await import("../../../data/MS/output2.json");
+            break;
           default:
             data = await import("../../../data/MS/MississippiConDist.json"); // Default to SMD
             break;

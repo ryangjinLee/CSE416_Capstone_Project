@@ -54,20 +54,6 @@
         },
         {
           "District": 2,
-          "White": 0.4305,
-          "Hispanic": 0.4233,
-          "Black": 0.6085,
-          "Asian": 0.0976
-        },
-        {
-          "District": 3,
-          "White": 0.5695,
-          "Hispanic": 0.5767,
-          "Black": 0.3915,
-          "Asian": 0.9024
-        },
-        {
-          "District": 4,
           "White": 0.5695,
           "Hispanic": 0.5767,
           "Black": 0.3915,
