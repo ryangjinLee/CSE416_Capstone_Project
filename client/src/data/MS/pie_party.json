@@ -1,0 +1,47 @@
+{
+    "SMD": [
+      {
+        "District": 1,
+        "Republicans": 228787,
+        "Conservatives": 104008
+      },
+      {
+        "District": 2,
+        "Republicans": 101010,
+        "Conservatives": 196224
+      },
+      {
+        "District": 3,
+        "Republicans": 221064,
+        "Conservatives": 120782
+      },
+      {
+        "District": 4,
+        "Republicans": 255971,
+        "Conservatives": 0
+      }
+    ],
+    "MMD2": [
+      {
+        "District": 1,
+        "Republicans": 425011,
+        "Conservatives": 205018
+      },
+      {
+        "District": 2,
+        "Republicans": 425011,
+        "Conservatives": 205018
+      },
+      {
+        "District": 3,
+        "Republicans": 417288,
+        "Conservatives": 120782
+      },
+      {
+        "District": 4,
+        "Republicans": 417288,
+        "Conservatives": 120782
+      }
+    ]
+  }
+  

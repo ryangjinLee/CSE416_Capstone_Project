@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { Map, Layer, Source } from "react-map-gl";
-import "./NY.css";
+import "./MS.css";
 
-const NY_Map = (props) => {
+const MS_Map = (props) => {
   const [geoData, setGeoData] = useState(null); // State to store dynamically loaded GeoJSON data
   // Map district IDs to their initial colors
   const initialColors = {
-    1: "blue",
+    1: "red",
     2: "blue",
-    3: "blue",
+    3: "red",
     4: "red",
     
   };
@@ -23,15 +23,15 @@ const NY_Map = (props) => {
   ]);
 
   const [viewState, setViewState] = useState({
-    latitude: 42.9538,
-    longitude: -75.5268,
+    latitude: 32.3547,
+    longitude: -89.3985,
     zoom: 6,
-  });
+  })
 
   const handleClick = (event) => {
     const feature = event.features[0]; // Get the first clicked feature
     if (feature && feature.properties) {
-      const districtId = feature.id.toString();
+      const districtId = feature.properties.District.toString();
 
       // Update the selected district state
       setSelectedDistrict(districtId);
@@ -44,7 +44,7 @@ const NY_Map = (props) => {
         "match",
         ["get", "name"],
         ...Object.entries(initialColors)
-          .map(([id, color]) => [id, id === districtId ? "black" : color])
+          .map(([District, color]) => [District, District === districtId ? "black" : color])
           .flat(),
         "orange",
       ];
@@ -59,20 +59,20 @@ const NY_Map = (props) => {
       try {
         let data;
         switch (props.selectedOptionMap) {
-          case "MMD2":
-            data = await import("../../../data/NY/output2.json");
-            break;
-          case "MMD3":
-            data = await import("../../../data/NY/output3.json");
-            break;
-          case "MMD4":
-            data = await import("../../../data/NY/output4.json");
-            break;
-          case "MMD5":
-            data = await import("../../../data/NY/output5.json");
-            break;
+        //   case "MMD2":
+        //     data = await import("../../../data/NY/output2.json");
+        //     break;
+        //   case "MMD3":
+        //     data = await import("../../../data/NY/output3.json");
+        //     break;
+        //   case "MMD4":
+        //     data = await import("../../../data/NY/output4.json");
+        //     break;
+        //   case "MMD5":
+        //     data = await import("../../../data/NY/output5.json");
+            // break;
           default:
-            data = await import("../../../data/NY/output_SMD.json"); // Default to SMD
+            data = await import("../../../data/MS/MississippiConDist.json"); // Default to SMD
             break;
         }
         setGeoData(data.default); // Update geoData state with the loaded GeoJSON
@@ -100,18 +100,18 @@ const NY_Map = (props) => {
         mapStyle="mapbox://styles/mapbox/light-v9"
         style={{ width: "800px", height: "600px" }}
         className="justify-center"
-        interactiveLayerIds={["ny-counties-fill"]}
+        interactiveLayerIds={["ms-counties-fill"]}
         onClick={handleClick}
         onMove={(evt) => handleViewStateChange(evt.viewState)} // Handle dragging
         onZoom={(evt) => handleViewStateChange(evt.viewState)} // Handle zooming
       >
         {/* Source for the counties */}
-        <Source id="ny-counties" type="geojson" data={geoData}>
+        <Source id="ms-counties" type="geojson" data={geoData}>
           {/* Layer to color fill counties */}
           <Layer
-            id="ny-counties-fill"
+            id="ms-counties-fill"
             type="fill"
-            source="ny-counties"
+            source="ms-counties"
             paint={{
               "fill-color": layerOption,
               "fill-opacity": 0.7,
@@ -120,9 +120,9 @@ const NY_Map = (props) => {
 
           {/* Layer for the county borders */}
           <Layer
-            id="ny-counties-borders"
+            id="ms-counties-borders"
             type="line"
-            source="ny-counties"
+            source="ms-counties"
             paint={{
               "line-color": "black", // Black borders for the counties
               "line-width": 1, // Thickness of the borders
@@ -134,4 +134,4 @@ const NY_Map = (props) => {
   );
 };
 
-export default NY_Map;
+export default MS_Map;
