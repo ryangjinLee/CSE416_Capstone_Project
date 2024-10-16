@@ -1,33 +1,41 @@
 import React, { useEffect, useState } from "react";
 import { AgCharts } from "ag-charts-react";
+import { getData } from "../../../api"; // Assuming you have a function to fetch data from your API
 import "ag-charts-enterprise";
-import ny_mmd_2_data from "../../../data/NY/box_mmd_2.json";
-import ny_mmd_3_data from "../../../data/NY/box_mmd_3.json";
-import ny_mmd_4_data from "../../../data/NY/box_mmd_4.json";
-import ny_mmd_5_data from "../../../data/NY/box_mmd_5.json";
 
 const NY_MMD = () => {
   const [selectedOptionCompare, setSelectedOptionCompare] = useState("MMD2");
+  const [mmdData, setMmdData] = useState({
+    MMD2: { total: [], democratic: [], republican: [] },
+    MMD3: { total: [], democratic: [], republican: [] },
+    MMD4: { total: [], democratic: [], republican: [] },
+    MMD5: { total: [], democratic: [], republican: [] },
+  });
 
   const handleSelectChangeCompare = (event) => {
     setSelectedOptionCompare(event.target.value);
   };
 
-  const MMD2_total = ny_mmd_2_data.total;
-  const MMD2_Democratic = ny_mmd_2_data.democratic;
-  const MMD2_Republican = ny_mmd_2_data.republican;
+  useEffect(() => {
+    const fetchMmdData = async (mmdType) => {
+      try {
+        const response = await getData(`/boxplot/ny/${mmdType.toLowerCase()}`);
+        setMmdData((prevState) => ({
+          ...prevState,
+          [mmdType]: response.value, // Assuming the response contains total, democratic, and republican
+        }));
+      } catch (error) {
+        console.error(`Error fetching ${mmdType} data:`, error);
+      }
+    };
 
-  const MMD3_total = ny_mmd_3_data.total;
-  const MMD3_Democratic = ny_mmd_3_data.democratic;
-  const MMD3_Republican = ny_mmd_3_data.republican;
+    // Fetch data for the selected option if not already fetched
+    if (mmdData[selectedOptionCompare].total.length === 0) {
+      fetchMmdData(selectedOptionCompare);
+    }
+  }, [selectedOptionCompare]);
 
-  const MMD4_total = ny_mmd_4_data.total;
-  const MMD4_Democratic = ny_mmd_4_data.democratic;
-  const MMD4_Republican = ny_mmd_4_data.republican;
-
-  const MMD5_total = ny_mmd_5_data.total;
-  const MMD5_Democratic = ny_mmd_5_data.democratic;
-  const MMD5_Republican = ny_mmd_5_data.republican;
+  const { total, democratic, republican } = mmdData[selectedOptionCompare];
 
   const [options, setOptions] = useState({
     title: {
@@ -95,48 +103,23 @@ const NY_MMD = () => {
     ],
   });
 
-  const dataMapping = {
-    MMD2: {
-      data: MMD2_total,
-      dem: MMD2_Democratic,
-      rep: MMD2_Republican,
-    },
-    MMD3: {
-      data: MMD3_total,
-      dem: MMD3_Democratic,
-      rep: MMD3_Republican,
-    },
-    MMD4: {
-      data: MMD4_total,
-      dem: MMD4_Democratic,
-      rep: MMD4_Republican,
-    },
-    MMD5: {
-      data: MMD5_total,
-      dem: MMD5_Democratic,
-      rep: MMD5_Republican,
-    },
-  };
-
   useEffect(() => {
-    const { data, dem, rep } = dataMapping[selectedOptionCompare];
-
     setOptions((prevOptions) => ({
       ...prevOptions,
-      data: data,
+      data: total, // Update box plot data
       series: [
         prevOptions.series[0],
         {
           ...prevOptions.series[1],
-          data: dem,
+          data: democratic, // Democratic scatter points
         },
         {
           ...prevOptions.series[2],
-          data: rep,
+          data: republican, // Republican scatter points
         },
       ],
     }));
-  }, [selectedOptionCompare]);
+  }, [total, democratic, republican]);
 
   return (
     <div>

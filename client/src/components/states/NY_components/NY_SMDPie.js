@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { PieChart, Pie, Cell, ResponsiveContainer, Legend, Tooltip } from 'recharts';
 import PartyData from "../../../data/NY/pie_party.json";
-import { getData } from "../../../api";
 
 const NY_SMDPieChart = () => {
   const [partyData, setPartyData] = useState([]);

@@ -9,23 +9,23 @@ import {
 } from "recharts";
 // Endpoint: "/party/ny"
 import PartyData from "../../../data/NY/pie_party.json";
-import {getData} from "../../../api";
+import { getData } from "../../../api";
 
 const NY_PieChart = (props) => {
   const [partyData, setPartyData] = useState([]);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const result = await getData('==');
-        setPartyData(result);
-      } catch (error) {
-        console.error('Error fetching data:', error);
-      }
-    };
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     try {
+  //       const result = await getData('==');
+  //       setPartyData(result);
+  //     } catch (error) {
+  //       console.error('Error fetching data:', error);
+  //     }
+  //   };
 
-    fetchData();
-  }, []);
+  //   fetchData();
+  // }, []);
 
   useEffect(() => {
     const jsonData = PartyData[props.selectedOptionMap];
