@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Map, Layer, Source } from "react-map-gl";
 import NYCountiesGeoData from "../../data/NY/CountiesGeoData.json";
-import CACountiesGeoData from "../../data/CA/CountiesGeoData.json";
+import LACountiesGeoData from "../../data/LA/CountiesGeoData.json";
 import MSCountiesGeoData from "../../data/MS/CountiesGeoData.json";
 import "./Components.css";
 import { getData } from "../../api";
@@ -42,7 +42,7 @@ const MapBox = ({ selectedState }) => {
           //   width: "75vw",
           height: window.innerHeight,
         });
-        setGeoData(CACountiesGeoData);
+        setGeoData(LACountiesGeoData);
         break;
       case "NewYork":
         setMapViewport({
@@ -87,7 +87,7 @@ const MapBox = ({ selectedState }) => {
         onMove={(evt) => handlemapViewportChange(evt.viewState)} // Handle dragging
         onZoom={(evt) => handlemapViewportChange(evt.viewState)} // Handle zooming
       >
-        <Source id="ca-counties" type="geojson" data={CACountiesGeoData}>
+        <Source id="ca-counties" type="geojson" data={LACountiesGeoData}>
           <Layer
             id="ca-counties-fill"
             type="fill"

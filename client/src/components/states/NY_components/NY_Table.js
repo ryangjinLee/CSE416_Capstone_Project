@@ -1,9 +1,9 @@
 import React from "react";
 import { Table } from "react-bootstrap";
-import EthnicityData from "../../../data/NY/EthnicityData.json";
+import Table_Data from "../../../data/NY/Table_Data.json";
 
 const PartyWinBreakdownTable = () => {
-  const data = EthnicityData;
+  const data = Table_Data;
 
   const calculatePercentage = (value, total) => {
     return ((value / total) * 100).toFixed(1);
@@ -29,14 +29,14 @@ const PartyWinBreakdownTable = () => {
           <th>Black</th>
           <th>Asian</th>
           <th>Republican</th>
-          <th>Conservative</th>
+          <th>Democratic</th>
         </tr>
       </thead>
       <tbody>
         {data.map((item, index) => {
           const totalVotes =
-            item.Republicans +
-            item.Conservatives +
+            item.Republican +
+            item.Democratic +
             item.Workers +
             item.Others +
             item.Blank;
@@ -47,8 +47,8 @@ const PartyWinBreakdownTable = () => {
               <td>{(item.Hispanic * 100).toFixed(1)}%</td>
               <td>{(item.Black * 100).toFixed(1)}%</td>
               <td>{(item.Asian * 100).toFixed(1)}%</td>
-              <td>{calculatePercentage(item.Republicans, totalVotes)}%</td>
-              <td>{calculatePercentage(item.Conservatives, totalVotes)}%</td>
+              <td>{calculatePercentage(item.Republican, totalVotes)}%</td>
+              <td>{calculatePercentage(item.Democratic, totalVotes)}%</td>
             </tr>
           );
         })}

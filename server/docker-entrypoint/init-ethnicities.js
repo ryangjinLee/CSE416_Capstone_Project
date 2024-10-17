@@ -5,7 +5,7 @@ db.ethnicities.insert({ name: 'NY', value: [
     {
       "District": 1,
       "Republicans": 117890,
-      "Conservatives": 1080366,
+      "Democratics": 1080366,
       "Workers": 6726,
       "Others": 1305,
       "Blank": 12325,
@@ -26,7 +26,7 @@ db.ethnicities.insert({ name: 'NY', value: [
     {
       "District": 2,
       "Republicans": 212630,
-      "Conservatives": 1154242,
+      "Democratics": 1154242,
       "Workers": 9087,
       "Others": 1847,
       "Blank": 19300,
@@ -47,7 +47,7 @@ db.ethnicities.insert({ name: 'NY', value: [
     {
       "District": 3,
       "Republicans": 238415,
-      "Conservatives": 1174278,
+      "Democratics": 1174278,
       "Workers": 10640,
       "Others": 2211,
       "Blank": 21848,
@@ -68,7 +68,7 @@ db.ethnicities.insert({ name: 'NY', value: [
     {
       "District": 4,
       "Republicans": 94740,
-      "Conservatives": 73876,
+      "Democratics": 73876,
       "Workers": 2361,
       "Others": 542,
       "Blank": 6975,
@@ -89,7 +89,7 @@ db.ethnicities.insert({ name: 'NY', value: [
     {
       "District": 5,
       "Republicans": 113158,
-      "Conservatives": 88187,
+      "Democratics": 88187,
       "Workers": 3470,
       "Others": 802,
       "Blank": 8795,
@@ -110,7 +110,7 @@ db.ethnicities.insert({ name: 'NY', value: [
     {
       "District": 6,
       "Republicans": 163926,
-      "Conservatives": 39634,
+      "Democratics": 39634,
       "Workers": 2019,
       "Others": 1040,
       "Blank": 6104,
@@ -131,7 +131,7 @@ db.ethnicities.insert({ name: 'NY', value: [
     {
       "District": 7,
       "Republicans": 3094182,
-      "Conservatives": 2316562,
+      "Democratics": 2316562,
       "Workers": 178477,
       "Others": 42406,
       "Blank": 295666,
@@ -152,7 +152,7 @@ db.ethnicities.insert({ name: 'NY', value: [
     {
       "District": 8,
       "Republicans": 160242,
-      "Conservatives": 36772,
+      "Democratics": 36772,
       "Workers": 1797,
       "Others": 988,
       "Blank": 5740,
@@ -173,7 +173,7 @@ db.ethnicities.insert({ name: 'NY', value: [
     {
       "District": 9,
       "Republicans": 162084,
-      "Conservatives": 38203,
+      "Democratics": 38203,
       "Workers": 1908,
       "Others": 1014,
       "Blank": 5922,
@@ -194,7 +194,7 @@ db.ethnicities.insert({ name: 'NY', value: [
     {
       "District": 10,
       "Republicans": 987110,
-      "Conservatives": 126812,
+      "Democratics": 126812,
       "Workers": 4291,
       "Others": 6690,
       "Blank": 22351,
@@ -215,7 +215,7 @@ db.ethnicities.insert({ name: 'NY', value: [
     {
       "District": 11,
       "Republicans": 663022,
-      "Conservatives": 66909,
+      "Democratics": 66909,
       "Workers": 1736,
       "Others": 2620,
       "Blank": 16244,
@@ -236,7 +236,7 @@ db.ethnicities.insert({ name: 'NY', value: [
     {
       "District": 12,
       "Republicans": 119475,
-      "Conservatives": 95423,
+      "Democratics": 95423,
       "Workers": 4036,
       "Others": 1052,
       "Blank": 8142,
@@ -257,7 +257,7 @@ db.ethnicities.insert({ name: 'NY', value: [
     {
       "District": 13,
       "Republicans": 274128,
-      "Conservatives": 37444,
+      "Democratics": 37444,
       "Workers": 1738,
       "Others": 1532,
       "Blank": 7299,
@@ -278,7 +278,7 @@ db.ethnicities.insert({ name: 'NY', value: [
     {
       "District": 14,
       "Republicans": 147350,
-      "Conservatives": 26754,
+      "Democratics": 26754,
       "Workers": 1021,
       "Others": 806,
       "Blank": 4466,
@@ -299,7 +299,7 @@ db.ethnicities.insert({ name: 'NY', value: [
     {
       "District": 15,
       "Republicans": 126778,
-      "Conservatives": 10690,
+      "Democratics": 10690,
       "Workers": 717,
       "Others": 726,
       "Blank": 2833,
@@ -320,7 +320,7 @@ db.ethnicities.insert({ name: 'NY', value: [
     {
       "District": 16,
       "Republicans": 229083,
-      "Conservatives": 50150,
+      "Democratics": 50150,
       "Workers": 2983,
       "Others": 1259,
       "Blank": 8918,
@@ -341,7 +341,7 @@ db.ethnicities.insert({ name: 'NY', value: [
     {
       "District": 17,
       "Republicans": 102305,
-      "Conservatives": 39460,
+      "Democratics": 39460,
       "Workers": 2266,
       "Others": 533,
       "Blank": 6085,
@@ -362,7 +362,7 @@ db.ethnicities.insert({ name: 'NY', value: [
     {
       "District": 18,
       "Republicans": 184825,
-      "Conservatives": 102932,
+      "Democratics": 102932,
       "Workers": 6490,
       "Others": 1611,
       "Blank": 16123,
@@ -383,7 +383,7 @@ db.ethnicities.insert({ name: 'NY', value: [
     {
       "District": 19,
       "Republicans": 276762,
-      "Conservatives": 218812,
+      "Democratics": 218812,
       "Workers": 13547,
       "Others": 4044,
       "Blank": 32314,
@@ -404,7 +404,7 @@ db.ethnicities.insert({ name: 'NY', value: [
     {
       "District": 20,
       "Republicans": 171807,
-      "Conservatives": 85052,
+      "Democratics": 85052,
       "Workers": 11400,
       "Others": 3817,
       "Blank": 17721,
@@ -425,7 +425,7 @@ db.ethnicities.insert({ name: 'NY', value: [
     {
       "District": 21,
       "Republicans": 137321,
-      "Conservatives": 190813,
+      "Democratics": 190813,
       "Workers": 8659,
       "Others": 1819,
       "Blank": 23682,
@@ -446,7 +446,7 @@ db.ethnicities.insert({ name: 'NY', value: [
     {
       "District": 22,
       "Republicans": 177863,
-      "Conservatives": 160838,
+      "Democratics": 160838,
       "Workers": 8697,
       "Others": 2246,
       "Blank": 24308,
@@ -467,7 +467,7 @@ db.ethnicities.insert({ name: 'NY', value: [
     {
       "District": 23,
       "Republicans": 237751,
-      "Conservatives": 240176,
+      "Democratics": 240176,
       "Workers": 15715,
       "Others": 3606,
       "Blank": 27441,
@@ -488,7 +488,7 @@ db.ethnicities.insert({ name: 'NY', value: [
     {
       "District": 24,
       "Republicans": 206668,
-      "Conservatives": 235666,
+      "Democratics": 235666,
       "Workers": 14004,
       "Others": 2858,
       "Blank": 26778,
@@ -509,7 +509,7 @@ db.ethnicities.insert({ name: 'NY', value: [
     {
       "District": 25,
       "Republicans": 100835,
-      "Conservatives": 62252,
+      "Democratics": 62252,
       "Workers": 4120,
       "Others": 1007,
       "Blank": 9255,
@@ -530,7 +530,7 @@ db.ethnicities.insert({ name: 'NY', value: [
     {
       "District": 26,
       "Republicans": 141786,
-      "Conservatives": 78724,
+      "Democratics": 78724,
       "Workers": 7668,
       "Others": 1872,
       "Blank": 10372,

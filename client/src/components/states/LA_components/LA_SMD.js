@@ -20,7 +20,7 @@ function get_SMD_Republican() {
 const LA_Box = () => {
   const [options, setOptions] = useState({
     title: {
-      text: "New York Single Member District",
+      text: "California Single Member District",
       fontSize: 24,
     },
     subtitle: {

@@ -31,7 +31,7 @@ const LA_MMD = () => {
 
   const [options, setOptions] = useState({
     title: {
-      text: "New York Multi Member District",
+      text: "California Multi Member District",
       fontSize: 24,
     },
     subtitle: {

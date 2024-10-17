@@ -31,27 +31,27 @@ const NY_PieChart = (props) => {
     const jsonData = PartyData[props.selectedOptionMap];
 
     const calculatePartyTotals = async () => {
-      let totalRepublicans = 0;
-      let totalConservatives = 0;
+      let totalRepublican = 0;
+      let totalDemocratic = 0;
 
       // Calculate the total for all districts
       jsonData.forEach((district) => {
-        totalRepublicans += district.Republicans || 0;
-        totalConservatives += district.Conservatives || 0;
+        totalRepublican += district.Republican || 0;
+        totalDemocratic += district.Democratic || 0;
       });
 
-      const total = totalRepublicans + totalConservatives;
+      const total = totalRepublican + totalDemocratic;
 
       // Calculate percentages
-      const republicanPercentage = Math.round((totalRepublicans / total) * 100);
-      const conservativePercentage = Math.round(
-        (totalConservatives / total) * 100
+      const republicanPercentage = Math.round((totalRepublican / total) * 100);
+      const democraticPercentage = Math.round(
+        (totalDemocratic / total) * 100
       );
 
       // Set the initial party data with the totals across all districts
       await setPartyData([
         { name: "Republican", value: republicanPercentage },
-        { name: "Democrat", value: conservativePercentage },
+        { name: "Democratic", value: democraticPercentage },
       ]);
     };
 
@@ -60,23 +60,23 @@ const NY_PieChart = (props) => {
       const selectedDistrictData = jsonData[Number(props.selectedDistrict) - 1];
 
       if (selectedDistrictData) {
-        const republicanTotal = selectedDistrictData.Republicans || 0;
-        const conservativeTotal = selectedDistrictData.Conservatives || 0;
+        const republicanTotal = selectedDistrictData.Republican || 0;
+        const DemocraticTotal = selectedDistrictData.Democratic || 0;
 
-        const total = republicanTotal + conservativeTotal;
+        const total = republicanTotal + DemocraticTotal;
 
         // Calculate percentages for the selected district
         const republicanPercentage = Math.round(
           (republicanTotal / total) * 100
         );
-        const conservativePercentage = Math.round(
-          (conservativeTotal / total) * 100
+        const democraticPercentage = Math.round(
+          (DemocraticTotal / total) * 100
         );
 
         // Update party data with the selected district values
         await setPartyData([
           { name: "Republican", value: republicanPercentage },
-          { name: "Conservative", value: conservativePercentage },
+          { name: "Democratic", value: democraticPercentage },
         ]);
       }
     };
