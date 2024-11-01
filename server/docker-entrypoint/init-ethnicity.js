@@ -1,7 +1,7 @@
 db = db.getSiblingDB('cse416');
 
-db.createCollection('ethnicities');
-db.ethnicities.insert({ name: 'NY', value: [
+db.createCollection('ethnicity');
+db.ethnicity.insert({ name: 'NY', value: [
     {
       "District": 1,
       "Republicans": 117890,
