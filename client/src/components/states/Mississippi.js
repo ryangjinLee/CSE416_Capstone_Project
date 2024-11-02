@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 import StateSelectionToolbar from "../main_map/StateSelectionToolbar";
 import "./States.css";
-import NY_SMD from "./NY_components/NY_SMD";
-import NY_MMD from "./NY_components/NY_MMD";
+import MS_SMD from "./MS_components/MS_SMD";
+import MS_MMD from "./MS_components/MS_MMD";
 import MS_Map from "./MS_components/MS_Map";
 import MS_PieChart from "./MS_components/MS_PieChart";
 import MS_PieChartRace from "./MS_components/MS_PieChartRace";
-import NY_Table from "./MS_components/MS_Table";
+import MS_Table from "./MS_components/MS_Table";
 import MS_MMDPie from "./MS_components/MS_MMDPie";
 import MS_SMDPieChart from "./MS_components/MS_SMDPie";
 
-const NewYork = () => {
+const Mississippi = () => {
   const [selectedOptionMap, setSelectedOptionMap] = useState("SMD"); // State for the selected option
   const [selectedDistrict, setSelectedDistrict] = useState(null);
 
@@ -124,10 +124,10 @@ const NewYork = () => {
         <h className="page-header">Vote Distribution Across Districts</h>
         <div className="second-page">
           <div className="first-half Chart">
-            <NY_SMD />
+            <MS_SMD />
           </div>
           <div className="second-half Chart">
-            <NY_MMD />
+            <MS_MMD />
           </div>
         </div>
       </div>
@@ -145,11 +145,11 @@ const NewYork = () => {
       <div className="whole-page">
         <h className="page-header">SMD Data</h>
         <div className="third-page Table">
-          <NY_Table />
+          <MS_Table />
         </div>
       </div>
     </>
   );
 };
 
-export default NewYork;
+export default Mississippi;

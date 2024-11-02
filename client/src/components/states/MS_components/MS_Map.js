@@ -17,7 +17,7 @@ const MS_Map = (props) => {
 
   const [layerOption, setLayerOption] = useState([
     "match",
-    ["get", "name"],
+    ["get", "features.properties.id"], 
     ...Object.entries(initialColors).flat(), // Spread initial colors for all districts
     "orange", // Default color for districts not matched
   ]);
@@ -42,10 +42,9 @@ const MS_Map = (props) => {
       // Update only the clicked district to black, all others retain their original color
       const updatedLayerOption = [
         "match",
-        ["get", "name"],
+        ["get", "properties.id"],
         ...Object.entries(initialColors)
-           .map(([id, color]) => [id, id === districtId ? "black" : color])
-          .flat(),
+           .map(([id, color]) => [id, id === districtId ? "black" : color]).flat(),
         "orange",
       ];
 
@@ -78,7 +77,6 @@ const MS_Map = (props) => {
   const handleViewStateChange = (newViewState) => {
     setViewState(newViewState); // Update view state to handle dragging and zooming
   };
-
   if (!geoData) {
     return <div>Loading Map...</div>; // Display a loading message while data is being fetched
   }

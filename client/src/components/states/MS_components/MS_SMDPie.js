@@ -9,8 +9,7 @@ const MS_SMDPieChart = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const NYEthnicityData = await getData('/ethnicity/MS');
-        console.log(NYEthnicityData)
+        const MSEthnicityData = await getData('/ethnicity/MS');
       } catch (error) {
         console.error('Error fetching data:', error);
       }
@@ -40,9 +39,6 @@ const MS_SMDPieChart = () => {
 
     calculatePartyTotals();
   }, []);
-
-
-
 
   const COLORS = ['#FF0000', '#0000FF'];
 
