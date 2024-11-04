@@ -1,26 +1,23 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { AgCharts } from "ag-charts-react";
 
-import { getData } from "../../../api";
-
 // endpoint: /box/ny/smd
+import ny_smd from "../../../data/NY/box_smd.json"
 import "ag-charts-enterprise";
 
+
+function get_SMD_Data() {
+  return ny_smd.total
+}
+function get_SMD_Democratic() {
+  return ny_smd.democratic
+}
+
+function get_SMD_Republican() {
+  return ny_smd.republican
+}
+
 const NY_Box = () => {
-  const [smd, setSMDData] = useState(null); // Initialize smd to null
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const smd_boxplot = await getData("/boxplot/ny/smd");
-        setSMDData(smd_boxplot.value); // Update smd state when data is fetched
-      } catch (error) {
-        console.error("Error fetching data:", error);
-      }
-    };
-    fetchData();
-  }, []); // Add an empty dependency array to ensure it runs only once
-
   const [options, setOptions] = useState({
     title: {
       text: "New York Single Member District",
@@ -29,7 +26,7 @@ const NY_Box = () => {
     subtitle: {
       text: "Political Voting Percentage by District",
     },
-    data: [], // Initially empty, to be updated later
+    data: get_SMD_Data(),
     series: [
       {
         type: "box-plot",
@@ -49,9 +46,10 @@ const NY_Box = () => {
         maxKey: "max",
         maxName: "Max",
       },
-      // Democratic scatter points with blue color (placeholder for now)
+
+      // Democratic scatter points with blue color
       {
-        data: [], // Initially empty, will be updated later
+        data: get_SMD_Democratic(),
         type: "scatter",
         xKey: "district",
         yKey: "percentage",
@@ -59,9 +57,9 @@ const NY_Box = () => {
         fill: "#0000FF",
         stroke: "#0000FF",
       },
-      // Republican scatter points with red color (placeholder for now)
+      // Republican scatter points with red color
       {
-        data: [], // Initially empty, will be updated later
+        data: get_SMD_Republican(),
         type: "scatter",
         xKey: "district",
         yKey: "percentage",
@@ -88,29 +86,6 @@ const NY_Box = () => {
       },
     ],
   });
-
-  useEffect(() => {
-    if (smd) {
-      setOptions((prevOptions) => ({
-        ...prevOptions,
-        data: smd.total, // Update box plot data when smd is available
-        series: [
-          {
-            ...prevOptions.series[0], // Keep the box-plot series as is
-            data: smd.total, // Use smd.total for box-plot
-          },
-          {
-            ...prevOptions.series[1], // Democratic scatter points
-            data: smd.democratic, // Use smd.democratic for scatter plot
-          },
-          {
-            ...prevOptions.series[2], // Republican scatter points
-            data: smd.republican, // Use smd.republican for scatter plot
-          },
-        ],
-      }));
-    }
-  }, [smd]); // Run this effect whenever smd changes
 
   return (
     <div>

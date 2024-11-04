@@ -2,16 +2,16 @@ import { Injectable } from '@nestjs/common';
 import { MongoDBService } from '../mongo-db/mongo-db.service';
 
 @Injectable()
-export class StateGeoService {
+export class CountyGeoService {
   constructor(private readonly mongoDBService: MongoDBService) {}
 
-  async getStateGeoData(stateName: string) {
-    const stateGeoData = await this.mongoDBService.findAll(stateName);
+  async getCountyGeoData(countyName: string) {
+    const countyGeoData = await this.mongoDBService.findAll(countyName);
 
-    return stateGeoData;
+    return countyGeoData;
   }
 
-  async getStateData(stateName: string, whereQuery: any) {
+  async getCountyData(stateName: string, whereQuery: any) {
     const stateInfo = await this.mongoDBService.findOne(stateName, whereQuery);
 
     return stateInfo;

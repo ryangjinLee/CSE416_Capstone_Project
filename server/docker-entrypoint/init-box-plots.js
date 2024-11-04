@@ -1,7 +1,7 @@
 db = db.getSiblingDB('cse416');
 
-db.createCollection('boxplot');
-db.boxplot.insert({ name: 'ny_smd', value: {
+db.createCollection('boxplots');
+db.boxplots.insert({ name: 'ny_smd', value: {
     "total": [
       { "district": "1", "min": 9, "q1": 23, "median": 32, "q3": 36, "max": 40 },
       { "district": "2", "min": 9, "q1": 16, "median": 18, "q3": 36, "max": 55 },
@@ -175,7 +175,7 @@ db.boxplot.insert({ name: 'ny_smd', value: {
   }
 });
 
-db.boxplot.insert({ name: 'ny_mmd2', value: {
+db.boxplots.insert({ name: 'ny_mmd2', value: {
     "total": [
       {
         "district": "District 1",
@@ -331,7 +331,7 @@ db.boxplot.insert({ name: 'ny_mmd2', value: {
   }
 });
 
-db.boxplot.insert({ name: 'ny_mmd3', value: {
+db.boxplots.insert({ name: 'ny_mmd3', value: {
     "total": [
       {
         "district": "District 1",
@@ -439,7 +439,7 @@ db.boxplot.insert({ name: 'ny_mmd3', value: {
   }
 });
 
-db.boxplot.insert({ name: 'ny_mmd4', value: {
+db.boxplots.insert({ name: 'ny_mmd4', value: {
     "total": [
       {
         "district": "District 1",
@@ -519,7 +519,7 @@ db.boxplot.insert({ name: 'ny_mmd4', value: {
   }
 });
 
-db.boxplot.insert({ name: 'ny_mmd5', value: {
+db.boxplots.insert({ name: 'ny_mmd5', value: {
     "total": [
       {
         "district": "District 1",

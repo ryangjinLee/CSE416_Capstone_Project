@@ -2,8 +2,6 @@ import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 
-const SERVER_PORT = 8080;
-
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
@@ -21,8 +19,8 @@ async function bootstrap() {
   });
 
   const document = SwaggerModule.createDocument(app, config);
-  SwaggerModule.setup('docs', app, document);
+  SwaggerModule.setup('docs', app, document); // Swagger UI가 'http://localhost:3001/api-docs'에 표시됨
 
-  await app.listen(SERVER_PORT);
+  await app.listen(3001);
 }
 bootstrap();

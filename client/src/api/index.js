@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'http://localhost:8080';
+const API_BASE_URL = 'http://localhost:3001';
 
 // create axios instance
 const api = axios.create({
@@ -13,8 +13,6 @@ const api = axios.create({
 // GET
 export const getData = async (endpoint) => {
     try {
-        console.log("======")
-        console.log(endpoint)
         const response = await api.get(endpoint);
         return response.data;
     } catch (error) {

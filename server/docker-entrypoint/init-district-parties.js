@@ -1,7 +1,7 @@
 db = db.getSiblingDB('cse416');
 
-db.createCollection('districtParty');
-db.districtParty.insert({ name: 'ny_smd', value: [
+db.createCollection('districtParties');
+db.districtParties.insert({ name: 'ny_smd', value: [
     {
       "District": 1,
       "Republicans": 117890,
@@ -134,7 +134,7 @@ db.districtParty.insert({ name: 'ny_smd', value: [
     }
 ]});
 
-db.districtParty.insert({ name: 'ny_mmd2', value: [
+db.districtParties.insert({ name: 'ny_mmd2', value: [
     {
       "District": 1,
       "Republicans": 117890,
@@ -267,7 +267,7 @@ db.districtParty.insert({ name: 'ny_mmd2', value: [
     }
 ]});
 
-db.districtParty.insert({ name: 'ny_mmd3', value: [
+db.districtParties.insert({ name: 'ny_mmd3', value: [
     {
       "District": 1,
       "Republicans": 117890,
@@ -400,7 +400,7 @@ db.districtParty.insert({ name: 'ny_mmd3', value: [
     }
 ]});
 
-db.districtParty.insert({ name: 'ny_mmd4', value: [
+db.districtParties.insert({ name: 'ny_mmd4', value: [
     {
       "District": 1,
       "Republicans": 117890,
@@ -533,7 +533,7 @@ db.districtParty.insert({ name: 'ny_mmd4', value: [
     }
 ]});
 
-db.districtParty.insert({ name: 'ny_mmd5', value: [
+db.districtParties.insert({ name: 'ny_mmd5', value: [
     {
       "District": 1,
       "Republicans": 117890,

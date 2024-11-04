@@ -1,7 +1,7 @@
 db = db.getSiblingDB('cse416');
 
-db.createCollection('districtRace');
-db.districtRace.insert({ name: 'ny_smd', value: {
+db.createCollection('districtRaces');
+db.districtRaces.insert({ name: 'ny_smd', value: {
     "total": {
       "White": 56,
       "Hispanic": 19,
@@ -194,7 +194,7 @@ db.districtRace.insert({ name: 'ny_smd', value: {
     ]
 }});
 
-db.districtRace.insert({ name: 'ny_mmd2', value: {
+db.districtRaces.insert({ name: 'ny_mmd2', value: {
     "total": {
       "White": 56,
       "Hispanic": 19,
@@ -387,7 +387,7 @@ db.districtRace.insert({ name: 'ny_mmd2', value: {
     ]
 }});
 
-db.districtRace.insert({ name: 'ny_mmd3', value: {
+db.districtRaces.insert({ name: 'ny_mmd3', value: {
     "total": {
       "White": 56,
       "Hispanic": 19,
@@ -580,7 +580,7 @@ db.districtRace.insert({ name: 'ny_mmd3', value: {
     ]
 }});
 
-db.districtRace.insert({ name: 'ny_mmd4', value: {
+db.districtRaces.insert({ name: 'ny_mmd4', value: {
     "total": {
       "White": 56,
       "Hispanic": 19,
@@ -773,7 +773,7 @@ db.districtRace.insert({ name: 'ny_mmd4', value: {
     ]
 }});
 
-db.districtRace.insert({ name: 'ny_mmd5', value: {
+db.districtRaces.insert({ name: 'ny_mmd5', value: {
     "total": {
       "White": 56,
       "Hispanic": 19,

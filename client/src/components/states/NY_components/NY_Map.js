@@ -1,16 +1,39 @@
 import React, { useEffect, useState } from "react";
 import { Map, Layer, Source } from "react-map-gl";
 import NYCountiesGeoData_SMD from "../../../data/NY/output5.json";
-import MapInitialColor from "../../../data/NY/map_initial_color.json"
-import MapEnvironment from "../../../data/NY/map_environment.json"
-
 import "./NY.css";
 
 const NY_Map = (props) => {
   const [geoData, setGeoData] = useState(null); // State to store dynamically loaded GeoJSON data
   // Map district IDs to their initial colors
-  const initialColors = MapInitialColor
-  const mapEnv = MapEnvironment
+  const initialColors = {
+    1: "blue",
+    2: "blue",
+    3: "blue",
+    4: "red",
+    5: "red",
+    6: "red",
+    7: "red",
+    8: "red",
+    9: "red",
+    10: "red",
+    11: "red",
+    12: "red",
+    13: "red",
+    14: "red",
+    15: "red",
+    16: "red",
+    17: "red",
+    18: "red",
+    19: "red",
+    20: "red",
+    21: "blue",
+    22: "red",
+    23: "blue",
+    24: "blue",
+    25: "red",
+    26: "red",
+  };
 
   const [selectedDistrict, setSelectedDistrict] = useState(null); // Keep track of selected district
 
@@ -21,7 +44,11 @@ const NY_Map = (props) => {
     "orange", // Default color for districts not matched
   ]);
 
-  const [viewState, setViewState] = useState(mapEnv);
+  const [viewState, setViewState] = useState({
+    latitude: 42.9538,
+    longitude: -75.5268,
+    zoom: 6,
+  });
 
   const handleClick = (event) => {
     const feature = event.features[0]; // Get the first clicked feature
