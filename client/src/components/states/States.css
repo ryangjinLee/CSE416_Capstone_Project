@@ -133,14 +133,6 @@
   width: 50vw;
   max-height: 100vh;
 }
-.first-half-LA {
-  width: 60vw;
-  max-height: 100vh;
-}
-.second-half-LA {
-  width: 48vw;
-  max-height: 100vh;
-}
 
 .Chart {
   display: flex;

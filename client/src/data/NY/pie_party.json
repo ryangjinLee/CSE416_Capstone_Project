@@ -2,316 +2,661 @@
   "SMD": [
     {
       "District": 1,
-      "Republican": 117890,
-      "Democratic": 1080366
+      "Republicans": 117890,
+      "Conservatives": 1080366
     },
     {
       "District": 2,
-      "Republican": 212630,
-      "Democratic": 1154242
+      "Republicans": 212630,
+      "Conservatives": 1154242
     },
     {
       "District": 3,
-      "Republican": 238415,
-      "Democratic": 1174278
+      "Republicans": 238415,
+      "Conservatives": 1174278
     },
     {
       "District": 4,
-      "Republican": 94740,
-      "Democratic": 73876
+      "Republicans": 94740,
+      "Conservatives": 73876
     },
     {
       "District": 5,
-      "Republican": 113158,
-      "Democratic": 88187
+      "Republicans": 113158,
+      "Conservatives": 88187
     },
     {
       "District": 6,
-      "Republican": 163926,
-      "Democratic": 39634
+      "Republicans": 163926,
+      "Conservatives": 39634
     },
     {
       "District": 7,
-      "Republican": 3094182,
-      "Democratic": 2316562
+      "Republicans": 3094182,
+      "Conservatives": 2316562
     },
     {
       "District": 8,
-      "Republican": 160242,
-      "Democratic": 36772
+      "Republicans": 160242,
+      "Conservatives": 36772
     },
     {
       "District": 9,
-      "Republican": 162084,
-      "Democratic": 38203
+      "Republicans": 162084,
+      "Conservatives": 38203
     },
     {
       "District": 10,
-      "Republican": 987110,
-      "Democratic": 126812
+      "Republicans": 987110,
+      "Conservatives": 126812
     },
     {
       "District": 11,
-      "Republican": 663022,
-      "Democratic": 66909
+      "Republicans": 663022,
+      "Conservatives": 66909
     },
     {
       "District": 12,
-      "Republican": 119475,
-      "Democratic": 95423
+      "Republicans": 119475,
+      "Conservatives": 95423
     },
     {
       "District": 13,
-      "Republican": 274128,
-      "Democratic": 37444
+      "Republicans": 274128,
+      "Conservatives": 37444
     },
     {
       "District": 14,
-      "Republican": 147350,
-      "Democratic": 26754
+      "Republicans": 147350,
+      "Conservatives": 26754
     },
     {
       "District": 15,
-      "Republican": 126778,
-      "Democratic": 10690
+      "Republicans": 126778,
+      "Conservatives": 10690
     },
     {
       "District": 16,
-      "Republican": 229083,
-      "Democratic": 50150
+      "Republicans": 229083,
+      "Conservatives": 50150
     },
     {
       "District": 17,
-      "Republican": 102305,
-      "Democratic": 39460
+      "Republicans": 102305,
+      "Conservatives": 39460
     },
     {
       "District": 18,
-      "Republican": 184825,
-      "Democratic": 102932
+      "Republicans": 184825,
+      "Conservatives": 102932
     },
     {
       "District": 19,
-      "Republican": 276762,
-      "Democratic": 218812
+      "Republicans": 276762,
+      "Conservatives": 218812
     },
     {
       "District": 20,
-      "Republican": 171807,
-      "Democratic": 85052
+      "Republicans": 171807,
+      "Conservatives": 85052
     },
     {
       "District": 21,
-      "Republican": 137321,
-      "Democratic": 190813
+      "Republicans": 137321,
+      "Conservatives": 190813
     },
     {
       "District": 22,
-      "Republican": 177863,
-      "Democratic": 160838
+      "Republicans": 177863,
+      "Conservatives": 160838
     },
     {
       "District": 23,
-      "Republican": 237751,
-      "Democratic": 240176
+      "Republicans": 237751,
+      "Conservatives": 240176
     },
     {
       "District": 24,
-      "Republican": 206668,
-      "Democratic": 235666
+      "Republicans": 206668,
+      "Conservatives": 235666
     },
     {
       "District": 25,
-      "Republican": 100835,
-      "Democratic": 62252
+      "Republicans": 100835,
+      "Conservatives": 62252
     },
     {
       "District": 26,
-      "Republican": 141786,
-      "Democratic": 78724
+      "Republicans": 141786,
+      "Conservatives": 78724
     }
   ],
   "MMD2": [
     {
       "District": 1,
-      "Republican": 330520.0,
-      "Democratic": 2234608.0
+      "Republicans": 117890,
+      "Conservatives": 1080366
     },
     {
       "District": 2,
-      "Republican": 333155.0,
-      "Democratic": 1248154.0
+      "Republicans": 212630,
+      "Conservatives": 1154242
     },
     {
       "District": 3,
-      "Republican": 277084.0,
-      "Democratic": 127821.0
+      "Republicans": 238415,
+      "Conservatives": 1174278
     },
     {
       "District": 4,
-      "Republican": 3254424.0,
-      "Democratic": 2353334.0
+      "Republicans": 94740,
+      "Conservatives": 73876
     },
     {
       "District": 5,
-      "Republican": 825106.0,
-      "Democratic": 105112.0
+      "Republicans": 113158,
+      "Conservatives": 88187
     },
     {
       "District": 6,
-      "Republican": 1106585.0,
-      "Democratic": 222235.0
+      "Republicans": 163926,
+      "Conservatives": 39634
     },
     {
       "District": 7,
-      "Republican": 421478.0,
-      "Democratic": 64198.0
+      "Republicans": 3094182,
+      "Conservatives": 2316562
     },
     {
       "District": 8,
-      "Republican": 355861.0,
-      "Democratic": 60840.0
+      "Republicans": 160242,
+      "Conservatives": 36772
     },
     {
       "District": 9,
-      "Republican": 287130.0,
-      "Democratic": 142392.0
+      "Republicans": 162084,
+      "Conservatives": 38203
     },
     {
       "District": 10,
-      "Republican": 448569.0,
-      "Democratic": 303864.0
+      "Republicans": 987110,
+      "Conservatives": 126812
     },
     {
       "District": 11,
-      "Republican": 315184.0,
-      "Democratic": 351651.0
+      "Republicans": 663022,
+      "Conservatives": 66909
     },
     {
       "District": 12,
-      "Republican": 307503.0,
-      "Democratic": 297918.0
+      "Republicans": 119475,
+      "Conservatives": 95423
     },
     {
       "District": 13,
-      "Republican": 379537.0,
-      "Democratic": 318900.0
+      "Republicans": 274128,
+      "Conservatives": 37444
+    },
+    {
+      "District": 14,
+      "Republicans": 147350,
+      "Conservatives": 26754
+    },
+    {
+      "District": 15,
+      "Republicans": 126778,
+      "Conservatives": 10690
+    },
+    {
+      "District": 16,
+      "Republicans": 229083,
+      "Conservatives": 50150
+    },
+    {
+      "District": 17,
+      "Republicans": 102305,
+      "Conservatives": 39460
+    },
+    {
+      "District": 18,
+      "Republicans": 184825,
+      "Conservatives": 102932
+    },
+    {
+      "District": 19,
+      "Republicans": 276762,
+      "Conservatives": 218812
+    },
+    {
+      "District": 20,
+      "Republicans": 171807,
+      "Conservatives": 85052
+    },
+    {
+      "District": 21,
+      "Republicans": 137321,
+      "Conservatives": 190813
+    },
+    {
+      "District": 22,
+      "Republicans": 177863,
+      "Conservatives": 160838
+    },
+    {
+      "District": 23,
+      "Republicans": 237751,
+      "Conservatives": 240176
+    },
+    {
+      "District": 24,
+      "Republicans": 206668,
+      "Conservatives": 235666
+    },
+    {
+      "District": 25,
+      "Republicans": 100835,
+      "Conservatives": 62252
+    },
+    {
+      "District": 26,
+      "Republicans": 141786,
+      "Conservatives": 78724
     }
   ],
   "MMD3": [
     {
       "District": 1,
-      "Republican": 568935.0,
-      "Democratic": 3408886.0
+      "Republicans": 117890,
+      "Conservatives": 1080366
     },
     {
       "District": 2,
-      "Republican": 371824.0,
-      "Democratic": 201697.0
+      "Republicans": 212630,
+      "Conservatives": 1154242
     },
     {
       "District": 3,
-      "Republican": 3416508.0,
-      "Democratic": 2391537.0
+      "Republicans": 238415,
+      "Conservatives": 1174278
     },
     {
       "District": 4,
-      "Republican": 1769607.0,
-      "Democratic": 289144.0
+      "Republicans": 94740,
+      "Conservatives": 73876
     },
     {
       "District": 5,
-      "Republican": 548256.0,
-      "Democratic": 74888.0
+      "Republicans": 113158,
+      "Conservatives": 88187
     },
     {
       "District": 6,
-      "Republican": 516213.0,
-      "Democratic": 192542.0
+      "Republicans": 163926,
+      "Conservatives": 39634
     },
     {
       "District": 7,
-      "Republican": 585890.0,
-      "Democratic": 494677.0
+      "Republicans": 3094182,
+      "Conservatives": 2316562
     },
     {
       "District": 8,
-      "Republican": 485366.0,
-      "Democratic": 458756.0
+      "Republicans": 160242,
+      "Conservatives": 36772
     },
     {
       "District": 9,
-      "Republican": 379537.0,
-      "Democratic": 318900.0
+      "Republicans": 162084,
+      "Conservatives": 38203
+    },
+    {
+      "District": 10,
+      "Republicans": 987110,
+      "Conservatives": 126812
+    },
+    {
+      "District": 11,
+      "Republicans": 663022,
+      "Conservatives": 66909
+    },
+    {
+      "District": 12,
+      "Republicans": 119475,
+      "Conservatives": 95423
+    },
+    {
+      "District": 13,
+      "Republicans": 274128,
+      "Conservatives": 37444
+    },
+    {
+      "District": 14,
+      "Republicans": 147350,
+      "Conservatives": 26754
+    },
+    {
+      "District": 15,
+      "Republicans": 126778,
+      "Conservatives": 10690
+    },
+    {
+      "District": 16,
+      "Republicans": 229083,
+      "Conservatives": 50150
+    },
+    {
+      "District": 17,
+      "Republicans": 102305,
+      "Conservatives": 39460
+    },
+    {
+      "District": 18,
+      "Republicans": 184825,
+      "Conservatives": 102932
+    },
+    {
+      "District": 19,
+      "Republicans": 276762,
+      "Conservatives": 218812
+    },
+    {
+      "District": 20,
+      "Republicans": 171807,
+      "Conservatives": 85052
+    },
+    {
+      "District": 21,
+      "Republicans": 137321,
+      "Conservatives": 190813
+    },
+    {
+      "District": 22,
+      "Republicans": 177863,
+      "Conservatives": 160838
+    },
+    {
+      "District": 23,
+      "Republicans": 237751,
+      "Conservatives": 240176
+    },
+    {
+      "District": 24,
+      "Republicans": 206668,
+      "Conservatives": 235666
+    },
+    {
+      "District": 25,
+      "Republicans": 100835,
+      "Conservatives": 62252
+    },
+    {
+      "District": 26,
+      "Republicans": 141786,
+      "Conservatives": 78724
     }
   ],
   "MMD4": [
     {
       "District": 1,
-      "Republican": 663675.0,
-      "Democratic": 3482762.0
+      "Republicans": 117890,
+      "Conservatives": 1080366
     },
     {
       "District": 2,
-      "Republican": 3531508.0,
-      "Democratic": 2481155.0
+      "Republicans": 212630,
+      "Conservatives": 1154242
     },
     {
       "District": 3,
-      "Republican": 1931691.0,
-      "Democratic": 327347.0
+      "Republicans": 238415,
+      "Conservatives": 1174278
     },
     {
       "District": 4,
-      "Republican": 777339.0,
-      "Democratic": 125038.0
+      "Republicans": 94740,
+      "Conservatives": 73876
     },
     {
       "District": 5,
-      "Republican": 735699.0,
-      "Democratic": 446256.0
+      "Republicans": 113158,
+      "Conservatives": 88187
     },
     {
       "District": 6,
-      "Republican": 622687.0,
-      "Democratic": 649569.0
+      "Republicans": 163926,
+      "Conservatives": 39634
     },
     {
       "District": 7,
-      "Republican": 379537.0,
-      "Democratic": 318900.0
+      "Republicans": 3094182,
+      "Conservatives": 2316562
+    },
+    {
+      "District": 8,
+      "Republicans": 160242,
+      "Conservatives": 36772
+    },
+    {
+      "District": 9,
+      "Republicans": 162084,
+      "Conservatives": 38203
+    },
+    {
+      "District": 10,
+      "Republicans": 987110,
+      "Conservatives": 126812
+    },
+    {
+      "District": 11,
+      "Republicans": 663022,
+      "Conservatives": 66909
+    },
+    {
+      "District": 12,
+      "Republicans": 119475,
+      "Conservatives": 95423
+    },
+    {
+      "District": 13,
+      "Republicans": 274128,
+      "Conservatives": 37444
+    },
+    {
+      "District": 14,
+      "Republicans": 147350,
+      "Conservatives": 26754
+    },
+    {
+      "District": 15,
+      "Republicans": 126778,
+      "Conservatives": 10690
+    },
+    {
+      "District": 16,
+      "Republicans": 229083,
+      "Conservatives": 50150
+    },
+    {
+      "District": 17,
+      "Republicans": 102305,
+      "Conservatives": 39460
+    },
+    {
+      "District": 18,
+      "Republicans": 184825,
+      "Conservatives": 102932
+    },
+    {
+      "District": 19,
+      "Republicans": 276762,
+      "Conservatives": 218812
+    },
+    {
+      "District": 20,
+      "Republicans": 171807,
+      "Conservatives": 85052
+    },
+    {
+      "District": 21,
+      "Republicans": 137321,
+      "Conservatives": 190813
+    },
+    {
+      "District": 22,
+      "Republicans": 177863,
+      "Conservatives": 160838
+    },
+    {
+      "District": 23,
+      "Republicans": 237751,
+      "Conservatives": 240176
+    },
+    {
+      "District": 24,
+      "Republicans": 206668,
+      "Conservatives": 235666
+    },
+    {
+      "District": 25,
+      "Republicans": 100835,
+      "Conservatives": 62252
+    },
+    {
+      "District": 26,
+      "Republicans": 141786,
+      "Conservatives": 78724
     }
   ],
   "MMD5": [
     {
       "District": 1,
-      "Republican": 776833.0,
-      "Democratic": 3570949.0
+      "Republicans": 117890,
+      "Conservatives": 1080366
     },
     {
       "District": 2,
-      "Republican": 4243456.0,
-      "Democratic": 2498080.0
+      "Republicans": 212630,
+      "Conservatives": 1154242
     },
     {
       "District": 3,
-      "Republican": 1757146.0,
-      "Democratic": 336583.0
+      "Republicans": 238415,
+      "Conservatives": 1174278
     },
     {
       "District": 4,
-      "Republican": 964782.0,
-      "Democratic": 496406.0
+      "Republicans": 94740,
+      "Conservatives": 73876
     },
     {
       "District": 5,
-      "Republican": 622687.0,
-      "Democratic": 649569.0
+      "Republicans": 113158,
+      "Conservatives": 88187
     },
     {
       "District": 6,
-      "Republican": 379537.0,
-      "Democratic": 318900.0
+      "Republicans": 163926,
+      "Conservatives": 39634
+    },
+    {
+      "District": 7,
+      "Republicans": 3094182,
+      "Conservatives": 2316562
+    },
+    {
+      "District": 8,
+      "Republicans": 160242,
+      "Conservatives": 36772
+    },
+    {
+      "District": 9,
+      "Republicans": 162084,
+      "Conservatives": 38203
+    },
+    {
+      "District": 10,
+      "Republicans": 987110,
+      "Conservatives": 126812
+    },
+    {
+      "District": 11,
+      "Republicans": 663022,
+      "Conservatives": 66909
+    },
+    {
+      "District": 12,
+      "Republicans": 119475,
+      "Conservatives": 95423
+    },
+    {
+      "District": 13,
+      "Republicans": 274128,
+      "Conservatives": 37444
+    },
+    {
+      "District": 14,
+      "Republicans": 147350,
+      "Conservatives": 26754
+    },
+    {
+      "District": 15,
+      "Republicans": 126778,
+      "Conservatives": 10690
+    },
+    {
+      "District": 16,
+      "Republicans": 229083,
+      "Conservatives": 50150
+    },
+    {
+      "District": 17,
+      "Republicans": 102305,
+      "Conservatives": 39460
+    },
+    {
+      "District": 18,
+      "Republicans": 184825,
+      "Conservatives": 102932
+    },
+    {
+      "District": 19,
+      "Republicans": 276762,
+      "Conservatives": 218812
+    },
+    {
+      "District": 20,
+      "Republicans": 171807,
+      "Conservatives": 85052
+    },
+    {
+      "District": 21,
+      "Republicans": 137321,
+      "Conservatives": 190813
+    },
+    {
+      "District": 22,
+      "Republicans": 177863,
+      "Conservatives": 160838
+    },
+    {
+      "District": 23,
+      "Republicans": 237751,
+      "Conservatives": 240176
+    },
+    {
+      "District": 24,
+      "Republicans": 206668,
+      "Conservatives": 235666
+    },
+    {
+      "District": 25,
+      "Republicans": 100835,
+      "Conservatives": 62252
+    },
+    {
+      "District": 26,
+      "Republicans": 141786,
+      "Conservatives": 78724
     }
   ]
 }

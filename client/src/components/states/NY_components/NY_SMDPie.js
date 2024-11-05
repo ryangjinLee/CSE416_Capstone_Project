@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { PieChart, Pie, Cell, ResponsiveContainer, Legend, Tooltip } from 'recharts';
-import Party_Data from '../../../data/NY/pie_party.json';
+import EthnicityData from '../../../data/NY/EthnicityData.json';
 import {getData} from "../../../api";
 
 const NY_SMDPieChart = () => {
@@ -9,8 +9,8 @@ const NY_SMDPieChart = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const NYParty_Data = await getData('/ethnicity/NY');
-        console.log(NYParty_Data)
+        const NYEthnicityData = await getData('/ethnicity/NY');
+        console.log(NYEthnicityData)
       } catch (error) {
         console.error('Error fetching data:', error);
       }
@@ -19,33 +19,27 @@ const NY_SMDPieChart = () => {
 
   useEffect(() => {
     const calculatePartyTotals = () => {
-      let republican_Count = 0;
-      let democratic_Count = 0;
+      let republicanTotal = 0;
+      let democratTotal = 0;
 
-      const SMD_Data = Party_Data["SMD"]
-
-      SMD_Data.forEach(district => {
-        if (district.Republican > district.Democratic){
-          republican_Count++
-        }else{
-          democratic_Count++
-        }
+      Object.values(EthnicityData).forEach(district => {
+        republicanTotal += district.Republicans || 0;
+        democratTotal += district.Conservatives || 0;
       });
 
 
-      const total = republican_Count + democratic_Count;
-      const republicanPercentage = Math.round((republican_Count / total) * 100);
-      const democraticPercentage = Math.round((democratic_Count / total) * 100);
+      const total = republicanTotal + democratTotal;
+      const republicanPercentage = Math.round((republicanTotal / total) * 100);
+      const democratPercentage = Math.round((democratTotal / total) * 100);
 
       setPartyData([
         { name: 'Republican', value: republicanPercentage },
-        { name: 'Democratic', value: democraticPercentage },
+        { name: 'Democrat', value: democratPercentage },
       ]);
     };
 
     calculatePartyTotals();
   }, []);
-
 
 
 
@@ -65,7 +59,7 @@ const NY_SMDPieChart = () => {
   };
 
   return (
-    <div style={{ width: '100%', height: 500 }}>
+    <div style={{ width: '100%', height: 300 }}>
       <ResponsiveContainer>
         <PieChart>
           <Pie
