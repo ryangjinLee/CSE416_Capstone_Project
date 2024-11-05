@@ -98,6 +98,7 @@ const NY_Map = (props) => {
             break;
         }
         setGeoData(data.default); // Update geoData state with the loaded GeoJSON
+        console.log(data.default);
       } catch (error) {
         console.error("Error loading GeoJSON data:", error);
       }

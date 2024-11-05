@@ -51,39 +51,6 @@ const Mississippi = () => {
                       />
                       MMD:2
                     </label>
-
-                    <label className="radio-margin">
-                      <input
-                        type="radio"
-                        name="districtMethodMap"
-                        value="MMD3"
-                        checked={selectedOptionMap === "MMD3"}
-                        onChange={handleSelectChangeMap}
-                      />
-                      MMD:3
-                    </label>
-
-                    <label className="radio-margin">
-                      <input
-                        type="radio"
-                        name="districtMethodMap"
-                        value="MMD4"
-                        checked={selectedOptionMap === "MMD4"}
-                        onChange={handleSelectChangeMap}
-                      />
-                      MMD:4
-                    </label>
-
-                    <label className="radio-margin">
-                      <input
-                        type="radio"
-                        name="districtMethodMap"
-                        value="MMD5"
-                        checked={selectedOptionMap === "MMD5"}
-                        onChange={handleSelectChangeMap}
-                      />
-                      MMD:5
-                    </label>
                   </div>
                 </div>
                 <MS_Map

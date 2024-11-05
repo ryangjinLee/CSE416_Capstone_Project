@@ -35,16 +35,20 @@ const MS_Map = (props) => {
 
       // Update the selected district state
       setSelectedDistrict(districtId);
+      console.log(districtId);
 
       // Pass selected district to parent component
       props.setSelectedDistrict(districtId ? districtId : "Unknown District");
-
+      console.log(initialColors);
       // Update only the clicked district to black, all others retain their original color
       const updatedLayerOption = [
         "match",
         ["get", "properties.id"],
         ...Object.entries(initialColors)
-           .map(([id, color]) => [id, id === districtId ? "black" : color]).flat(),
+           .map(([id, color]) => {
+               console.log(`ID: ${id===districtId}, Color: ${color}`); // Debugging line to inspect values
+               return [id, id === districtId ? "black" : color];
+           }).flat(),
         "orange",
       ];
 
@@ -65,7 +69,9 @@ const MS_Map = (props) => {
             data = await import("../../../data/MS/MississippiConDist.json"); // Default to SMD
             break;
         }
+        
         setGeoData(data.default); // Update geoData state with the loaded GeoJSON
+        console.log(data.default);
       } catch (error) {
         console.error("Error loading GeoJSON data:", error);
       }
