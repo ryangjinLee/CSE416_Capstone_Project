@@ -1,0 +1,1383 @@
+{
+  "SMD": {
+    "total": {
+      "White": 0.56,
+      "Hispanic": 0.19,
+      "Black": 0.15,
+      "Asian": 0.1
+    },
+    "district": [
+      {
+          "District": 1,
+          "Total_population": 755464,
+          "White": 0.643,
+          "Black": 0.018,
+          "Alaska_Native": 0.018,
+          "Asian": 0.061,
+          "Pacific_Islander": 0.002,
+          "Other": 0.12,
+          "Multiracial": 0.138
+      },
+      {
+          "District": 2,
+          "Total_population": 743918,
+          "White": 0.669,
+          "Black": 0.017,
+          "Alaska_Native": 0.02,
+          "Asian": 0.043,
+          "Pacific_Islander": 0.002,
+          "Other": 0.089,
+          "Multiracial": 0.161
+      },
+      {
+          "District": 3,
+          "Total_population": 788130,
+          "White": 0.696,
+          "Black": 0.018,
+          "Alaska_Native": 0.008,
+          "Asian": 0.091,
+          "Pacific_Islander": 0.002,
+          "Other": 0.047,
+          "Multiracial": 0.138
+      },
+      {
+          "District": 4,
+          "Total_population": 761543,
+          "White": 0.553,
+          "Black": 0.033,
+          "Alaska_Native": 0.013,
+          "Asian": 0.094,
+          "Pacific_Islander": 0.002,
+          "Other": 0.155,
+          "Multiracial": 0.149
+      },
+      {
+          "District": 5,
+          "Total_population": 782849,
+          "White": 0.606,
+          "Black": 0.027,
+          "Alaska_Native": 0.016,
+          "Asian": 0.061,
+          "Pacific_Islander": 0.004,
+          "Other": 0.102,
+          "Multiracial": 0.184
+      },
+      {
+          "District": 6,
+          "Total_population": 747786,
+          "White": 0.483,
+          "Black": 0.093,
+          "Alaska_Native": 0.009,
+          "Asian": 0.119,
+          "Pacific_Islander": 0.008,
+          "Other": 0.126,
+          "Multiracial": 0.162
+      },
+      {
+          "District": 7,
+          "Total_population": 762568,
+          "White": 0.344,
+          "Black": 0.099,
+          "Alaska_Native": 0.017,
+          "Asian": 0.238,
+          "Pacific_Islander": 0.018,
+          "Other": 0.135,
+          "Multiracial": 0.148
+      },
+      {
+          "District": 8,
+          "Total_population": 752009,
+          "White": 0.26,
+          "Black": 0.135,
+          "Alaska_Native": 0.013,
+          "Asian": 0.191,
+          "Pacific_Islander": 0.01,
+          "Other": 0.206,
+          "Multiracial": 0.186
+      },
+      {
+          "District": 9,
+          "Total_population": 770568,
+          "White": 0.325,
+          "Black": 0.073,
+          "Alaska_Native": 0.018,
+          "Asian": 0.181,
+          "Pacific_Islander": 0.006,
+          "Other": 0.222,
+          "Multiracial": 0.176
+      },
+      {
+          "District": 10,
+          "Total_population": 746449,
+          "White": 0.49,
+          "Black": 0.049,
+          "Alaska_Native": 0.008,
+          "Asian": 0.23,
+          "Pacific_Islander": 0.002,
+          "Other": 0.075,
+          "Multiracial": 0.147
+      },
+      {
+          "District": 11,
+          "Total_population": 701735,
+          "White": 0.429,
+          "Black": 0.048,
+          "Alaska_Native": 0.008,
+          "Asian": 0.326,
+          "Pacific_Islander": 0.003,
+          "Other": 0.066,
+          "Multiracial": 0.12
+      },
+      {
+          "District": 12,
+          "Total_population": 734171,
+          "White": 0.342,
+          "Black": 0.148,
+          "Alaska_Native": 0.011,
+          "Asian": 0.208,
+          "Pacific_Islander": 0.004,
+          "Other": 0.145,
+          "Multiracial": 0.142
+      },
+      {
+          "District": 13,
+          "Total_population": 784322,
+          "White": 0.262,
+          "Black": 0.025,
+          "Alaska_Native": 0.018,
+          "Asian": 0.072,
+          "Pacific_Islander": 0.008,
+          "Other": 0.358,
+          "Multiracial": 0.256
+      },
+      {
+          "District": 14,
+          "Total_population": 725962,
+          "White": 0.272,
+          "Black": 0.054,
+          "Alaska_Native": 0.01,
+          "Asian": 0.404,
+          "Pacific_Islander": 0.012,
+          "Other": 0.137,
+          "Multiracial": 0.111
+      },
+      {
+          "District": 15,
+          "Total_population": 721009,
+          "White": 0.301,
+          "Black": 0.027,
+          "Alaska_Native": 0.013,
+          "Asian": 0.386,
+          "Pacific_Islander": 0.012,
+          "Other": 0.137,
+          "Multiracial": 0.123
+      },
+      {
+          "District": 16,
+          "Total_population": 748899,
+          "White": 0.432,
+          "Black": 0.016,
+          "Alaska_Native": 0.008,
+          "Asian": 0.316,
+          "Pacific_Islander": 0.008,
+          "Other": 0.092,
+          "Multiracial": 0.127
+      },
+      {
+          "District": 17,
+          "Total_population": 744019,
+          "White": 0.215,
+          "Black": 0.026,
+          "Alaska_Native": 0.006,
+          "Asian": 0.586,
+          "Pacific_Islander": 0.001,
+          "Other": 0.086,
+          "Multiracial": 0.082
+      },
+      {
+          "District": 18,
+          "Total_population": 743048,
+          "White": 0.24,
+          "Black": 0.019,
+          "Alaska_Native": 0.021,
+          "Asian": 0.108,
+          "Pacific_Islander": 0.004,
+          "Other": 0.364,
+          "Multiracial": 0.244
+      },
+      {
+          "District": 19,
+          "Total_population": 725878,
+          "White": 0.5,
+          "Black": 0.022,
+          "Alaska_Native": 0.008,
+          "Asian": 0.2,
+          "Pacific_Islander": 0.005,
+          "Other": 0.115,
+          "Multiracial": 0.151
+      },
+      {
+          "District": 20,
+          "Total_population": 794847,
+          "White": 0.528,
+          "Black": 0.034,
+          "Alaska_Native": 0.013,
+          "Asian": 0.086,
+          "Pacific_Islander": 0.002,
+          "Other": 0.138,
+          "Multiracial": 0.198
+      },
+      {
+          "District": 21,
+          "Total_population": 749912,
+          "White": 0.277,
+          "Black": 0.04,
+          "Alaska_Native": 0.02,
+          "Asian": 0.095,
+          "Pacific_Islander": 0.001,
+          "Other": 0.318,
+          "Multiracial": 0.249
+      },
+      {
+          "District": 21,
+          "Total_population": 749912,
+          "White": 0.277,
+          "Black": 0.04,
+          "Alaska_Native": 0.02,
+          "Asian": 0.095,
+          "Pacific_Islander": 0.001,
+          "Other": 0.318,
+          "Multiracial": 0.249
+      },
+      {
+          "District": 22,
+          "Total_population": 753645,
+          "White": 0.649,
+          "Black": 0.019,
+          "Alaska_Native": 0.018,
+          "Asian": 0.057,
+          "Pacific_Islander": 0.003,
+          "Other": 0.104,
+          "Multiracial": 0.149
+      },
+      {
+          "District": 23,
+          "Total_population": 730476,
+          "White": 0.493,
+          "Black": 0.049,
+          "Alaska_Native": 0.015,
+          "Asian": 0.186,
+          "Pacific_Islander": 0.003,
+          "Other": 0.1,
+          "Multiracial": 0.151
+      },
+      {
+          "District": 24,
+          "Total_population": 736951,
+          "White": 0.557,
+          "Black": 0.026,
+          "Alaska_Native": 0.013,
+          "Asian": 0.176,
+          "Pacific_Islander": 0.003,
+          "Other": 0.079,
+          "Multiracial": 0.149
+      },
+      {
+          "District": 25,
+          "Total_population": 763897,
+          "White": 0.607,
+          "Black": 0.029,
+          "Alaska_Native": 0.013,
+          "Asian": 0.114,
+          "Pacific_Islander": 0.002,
+          "Other": 0.082,
+          "Multiracial": 0.146
+      },
+      {
+          "District": 26,
+          "Total_population": 764211,
+          "White": 0.598,
+          "Black": 0.023,
+          "Alaska_Native": 0.01,
+          "Asian": 0.166,
+          "Pacific_Islander": 0.002,
+          "Other": 0.074,
+          "Multiracial": 0.127
+      },
+      {
+          "District": 27,
+          "Total_population": 740136,
+          "White": 0.548,
+          "Black": 0.033,
+          "Alaska_Native": 0.014,
+          "Asian": 0.13,
+          "Pacific_Islander": 0.004,
+          "Other": 0.099,
+          "Multiracial": 0.159
+      },
+      {
+          "District": 28,
+          "Total_population": 752991,
+          "White": 0.595,
+          "Black": 0.025,
+          "Alaska_Native": 0.014,
+          "Asian": 0.133,
+          "Pacific_Islander": 0.004,
+          "Other": 0.079,
+          "Multiracial": 0.147
+      },
+      {
+          "District": 29,
+          "Total_population": 739512,
+          "White": 0.569,
+          "Black": 0.022,
+          "Alaska_Native": 0.014,
+          "Asian": 0.155,
+          "Pacific_Islander": 0.002,
+          "Other": 0.079,
+          "Multiracial": 0.159
+      },
+      {
+          "District": 30,
+          "Total_population": 749645,
+          "White": 0.59,
+          "Black": 0.03,
+          "Alaska_Native": 0.016,
+          "Asian": 0.105,
+          "Pacific_Islander": 0.003,
+          "Other": 0.089,
+          "Multiracial": 0.167
+      },
+      {
+          "District": 31,
+          "Total_population": 760182,
+          "White": 0.557,
+          "Black": 0.024,
+          "Alaska_Native": 0.016,
+          "Asian": 0.133,
+          "Pacific_Islander": 0.003,
+          "Other": 0.081,
+          "Multiracial": 0.163
+      },
+      {
+          "District": 32,
+          "Total_population": 748126,
+          "White": 0.493,
+          "Black": 0.028,
+          "Alaska_Native": 0.013,
+          "Asian": 0.163,
+          "Pacific_Islander": 0.002,
+          "Other": 0.1,
+          "Multiracial": 0.17
+      },
+      {
+          "District": 33,
+          "Total_population": 735016,
+          "White": 0.541,
+          "Black": 0.025,
+          "Alaska_Native": 0.015,
+          "Asian": 0.153,
+          "Pacific_Islander": 0.002,
+          "Other": 0.079,
+          "Multiracial": 0.172
+      },
+      {
+          "District": 34,
+          "Total_population": 765012,
+          "White": 0.57,
+          "Black": 0.022,
+          "Alaska_Native": 0.018,
+          "Asian": 0.141,
+          "Pacific_Islander": 0.003,
+          "Other": 0.089,
+          "Multiracial": 0.145
+      },
+      {
+          "District": 35,
+          "Total_population": 754711,
+          "White": 0.563,
+          "Black": 0.026,
+          "Alaska_Native": 0.016,
+          "Asian": 0.143,
+          "Pacific_Islander": 0.003,
+          "Other": 0.077,
+          "Multiracial": 0.173
+      },
+      {
+          "District": 36,
+          "Total_population": 762433,
+          "White": 0.523,
+          "Black": 0.031,
+          "Alaska_Native": 0.014,
+          "Asian": 0.156,
+          "Pacific_Islander": 0.002,
+          "Other": 0.075,
+          "Multiracial": 0.17
+      },
+      {
+          "District": 37,
+          "Total_population": 772006,
+          "White": 0.507,
+          "Black": 0.028,
+          "Alaska_Native": 0.016,
+          "Asian": 0.171,
+          "Pacific_Islander": 0.003,
+          "Other": 0.085,
+          "Multiracial": 0.163
+      },
+      {
+          "District": 38,
+          "Total_population": 768382,
+          "White": 0.525,
+          "Black": 0.031,
+          "Alaska_Native": 0.014,
+          "Asian": 0.162,
+          "Pacific_Islander": 0.002,
+          "Other": 0.078,
+          "Multiracial": 0.188
+      },
+      {
+          "District": 39,
+          "Total_population": 758424,
+          "White": 0.5,
+          "Black": 0.036,
+          "Alaska_Native": 0.013,
+          "Asian": 0.173,
+          "Pacific_Islander": 0.003,
+          "Other": 0.079,
+          "Multiracial": 0.2
+      },
+      {
+          "District": 40,
+          "Total_population": 775438,
+          "White": 0.541,
+          "Black": 0.032,
+          "Alaska_Native": 0.016,
+          "Asian": 0.165,
+          "Pacific_Islander": 0.002,
+          "Other": 0.085,
+          "Multiracial": 0.158
+      },
+      {
+          "District": 41,
+          "Total_population": 767198,
+          "White": 0.581,
+          "Black": 0.026,
+          "Alaska_Native": 0.017,
+          "Asian": 0.151,
+          "Pacific_Islander": 0.002,
+          "Other": 0.071,
+          "Multiracial": 0.151
+      },
+      {
+          "District": 42,
+          "Total_population": 743981,
+          "White": 0.581,
+          "Black": 0.029,
+          "Alaska_Native": 0.014,
+          "Asian": 0.152,
+          "Pacific_Islander": 0.002,
+          "Other": 0.078,
+          "Multiracial": 0.15
+      },
+      {
+          "District": 43,
+          "Total_population": 736845,
+          "White": 0.57,
+          "Black": 0.025,
+          "Alaska_Native": 0.014,
+          "Asian": 0.172,
+          "Pacific_Islander": 0.002,
+          "Other": 0.076,
+          "Multiracial": 0.15
+      },
+      {
+          "District": 44,
+          "Total_population": 755931,
+          "White": 0.548,
+          "Black": 0.025,
+          "Alaska_Native": 0.013,
+          "Asian": 0.173,
+          "Pacific_Islander": 0.002,
+          "Other": 0.084,
+          "Multiracial": 0.153
+      },
+      {
+          "District": 45,
+          "Total_population": 749356,
+          "White": 0.545,
+          "Black": 0.032,
+          "Alaska_Native": 0.014,
+          "Asian": 0.162,
+          "Pacific_Islander": 0.002,
+          "Other": 0.082,
+          "Multiracial": 0.153
+      },
+      {
+          "District": 46,
+          "Total_population": 742393,
+          "White": 0.567,
+          "Black": 0.027,
+          "Alaska_Native": 0.014,
+          "Asian": 0.156,
+          "Pacific_Islander": 0.002,
+          "Other": 0.08,
+          "Multiracial": 0.153
+      },
+      {
+          "District": 47,
+          "Total_population": 768541,
+          "White": 0.576,
+          "Black": 0.027,
+          "Alaska_Native": 0.015,
+          "Asian": 0.146,
+          "Pacific_Islander": 0.002,
+          "Other": 0.08,
+          "Multiracial": 0.154
+      },
+      {
+          "District": 48,
+          "Total_population": 759843,
+          "White": 0.526,
+          "Black": 0.026,
+          "Alaska_Native": 0.013,
+          "Asian": 0.177,
+          "Pacific_Islander": 0.002,
+          "Other": 0.085,
+          "Multiracial": 0.165
+      },
+      {
+          "District": 49,
+          "Total_population": 762951,
+          "White": 0.555,
+          "Black": 0.025,
+          "Alaska_Native": 0.013,
+          "Asian": 0.17,
+          "Pacific_Islander": 0.002,
+          "Other": 0.077,
+          "Multiracial": 0.155
+      },
+      {
+          "District": 50,
+          "Total_population": 750314,
+          "White": 0.549,
+          "Black": 0.029,
+          "Alaska_Native": 0.015,
+          "Asian": 0.162,
+          "Pacific_Islander": 0.002,
+          "Other": 0.083,
+          "Multiracial": 0.159
+      },
+      {
+          "District": 51,
+          "Total_population": 747212,
+          "White": 0.585,
+          "Black": 0.028,
+          "Alaska_Native": 0.015,
+          "Asian": 0.138,
+          "Pacific_Islander": 0.003,
+          "Other": 0.083,
+          "Multiracial": 0.151
+      },
+      {
+          "District": 52,
+          "Total_population": 754892,
+          "White": 0.535,
+          "Black": 0.025,
+          "Alaska_Native": 0.013,
+          "Asian": 0.166,
+          "Pacific_Islander": 0.002,
+          "Other": 0.085,
+          "Multiracial": 0.174
+      }
+  ]
+  },
+  "MMD2": {
+    "total": {
+      "White": 0.56,
+      "Hispanic": 0.19,
+      "Black": 0.15,
+      "Asian": 0.1
+    },
+    "district": [
+      {
+          "District": 1,
+          "Total_population": 1499382.0,
+          "White": 0.655672163918041,
+          "Black": 0.01749125437281359,
+          "Alaska_Native": 0.018990504747626185,
+          "Asian": 0.05197401299350324,
+          "Pacific_Islander": 0.0019990004997501244,
+          "Other": 0.104447776111944,
+          "Multiracial": 0.14942528735632182
+      },
+      {
+          "District": 2,
+          "Total_population": 1509329.0,
+          "White": 0.5182591295647824,
+          "Black": 0.06303151575787894,
+          "Alaska_Native": 0.011005502751375686,
+          "Asian": 0.10655327663831915,
+          "Pacific_Islander": 0.0050025012506253125,
+          "Other": 0.1405702851425713,
+          "Multiracial": 0.1555777888944472
+      },
+      {
+          "District": 3,
+          "Total_population": 1570979.0,
+          "White": 0.651,
+          "Black": 0.0225,
+          "Alaska_Native": 0.012,
+          "Asian": 0.076,
+          "Pacific_Islander": 0.003,
+          "Other": 0.0745,
+          "Multiracial": 0.161
+      },
+      {
+          "District": 4,
+          "Total_population": 1533136.0,
+          "White": 0.3345,
+          "Black": 0.086,
+          "Alaska_Native": 0.0175,
+          "Asian": 0.2095,
+          "Pacific_Islander": 0.012,
+          "Other": 0.1785,
+          "Multiracial": 0.16199999999999998
+      },
+      {
+          "District": 5,
+          "Total_population": 1498458.0,
+          "White": 0.37462537462537465,
+          "Black": 0.09190809190809192,
+          "Alaska_Native": 0.01048951048951049,
+          "Asian": 0.21028971028971033,
+          "Pacific_Islander": 0.005994005994005995,
+          "Other": 0.14035964035964035,
+          "Multiracial": 0.16633366633366634
+      },
+      {
+          "District": 6,
+          "Total_population": 1435906.0,
+          "White": 0.3855,
+          "Black": 0.098,
+          "Alaska_Native": 0.0095,
+          "Asian": 0.267,
+          "Pacific_Islander": 0.0035,
+          "Other": 0.1055,
+          "Multiracial": 0.131
+      },
+      {
+          "District": 7,
+          "Total_population": 1469908.0,
+          "White": 0.3668668668668668,
+          "Black": 0.02152152152152152,
+          "Alaska_Native": 0.010510510510510508,
+          "Asian": 0.3513513513513513,
+          "Pacific_Islander": 0.01001001001001001,
+          "Other": 0.11461461461461461,
+          "Multiracial": 0.1251251251251251
+      },
+      {
+          "District": 8,
+          "Total_population": 1469981.0,
+          "White": 0.2432567432567433,
+          "Black": 0.03996003996003997,
+          "Alaska_Native": 0.007992007992007994,
+          "Asian": 0.4945054945054946,
+          "Pacific_Islander": 0.006493506493506495,
+          "Other": 0.1113886113886114,
+          "Multiracial": 0.09640359640359641
+      },
+      {
+          "District": 9,
+          "Total_population": 1468926.0,
+          "White": 0.36981509245377314,
+          "Black": 0.02048975512243878,
+          "Alaska_Native": 0.014492753623188408,
+          "Asian": 0.15392303848075964,
+          "Pacific_Islander": 0.004497751124437782,
+          "Other": 0.23938030984507747,
+          "Multiracial": 0.19740129935032485
+      },
+      {
+          "District": 10,
+          "Total_population": 2284146.0,
+          "White": 0.2720906968989663,
+          "Black": 0.03501167055685229,
+          "Alaska_Native": 0.019339779926642212,
+          "Asian": 0.0873624541513838,
+          "Pacific_Islander": 0.0033344448149383132,
+          "Other": 0.33144381460486827,
+          "Multiracial": 0.25141713904634877
+      },
+      {
+          "District": 11,
+          "Total_population": 1548492.0,
+          "White": 0.5890890890890892,
+          "Black": 0.026526526526526532,
+          "Alaska_Native": 0.015515515515515518,
+          "Asian": 0.07157157157157157,
+          "Pacific_Islander": 0.002502502502502503,
+          "Other": 0.12112112112112113,
+          "Multiracial": 0.17367367367367367
+      },
+      {
+          "District": 12,
+          "Total_population": 1501162.0,
+          "White": 0.5766350474288567,
+          "Black": 0.024463305042436344,
+          "Alaska_Native": 0.01148277583624563,
+          "Asian": 0.17074388417373937,
+          "Pacific_Islander": 0.002496255616575137,
+          "Other": 0.0763854218671992,
+          "Multiracial": 0.13779331003494757
+      },
+      {
+          "District": 13,
+          "Total_population": 1470612.0,
+          "White": 0.5246975806451613,
+          "Black": 0.04133064516129033,
+          "Alaska_Native": 0.014616935483870967,
+          "Asian": 0.1592741935483871,
+          "Pacific_Islander": 0.003528225806451613,
+          "Other": 0.10030241935483872,
+          "Multiracial": 0.15625
+      },
+      {
+          "District": 14,
+          "Total_population": 1523740.0,
+          "White": 0.5702063412179165,
+          "Black": 0.027679919476597887,
+          "Alaska_Native": 0.013085052843482638,
+          "Asian": 0.14645193759436337,
+          "Pacific_Islander": 0.0020130850528434826,
+          "Other": 0.08404630095621542,
+          "Multiracial": 0.15651736285858078
+      },
+      {
+          "District": 15,
+          "Total_population": 1502104.0,
+          "White": 0.5591612581128308,
+          "Black": 0.026460309535696457,
+          "Alaska_Native": 0.013979031452820766,
+          "Asian": 0.15177234148776836,
+          "Pacific_Islander": 0.002496255616575137,
+          "Other": 0.08387418871692462,
+          "Multiracial": 0.1622566150773839
+      },
+      {
+          "District": 16,
+          "Total_population": 1513265.0,
+          "White": 0.5531062124248497,
+          "Black": 0.027054108216432865,
+          "Alaska_Native": 0.014028056112224446,
+          "Asian": 0.16633266533066132,
+          "Pacific_Islander": 0.002004008016032064,
+          "Other": 0.08016032064128256,
+          "Multiracial": 0.15731462925851702
+      },
+      {
+          "District": 17,
+          "Total_population": 1525622.0,
+          "White": 0.5396904643035447,
+          "Black": 0.030953569645531708,
+          "Alaska_Native": 0.014977533699450825,
+          "Asian": 0.1617573639540689,
+          "Pacific_Islander": 0.002496255616575138,
+          "Other": 0.07488766849725413,
+          "Multiracial": 0.17523714428357465
+      },
+      {
+          "District": 18,
+          "Total_population": 1543979.0,
+          "White": 0.5587793896948474,
+          "Black": 0.029514757378689346,
+          "Alaska_Native": 0.01550775387693847,
+          "Asian": 0.15557778889444723,
+          "Pacific_Islander": 0.0020010005002501254,
+          "Other": 0.08254127063531767,
+          "Multiracial": 0.15607803901950976
+      },
+      {
+          "District": 19,
+          "Total_population": 1488007.0,
+          "White": 0.5725806451612904,
+          "Black": 0.02520161290322581,
+          "Alaska_Native": 0.014616935483870967,
+          "Asian": 0.14415322580645162,
+          "Pacific_Islander": 0.0030241935483870967,
+          "Other": 0.07963709677419355,
+          "Multiracial": 0.16078629032258063
+      },
+      {
+          "District": 20,
+          "Total_population": 1514893.0,
+          "White": 0.5662285136501517,
+          "Black": 0.025278058645096056,
+          "Alaska_Native": 0.016177957532861473,
+          "Asian": 0.13953488372093023,
+          "Pacific_Islander": 0.0030333670374115265,
+          "Other": 0.07987866531850353,
+          "Multiracial": 0.16986855409504548
+      },
+      {
+          "District": 21,
+          "Total_population": 1491749.0,
+          "White": 0.5590749120160885,
+          "Black": 0.02966314731020613,
+          "Alaska_Native": 0.014077425842131725,
+          "Asian": 0.15987933634992457,
+          "Pacific_Islander": 0.002011060834590246,
+          "Other": 0.08144796380090498,
+          "Multiracial": 0.15384615384615383
+      },
+      {
+          "District": 22,
+          "Total_population": 1512363.0,
+          "White": 0.551345962113659,
+          "Black": 0.029910269192422734,
+          "Alaska_Native": 0.01395812562313061,
+          "Asian": 0.156530408773679,
+          "Pacific_Islander": 0.0019940179461615157,
+          "Other": 0.07776669990029911,
+          "Multiracial": 0.16849451645064806
+      },
+      {
+          "District": 23,
+          "Total_population": 1487638.0,
+          "White": 0.5393600812595225,
+          "Black": 0.02539360081259523,
+          "Alaska_Native": 0.013712544438801422,
+          "Asian": 0.16150330116810566,
+          "Pacific_Islander": 0.0020314880650076183,
+          "Other": 0.09090909090909091,
+          "Multiracial": 0.1670898933468766
+      },
+      {
+          "District": 24,
+          "Total_population": 1514657.0,
+          "White": 0.5835010060362172,
+          "Black": 0.026156941649899394,
+          "Alaska_Native": 0.01710261569416499,
+          "Asian": 0.12374245472837023,
+          "Pacific_Islander": 0.003018108651911469,
+          "Other": 0.08953722334004023,
+          "Multiracial": 0.15694164989939638
+      },
+      {
+          "District": 25,
+          "Total_population": 1534439.0,
+          "White": 0.5298353909465021,
+          "Black": 0.03034979423868313,
+          "Alaska_Native": 0.0154320987654321,
+          "Asian": 0.1682098765432099,
+          "Pacific_Islander": 0.0025720164609053502,
+          "Other": 0.08230452674897121,
+          "Multiracial": 0.17129629629629634
+      },
+      {
+          "District": 26,
+          "Total_population": 1492776.0,
+          "White": 0.5570503238664674,
+          "Black": 0.024912805181863482,
+          "Alaska_Native": 0.01345291479820628,
+          "Asian": 0.171898355754858,
+          "Pacific_Islander": 0.0019930244145490786,
+          "Other": 0.07972097658196314,
+          "Multiracial": 0.1509715994020927
+      }
+  ]
+  },
+  "MMD3": {
+    "total": {
+      "White": 0.56,
+      "Hispanic": 0.19,
+      "Black": 0.15,
+      "Asian": 0.1
+    },
+    "district": [
+      {
+          "District": 1,
+          "Total_population": 2260925.0,
+          "White": 0.6216666666666667,
+          "Black": 0.02266666666666667,
+          "Alaska_Native": 0.016999999999999998,
+          "Asian": 0.066,
+          "Pacific_Islander": 0.002,
+          "Other": 0.12133333333333333,
+          "Multiracial": 0.14933333333333335
+      },
+      {
+          "District": 2,
+          "Total_population": 2298484.0,
+          "White": 0.507835945315105,
+          "Black": 0.07002334111370458,
+          "Alaska_Native": 0.011337112370790265,
+          "Asian": 0.14938312770923642,
+          "Pacific_Islander": 0.009336445481827277,
+          "Other": 0.10270090030010004,
+          "Multiracial": 0.14938312770923645
+      },
+      {
+          "District": 3,
+          "Total_population": 2232629.0,
+          "White": 0.3637574950033311,
+          "Black": 0.11059293804130578,
+          "Alaska_Native": 0.010659560293137908,
+          "Asian": 0.209526982011992,
+          "Pacific_Islander": 0.005329780146568954,
+          "Other": 0.14190539640239838,
+          "Multiracial": 0.1582278481012658
+      },
+      {
+          "District": 4,
+          "Total_population": 2171643.0,
+          "White": 0.3875917278185457,
+          "Black": 0.03035356904603069,
+          "Alaska_Native": 0.009673115410273516,
+          "Asian": 0.34289526350900607,
+          "Pacific_Islander": 0.007671781187458306,
+          "Other": 0.09839893262174786,
+          "Multiracial": 0.12341561040693796
+      },
+      {
+          "District": 5,
+          "Total_population": 2337739.0,
+          "White": 0.3976666666666666,
+          "Black": 0.04166666666666666,
+          "Alaska_Native": 0.017333333333333333,
+          "Asian": 0.10466666666666666,
+          "Pacific_Islander": 0.006,
+          "Other": 0.22733333333333328,
+          "Multiracial": 0.2053333333333333
+      },
+      {
+          "District": 6,
+          "Total_population": 2213029.0,
+          "White": 0.24217188540972687,
+          "Black": 0.032978014656895406,
+          "Alaska_Native": 0.01232511658894071,
+          "Asian": 0.3657561625582945,
+          "Pacific_Islander": 0.005662891405729515,
+          "Other": 0.1955363091272485,
+          "Multiracial": 0.14556962025316456
+      },
+      {
+          "District": 7,
+          "Total_population": 3048316.0,
+          "White": 0.4329664832416208,
+          "Black": 0.03326663331665833,
+          "Alaska_Native": 0.01775887943971986,
+          "Asian": 0.08329164582291146,
+          "Pacific_Islander": 0.0017508754377188595,
+          "Other": 0.21960980490245122,
+          "Multiracial": 0.21135567783891945
+      },
+      {
+          "District": 8,
+          "Total_population": 2227040.0,
+          "White": 0.5509320905459388,
+          "Black": 0.02363515312916113,
+          "Alaska_Native": 0.010319573901464717,
+          "Asian": 0.18042609853528635,
+          "Pacific_Islander": 0.0033288948069241024,
+          "Other": 0.08921438082556594,
+          "Multiracial": 0.14214380825565917
+      },
+      {
+          "District": 9,
+          "Total_population": 2223603.0,
+          "White": 0.548809124454881,
+          "Black": 0.0358939953035894,
+          "Alaska_Native": 0.01442468970144247,
+          "Asian": 0.15062059711506207,
+          "Pacific_Islander": 0.0036900369003690036,
+          "Other": 0.09325729620932574,
+          "Multiracial": 0.15330426031533043
+      },
+      {
+          "District": 10,
+          "Total_population": 2237283.0,
+          "White": 0.5564163017851127,
+          "Black": 0.026945099360053893,
+          "Alaska_Native": 0.014482990906028965,
+          "Asian": 0.14247221286628498,
+          "Pacific_Islander": 0.0023576961940047153,
+          "Other": 0.09026608285618054,
+          "Multiracial": 0.16705961603233413
+      },
+      {
+          "District": 11,
+          "Total_population": 2271284.0,
+          "White": 0.5418218760582457,
+          "Black": 0.028445648493057897,
+          "Alaska_Native": 0.014900101591601756,
+          "Asian": 0.1689806975956654,
+          "Pacific_Islander": 0.002370470707754825,
+          "Other": 0.07991872671859124,
+          "Multiracial": 0.16356247883508293
+      },
+      {
+          "District": 12,
+          "Total_population": 2264924.0,
+          "White": 0.5678475935828877,
+          "Black": 0.025401069518716585,
+          "Alaska_Native": 0.015040106951871659,
+          "Asian": 0.1557486631016043,
+          "Pacific_Islander": 0.0023395721925133692,
+          "Other": 0.08389037433155082,
+          "Multiracial": 0.14973262032085563
+      },
+      {
+          "District": 13,
+          "Total_population": 2249909.0,
+          "White": 0.5602023608768971,
+          "Black": 0.025295109612141653,
+          "Alaska_Native": 0.01585160202360877,
+          "Asian": 0.14468802698145028,
+          "Pacific_Islander": 0.0026981450252951096,
+          "Other": 0.07993254637436763,
+          "Multiracial": 0.17133220910623947
+      },
+      {
+          "District": 14,
+          "Total_population": 2260131.0,
+          "White": 0.5476748076279693,
+          "Black": 0.03011040481766477,
+          "Alaska_Native": 0.014051522248243561,
+          "Asian": 0.16058882569421212,
+          "Pacific_Islander": 0.0020073603211776514,
+          "Other": 0.08029441284710606,
+          "Multiracial": 0.16527266644362665
+      },
+      {
+          "District": 15,
+          "Total_population": 2306930.0,
+          "White": 0.5580774365821095,
+          "Black": 0.02803738317757009,
+          "Alaska_Native": 0.014686248331108143,
+          "Asian": 0.16054739652870492,
+          "Pacific_Islander": 0.0020026702269692926,
+          "Other": 0.08077436582109479,
+          "Multiracial": 0.15587449933244324
+      },
+      {
+          "District": 16,
+          "Total_population": 2252418.0,
+          "White": 0.555962691538974,
+          "Black": 0.027315123251165887,
+          "Alaska_Native": 0.014323784143904061,
+          "Asian": 0.1552298467688208,
+          "Pacific_Islander": 0.002331778814123917,
+          "Other": 0.08361092604930045,
+          "Multiracial": 0.16122584943371085
+      },
+      {
+          "District": 17,
+          "Total_population": 1525622.0,
+          "White": 0.5396904643035447,
+          "Black": 0.030953569645531708,
+          "Alaska_Native": 0.014977533699450825,
+          "Asian": 0.1617573639540689,
+          "Pacific_Islander": 0.002496255616575138,
+          "Other": 0.07488766849725413,
+          "Multiracial": 0.17523714428357465
+      },
+      {
+          "District": 18,
+          "Total_population": 1523740.0,
+          "White": 0.5702063412179165,
+          "Black": 0.027679919476597887,
+          "Alaska_Native": 0.013085052843482638,
+          "Asian": 0.14645193759436337,
+          "Pacific_Islander": 0.0020130850528434826,
+          "Other": 0.08404630095621542,
+          "Multiracial": 0.15651736285858078
+      }
+  ]
+  },
+  "MMD4": {
+    "total": {
+      "White": 0.56,
+      "Hispanic": 0.19,
+      "Black": 0.15,
+      "Asian": 0.1
+    },
+    "district": [
+      {
+          "District": 1,
+          "Total_population": 3008711.0,
+          "White": 0.587,
+          "Black": 0.040249999999999994,
+          "Alaska_Native": 0.014999999999999996,
+          "Asian": 0.07924999999999999,
+          "Pacific_Islander": 0.003499999999999999,
+          "Other": 0.12249999999999997,
+          "Multiracial": 0.1525
+      },
+      {
+          "District": 2,
+          "Total_population": 3104115.0,
+          "White": 0.4927500000000001,
+          "Black": 0.05425000000000002,
+          "Alaska_Native": 0.014750000000000003,
+          "Asian": 0.14275000000000002,
+          "Pacific_Islander": 0.0075000000000000015,
+          "Other": 0.12650000000000003,
+          "Multiracial": 0.1615
+      },
+      {
+          "District": 3,
+          "Total_population": 2934364.0,
+          "White": 0.3800599700149925,
+          "Black": 0.09495252373813091,
+          "Alaska_Native": 0.009995002498750622,
+          "Asian": 0.23863068465767115,
+          "Pacific_Islander": 0.004747626186906546,
+          "Other": 0.12293853073463266,
+          "Multiracial": 0.1486756621689155
+      },
+      {
+          "District": 4,
+          "Total_population": 2939889.0,
+          "White": 0.305,
+          "Black": 0.03075,
+          "Alaska_Native": 0.00925,
+          "Asian": 0.42300000000000004,
+          "Pacific_Islander": 0.00825,
+          "Other": 0.11299999999999999,
+          "Multiracial": 0.11075
+      },
+      {
+          "District": 5,
+          "Total_population": 3753072.0,
+          "White": 0.31120000000000003,
+          "Black": 0.029200000000000004,
+          "Alaska_Native": 0.017400000000000002,
+          "Asian": 0.11399999999999999,
+          "Pacific_Islander": 0.0038000000000000004,
+          "Other": 0.29460000000000003,
+          "Multiracial": 0.2298
+      },
+      {
+          "District": 6,
+          "Total_population": 3049654.0,
+          "White": 0.582854286428393,
+          "Black": 0.02549362659335167,
+          "Alaska_Native": 0.013496625843539117,
+          "Asian": 0.12121969507623095,
+          "Pacific_Islander": 0.0024993751562109477,
+          "Other": 0.09872531867033243,
+          "Multiracial": 0.15571107223194203
+      },
+      {
+          "District": 7,
+          "Total_population": 2994352.0,
+          "White": 0.5474691513472677,
+          "Black": 0.03450012591286829,
+          "Alaska_Native": 0.013850415512465368,
+          "Asian": 0.15285822211029962,
+          "Pacific_Islander": 0.0027700831024930744,
+          "Other": 0.0921682195920423,
+          "Multiracial": 0.15638378242256354
+      },
+      {
+          "District": 8,
+          "Total_population": 3015369.0,
+          "White": 0.5561390347586896,
+          "Black": 0.026756689172293072,
+          "Alaska_Native": 0.0140035008752188,
+          "Asian": 0.15903975993998498,
+          "Pacific_Islander": 0.002250562640660165,
+          "Other": 0.08202050512628156,
+          "Multiracial": 0.1597899474868717
+      },
+      {
+          "District": 9,
+          "Total_population": 3069601.0,
+          "White": 0.5492253873063468,
+          "Black": 0.03023488255872064,
+          "Alaska_Native": 0.015242378810594703,
+          "Asian": 0.1586706646676662,
+          "Pacific_Islander": 0.002248875562218891,
+          "Other": 0.07871064467766117,
+          "Multiracial": 0.16566716641679163
+      },
+      {
+          "District": 10,
+          "Total_population": 3002900.0,
+          "White": 0.5694093891973752,
+          "Black": 0.02523977788995457,
+          "Alaska_Native": 0.015396264512872288,
+          "Asian": 0.1418475517415447,
+          "Pacific_Islander": 0.0030287733467945486,
+          "Other": 0.07975769813225644,
+          "Multiracial": 0.16532054517920244
+      },
+      {
+          "District": 11,
+          "Total_population": 3004112.0,
+          "White": 0.5551939924906133,
+          "Black": 0.02978723404255319,
+          "Alaska_Native": 0.014017521902377972,
+          "Asian": 0.15819774718397997,
+          "Pacific_Islander": 0.002002503128911139,
+          "Other": 0.07959949937421777,
+          "Multiracial": 0.1612015018773467
+      },
+      {
+          "District": 12,
+          "Total_population": 3002295.0,
+          "White": 0.561536517563811,
+          "Black": 0.02577710386656559,
+          "Alaska_Native": 0.015415718979024518,
+          "Asian": 0.14253222137983326,
+          "Pacific_Islander": 0.002527167045741724,
+          "Other": 0.09021986353297955,
+          "Multiracial": 0.16199140763204453
+      },
+      {
+          "District": 13,
+          "Total_population": 3027215.0,
+          "White": 0.5436598329536827,
+          "Black": 0.027587952417109592,
+          "Alaska_Native": 0.01442672741078208,
+          "Asian": 0.170083523158694,
+          "Pacific_Islander": 0.0022779043280182236,
+          "Other": 0.08099215388509239,
+          "Multiracial": 0.16097190584662113
+      }
+  ]
+  },
+  "MMD5": {
+    "total": {
+      "White": 0.56,
+      "Hispanic": 0.19,
+      "Black": 0.15,
+      "Asian": 0.1
+    },
+    "district": [
+      {
+          "District": 1,
+          "Total_population": 3771279.0,
+          "White": 0.5385077015403081,
+          "Black": 0.05201040208041609,
+          "Alaska_Native": 0.015403080616123225,
+          "Asian": 0.11102220444088817,
+          "Pacific_Islander": 0.006401280256051211,
+          "Other": 0.1250250050010002,
+          "Multiracial": 0.15163032606521307
+      },
+      {
+          "District": 2,
+          "Total_population": 3840005.0,
+          "White": 0.47511493104137514,
+          "Black": 0.06036378173096142,
+          "Alaska_Native": 0.012592444533280032,
+          "Asian": 0.15070957425544673,
+          "Pacific_Islander": 0.004797121726963821,
+          "Other": 0.13032180691585046,
+          "Multiracial": 0.16610033979612232
+      },
+      {
+          "District": 3,
+          "Total_population": 3641540.0,
+          "White": 0.37532493501299746,
+          "Black": 0.027794441111777646,
+          "Alaska_Native": 0.008598280343931213,
+          "Asian": 0.3627274545090982,
+          "Pacific_Islander": 0.00579884023195361,
+          "Other": 0.09918016396720657,
+          "Multiracial": 0.1205758848230354
+      },
+      {
+          "District": 4,
+          "Total_population": 4487327.0,
+          "White": 0.27837972995499255,
+          "Black": 0.05434239039839972,
+          "Alaska_Native": 0.01666944490748458,
+          "Asian": 0.16369394899149856,
+          "Pacific_Islander": 0.005000833472245374,
+          "Other": 0.2733788964827471,
+          "Multiracial": 0.20853475579263206
+      },
+      {
+          "District": 5,
+          "Total_population": 3789790.0,
+          "White": 0.5773857257417803,
+          "Black": 0.027064955894145953,
+          "Alaska_Native": 0.013632718524458702,
+          "Asian": 0.12329591018444268,
+          "Pacific_Islander": 0.002806736166800321,
+          "Other": 0.09903769045709704,
+          "Multiracial": 0.1567762630312751
+      },
+      {
+          "District": 6,
+          "Total_population": 3771722.0,
+          "White": 0.5458986362711175,
+          "Black": 0.02829228577244047,
+          "Alaska_Native": 0.0148585385711378,
+          "Asian": 0.15265621819662126,
+          "Pacific_Islander": 0.0024424994911459398,
+          "Other": 0.08711581518420519,
+          "Multiracial": 0.168736006513332
+      },
+      {
+          "District": 7,
+          "Total_population": 3775212.0,
+          "White": 0.5507710795113158,
+          "Black": 0.02663729220909273,
+          "Alaska_Native": 0.013819347085920286,
+          "Asian": 0.16282795914279993,
+          "Pacific_Islander": 0.0022030843180452634,
+          "Other": 0.08271580212297217,
+          "Multiracial": 0.1610254356098538
+      },
+      {
+          "District": 8,
+          "Total_population": 3751125.0,
+          "White": 0.5638148667601682,
+          "Black": 0.026647966339410942,
+          "Alaska_Native": 0.01462632738930074,
+          "Asian": 0.16028851933480265,
+          "Pacific_Islander": 0.0022039671408535366,
+          "Other": 0.08194750550991786,
+          "Multiracial": 0.150470847525546
+      },
+      {
+          "District": 9,
+          "Total_population": 3817467.0,
+          "White": 0.5755511022044089,
+          "Black": 0.028256513026052102,
+          "Alaska_Native": 0.01503006012024048,
+          "Asian": 0.1466933867735471,
+          "Pacific_Islander": 0.002004008016032064,
+          "Other": 0.07975951903807615,
+          "Multiracial": 0.1527054108216433
+      },
+      {
+          "District": 10,
+          "Total_population": 2978627.0,
+          "White": 0.5256956630734521,
+          "Black": 0.03409375783404362,
+          "Alaska_Native": 0.014790674354474806,
+          "Asian": 0.1642015542742542,
+          "Pacific_Islander": 0.0027575833542241163,
+          "Other": 0.08398094760591628,
+          "Multiracial": 0.174479819503635
+      },
+      {
+          "District": 11,
+          "Total_population": 2281555.0,
+          "White": 0.5638870208473437,
+          "Black": 0.02689979825151311,
+          "Alaska_Native": 0.014794889038332211,
+          "Asian": 0.14391392064559516,
+          "Pacific_Islander": 0.0030262273032952256,
+          "Other": 0.0800268997982515,
+          "Multiracial": 0.1674512441156691
+      }
+  ]
+  }
+}
