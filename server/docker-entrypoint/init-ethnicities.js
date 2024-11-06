@@ -14,14 +14,6 @@ db.ethnicities.insert({ name: 'NY', value: [
       "Hispanic": 0.155,
       "Black": 0.043,
       "Asian": 0.052,
-      "Rep W": 84409.24,
-      "Rep H": 18272.95,
-      "Rep B": 5069.27,
-      "Rep A": 6130.28,
-      "Con W": 773542.056,
-      "Con H": 167456.73,
-      "Con B": 46455.738,
-      "Con A": 56179.032
     },
     {
       "District": 2,
@@ -35,14 +27,6 @@ db.ethnicities.insert({ name: 'NY', value: [
       "Hispanic": 0.277,
       "Black": 0.097,
       "Asian": 0.033,
-      "Rep W": 118647.54,
-      "Rep H": 58898.51,
-      "Rep B": 20625.11,
-      "Rep A": 7016.79,
-      "Con W": 644067.036,
-      "Con H": 319725.034,
-      "Con B": 111961.474,
-      "Con A": 38089.986
     },
     {
       "District": 3,
@@ -56,14 +40,6 @@ db.ethnicities.insert({ name: 'NY', value: [
       "Hispanic": 0.14,
       "Black": 0.034,
       "Asian": 0.234,
-      "Rep W": 132797.155,
-      "Rep H": 33378.1,
-      "Rep B": 8106.11,
-      "Rep A": 55789.11,
-      "Con W": 654072.846,
-      "Con H": 164398.92,
-      "Con B": 39925.452,
-      "Con A": 274781.052
     },
     {
       "District": 4,
@@ -77,14 +53,6 @@ db.ethnicities.insert({ name: 'NY', value: [
       "Hispanic": 0.221,
       "Black": 0.163,
       "Asian": 0.07,
-      "Rep W": 48033.18,
-      "Rep H": 20937.54,
-      "Rep B": 15442.62,
-      "Rep A": 6631.8,
-      "Con W": 37455.132,
-      "Con H": 16326.596,
-      "Con B": 12041.788,
-      "Con A": 5171.32
     },
     {
       "District": 5,
@@ -98,14 +66,6 @@ db.ethnicities.insert({ name: 'NY', value: [
       "Hispanic": 0.206,
       "Black": 0.402,
       "Asian": 0.149,
-      "Rep W": 14484.224,
-      "Rep H": 23310.548,
-      "Rep B": 45489.516,
-      "Rep A": 16860.542,
-      "Con W": 11287.936,
-      "Con H": 18166.522,
-      "Con B": 35451.174,
-      "Con A": 13139.863
     },
     {
       "District": 6,
@@ -119,14 +79,6 @@ db.ethnicities.insert({ name: 'NY', value: [
       "Hispanic": 0.236,
       "Black": 0.036,
       "Asian": 0.454,
-      "Rep W": 39670.092,
-      "Rep H": 38686.536,
-      "Rep B": 5901.336,
-      "Rep A": 7442240.4000000004,
-      "Con W": 9591.428,
-      "Con H": 9353.624,
-      "Con B": 1426.824,
-      "Con A": 1799383.6000000001
     },
     {
       "District": 7,
@@ -140,14 +92,6 @@ db.ethnicities.insert({ name: 'NY', value: [
       "Hispanic": 0.353,
       "Black": 0.101,
       "Asian": 0.132,
-      "Rep W": 1120093.8840000001,
-      "Rep H": 1092246.246,
-      "Rep B": 312512.382,
-      "Rep A": 408432.024,
-      "Con W": 838595.444,
-      "Con H": 817746.3860000001,
-      "Con B": 233972.762,
-      "Con A": 305786.184
     },
     {
       "District": 8,
@@ -161,14 +105,6 @@ db.ethnicities.insert({ name: 'NY', value: [
       "Hispanic": 0.168,
       "Black": 0.418,
       "Asian": 0.085,
-      "Rep W": 44226.792,
-      "Rep H": 26920.656,
-      "Rep B": 66981.156,
-      "Rep A": 13620.57,
-      "Con W": 10149.072,
-      "Con H": 6177.696,
-      "Con B": 15370.696,
-      "Con A": 3125.62
     },
     {
       "District": 9,
@@ -182,14 +118,6 @@ db.ethnicities.insert({ name: 'NY', value: [
       "Hispanic": 0.114,
       "Black": 0.404,
       "Asian": 0.091,
-      "Rep W": 52515.216,
-      "Rep H": 18477.576,
-      "Rep B": 65481.936,
-      "Rep A": 14749.644,
-      "Con W": 12377.772,
-      "Con H": 4355.142,
-      "Con B": 15434.012,
-      "Con A": 3476.473
     },
     {
       "District": 10,
