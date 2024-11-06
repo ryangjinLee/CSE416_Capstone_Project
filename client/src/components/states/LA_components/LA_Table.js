@@ -28,7 +28,7 @@ const PartyWinBreakdownTable = () => {
           <th rowSpan="2" className="align-middle">
             District
           </th>
-          <th colSpan="7" className="text-center">
+          <th colSpan="5" className="text-center">
             Race
           </th>
           <th colSpan="2" className="text-center">
@@ -37,7 +37,7 @@ const PartyWinBreakdownTable = () => {
           <th rowSpan="2" className="align-middle">
             District
           </th>
-          <th colSpan="7" className="text-center">
+          <th colSpan="5" className="text-center">
             Race
           </th>
           <th colSpan="2" className="text-center">
@@ -46,22 +46,18 @@ const PartyWinBreakdownTable = () => {
         </tr>
         <tr>
           <th>White</th>
+          <th>Hispanic</th>
           <th>Black</th>
-          <th>Alaska Native</th>
           <th>Asian</th>
-          <th>Pacific Islander</th>
           <th>Other</th>
-          <th>Multiracial</th>
           <th>Republican</th>
           <th>Democratic</th>
 
           <th>White</th>
+          <th>Hispanic</th>
           <th>Black</th>
-          <th>Alaska Native</th>
           <th>Asian</th>
-          <th>Pacific Islander</th>
           <th>Other</th>
-          <th>Multiracial</th>
           <th>Republican</th>
           <th>Democratic</th>
         </tr>
@@ -77,12 +73,10 @@ const PartyWinBreakdownTable = () => {
                 <>
                   <td className="font-weight-bold">{item1.District}</td>
                   <td>{(item1.White * 100).toFixed(1)}%</td>
+                  <td>{(item1.Hispanic * 100).toFixed(1)}%</td>
                   <td>{(item1.Black * 100).toFixed(1)}%</td>
-                  <td>{(item1.Alaska_Native * 100).toFixed(1)}%</td>
                   <td>{(item1.Asian * 100).toFixed(1)}%</td>
-                  <td>{(item1.Pacific_Islander * 100).toFixed(1)}%</td>
                   <td>{(item1.Other * 100).toFixed(1)}%</td>
-                  <td>{(item1.Multiracial * 100).toFixed(1)}%</td>
                   <td>{calculatePercentage(item1.Republican, item1.Total_Voters)}%</td>
                   <td>{calculatePercentage(item1.Democratic, item1.Total_Voters)}%</td>
                 </>
@@ -92,13 +86,11 @@ const PartyWinBreakdownTable = () => {
               {item2 ? (
                 <>
                   <td className="font-weight-bold">{item2.District}</td>
-                  <td>{(item2.White * 100).toFixed(1)}%</td>
-                  <td>{(item2.Black * 100).toFixed(1)}%</td>
-                  <td>{(item2.Alaska_Native * 100).toFixed(1)}%</td>
-                  <td>{(item2.Asian * 100).toFixed(1)}%</td>
-                  <td>{(item2.Pacific_Islander * 100).toFixed(1)}%</td>
-                  <td>{(item2.Other * 100).toFixed(1)}%</td>
-                  <td>{(item2.Multiracial * 100).toFixed(1)}%</td>
+                  <td>{(item1.White * 100).toFixed(1)}%</td>
+                  <td>{(item1.Hispanic * 100).toFixed(1)}%</td>
+                  <td>{(item1.Black * 100).toFixed(1)}%</td>
+                  <td>{(item1.Asian * 100).toFixed(1)}%</td>
+                  <td>{(item1.Other * 100).toFixed(1)}%</td>
                   <td>{calculatePercentage(item2.Republican, item2.Total_Voters)}%</td>
                   <td>{calculatePercentage(item2.Democratic, item2.Total_Voters)}%</td>
                 </>
