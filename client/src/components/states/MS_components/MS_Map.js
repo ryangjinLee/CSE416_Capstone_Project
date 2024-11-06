@@ -6,18 +6,18 @@ const MS_Map = (props) => {
   const [geoData, setGeoData] = useState(null); // State to store dynamically loaded GeoJSON data
   // Map district IDs to their initial colors
   const initialColors = {
-    1: "red",
+    1: "blue",
     2: "blue",
-    3: "red",
+    3: "blue",
     4: "red",
-    
+
   };
 
   const [selectedDistrict, setSelectedDistrict] = useState(null); // Keep track of selected district
 
   const [layerOption, setLayerOption] = useState([
     "match",
-    ["get", "features.properties.id"], 
+    ["get", "name"],
     ...Object.entries(initialColors).flat(), // Spread initial colors for all districts
     "orange", // Default color for districts not matched
   ]);
@@ -26,29 +26,26 @@ const MS_Map = (props) => {
     latitude: 32.3547,
     longitude: -89.3985,
     zoom: 6,
-  })
+  });
 
   const handleClick = (event) => {
     const feature = event.features[0]; // Get the first clicked feature
     if (feature && feature.properties) {
-      const districtId = feature.properties.id.toString();
+      const districtId = feature.properties.name.toString();
 
       // Update the selected district state
       setSelectedDistrict(districtId);
-      console.log(districtId);
 
       // Pass selected district to parent component
       props.setSelectedDistrict(districtId ? districtId : "Unknown District");
-      console.log(initialColors);
+
       // Update only the clicked district to black, all others retain their original color
       const updatedLayerOption = [
         "match",
-        ["get", "properties.id"],
+        ["get", "name"],
         ...Object.entries(initialColors)
-           .map(([id, color]) => {
-               console.log(`ID: ${id===districtId}, Color: ${color}`); // Debugging line to inspect values
-               return [id, id === districtId ? "black" : color];
-           }).flat(),
+          .map(([id, color]) => [id, id === districtId ? "black" : color])
+          .flat(),
         "orange",
       ];
 
@@ -65,13 +62,12 @@ const MS_Map = (props) => {
           case "MMD2":
             data = await import("../../../data/MS/output2.json");
             break;
+      
           default:
-            data = await import("../../../data/MS/MississippiConDist.json"); // Default to SMD
+            data = await import("../../../data/MS/output.json"); // Default to SMD
             break;
         }
-        
         setGeoData(data.default); // Update geoData state with the loaded GeoJSON
-        console.log(data.default);
       } catch (error) {
         console.error("Error loading GeoJSON data:", error);
       }
@@ -83,6 +79,7 @@ const MS_Map = (props) => {
   const handleViewStateChange = (newViewState) => {
     setViewState(newViewState); // Update view state to handle dragging and zooming
   };
+
   if (!geoData) {
     return <div>Loading Map...</div>; // Display a loading message while data is being fetched
   }
