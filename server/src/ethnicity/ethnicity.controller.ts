@@ -1,34 +1,16 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
+import { Controller, Get, Param } from '@nestjs/common';
 import { EthnicityService } from './ethnicity.service';
-import { CreateEthnicityDto } from './dto/create-ethnicity.dto';
-import { UpdateEthnicityDto } from './dto/update-ethnicity.dto';
+import { ApiOperation, ApiTags } from '@nestjs/swagger';
 
+@ApiTags('Ethnicity')
 @Controller('ethnicity')
 export class EthnicityController {
   constructor(private readonly ethnicityService: EthnicityService) {}
 
-  @Post()
-  create(@Body() createEthnicityDto: CreateEthnicityDto) {
-    return this.ethnicityService.create(createEthnicityDto);
-  }
-
-  @Get()
-  findAll() {
-    return this.ethnicityService.findAll();
-  }
-
-  @Get(':id')
-  findOne(@Param('id') id: string) {
-    return this.ethnicityService.findOne(+id);
-  }
-
-  @Patch(':id')
-  update(@Param('id') id: string, @Body() updateEthnicityDto: UpdateEthnicityDto) {
-    return this.ethnicityService.update(+id, updateEthnicityDto);
-  }
-
-  @Delete(':id')
-  remove(@Param('id') id: string) {
-    return this.ethnicityService.remove(+id);
+  @Get('/:district')
+  @ApiOperation({ summary: 'returns the ethnicity data of given district' })
+  getDistrictEthnicityJSON(@Param('district') districtName: string) {
+    console.log(districtName);
+    return this.ethnicityService.getDistrictEthnicityJSON(districtName);
   }
 }

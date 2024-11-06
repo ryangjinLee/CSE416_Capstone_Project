@@ -1,26 +1,14 @@
 import { Injectable } from '@nestjs/common';
-import { CreateEthnicityDto } from './dto/create-ethnicity.dto';
-import { UpdateEthnicityDto } from './dto/update-ethnicity.dto';
+import { MongoDBService } from '../mongo-db/mongo-db.service';
+import { COLLECTIONS } from '../constants';
 
 @Injectable()
 export class EthnicityService {
-  create(createEthnicityDto: CreateEthnicityDto) {
-    return 'This action adds a new ethnicity';
-  }
+  constructor(private readonly mongoDBService: MongoDBService) {}
 
-  findAll() {
-    return `This action returns all ethnicity`;
-  }
+  async getDistrictEthnicityJSON(districtName: string) {
+    const whereQuery = { name: districtName };
 
-  findOne(id: number) {
-    return `This action returns a #${id} ethnicity`;
-  }
-
-  update(id: number, updateEthnicityDto: UpdateEthnicityDto) {
-    return `This action updates a #${id} ethnicity`;
-  }
-
-  remove(id: number) {
-    return `This action removes a #${id} ethnicity`;
+    return await this.mongoDBService.findOne(COLLECTIONS.ETHNICITY, whereQuery);
   }
 }

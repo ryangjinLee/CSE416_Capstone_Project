@@ -19,8 +19,8 @@ async function bootstrap() {
   });
 
   const document = SwaggerModule.createDocument(app, config);
-  SwaggerModule.setup('docs', app, document); // Swagger UI가 'http://localhost:3001/api-docs'에 표시됨
+  SwaggerModule.setup('docs', app, document);
 
-  await app.listen(3001);
+  await app.listen(8080);
 }
 bootstrap();
