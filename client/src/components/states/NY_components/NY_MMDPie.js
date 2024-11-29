@@ -7,7 +7,7 @@ import {
   Legend,
   Tooltip,
 } from "recharts";
-import EthnicityData from "../../../data/NY/EthnicityData.json";
+import Party_Data from '../../../data/NY/pie_party.json';
 
 const NY_InteractivePie = () => {
   const [chartData, setChartData] = useState([]);
@@ -20,67 +20,47 @@ const NY_InteractivePie = () => {
     let newData = [];
     switch (dataType) {
       case "MMD2":
-        newData = calculateMMD2Data();
+        newData = calculatePartyTotals("MMD2");
         break;
       case "MMD3":
-        newData = calculateMMD3Data();
+        newData = calculatePartyTotals("MMD3");
         break;
       case "MMD4":
-        newData = calculateMMD4Data();
+        newData = calculatePartyTotals("MMD4");
         break;
       case "MMD5":
-        newData = calculateMMD5Data();
+        newData = calculatePartyTotals("MMD5");
         break;
       default:
-        newData = calculateMMD2Data();
+        newData = calculatePartyTotals("MMD2");
     }
+    console.log(dataType)
     setChartData(newData);
   };
 
-  const generateRandomPercentages = () => {
-    const republican = Math.floor(Math.random() * (71 - 40) + 40); // Random number between 40 and 70
-    const democrat = 100 - republican;
+  const calculatePartyTotals = (districting) => {
+    let republican_Count = 0;
+    let democratic_Count = 0;
+
+    const SMD_Data = Party_Data[districting]
+
+    SMD_Data.forEach(district => {
+      if (district.Republican > district.Democratic){
+        republican_Count++
+      }else{
+        democratic_Count++
+      }
+    });
+
+    const total = republican_Count + democratic_Count;
+    const republicanPercentage = Math.round((republican_Count / total) * 100);
+    const democraticPercentage = Math.round((democratic_Count / total) * 100);
+
     return [
-      { name: "Republican", value: republican },
-      { name: "Democrat", value: democrat },
-    ];
+      { name: 'Republican', value: republicanPercentage },
+      { name: 'Democratic', value: democraticPercentage },
+    ]
   };
-
-  const calculateMMD2Data = () => {
-    return generateRandomPercentages();
-  };
-
-  const calculateMMD3Data = () => {
-    return generateRandomPercentages();
-  };
-
-  const calculateMMD4Data = () => {
-    return generateRandomPercentages();
-  };
-
-  const calculateMMD5Data = () => {
-    return generateRandomPercentages();
-  };
-
-  //   const calculateMMDData = (mmdSize) => {
-  //     const districtCount = Object.keys(EthnicityData).length;
-  //     const mmdCount = Math.floor(districtCount / mmdSize);
-
-  //     let republicanTotal = 0;
-  //     let democratTotal = 0;
-  //     let totalVotes = 0;
-
-  //     Object.values(EthnicityData).slice(0, mmdCount * mmdSize).forEach(district => {
-  //       republicanTotal += district.Republicans || 0;
-  //       democratTotal += district.Democrats || 0;
-  //       totalVotes += (district.Republicans || 0) + (district.Democrats || 0);
-  //     });
-
-  //     return [
-  //       { name: 'Republican', value: Math.round((republicanTotal / totalVotes) * 100) },
-  //       { name: 'Democrat', value: Math.round((democratTotal / totalVotes) * 100) },
-  //     ];
-  //   };
 
   const COLORS = ["#FF0000", "#0000FF"];
 
@@ -126,6 +106,9 @@ const NY_InteractivePie = () => {
           <Legend />
         </PieChart>
       </ResponsiveContainer>
+      <div style={{ textAlign: 'center', marginTop: '100px', fontSize: '1.5em', fontWeight: 'bold' }}>
+        MMD
+      </div>
       <div
         style={{ marginTop: "20px", display: "flex", justifyContent: "center" }}
       >
@@ -140,6 +123,7 @@ const NY_InteractivePie = () => {
             {type}
           </label>
         ))}
+        
       </div>
     </div>
   );

@@ -81,26 +81,26 @@
       "max": 26
     }
   ],
-  "democratic": [
-    { "district": "District 1", "percentage": 28 },
-    { "district": "District 2", "percentage": 22 },
-    { "district": "District 3", "percentage": 22 },
-    { "district": "District 4", "percentage": 60 },
-    { "district": "District 5", "percentage": 1 },
-    { "district": "District 6", "percentage": 59 },
-    { "district": "District 7", "percentage": 7 },
-    { "district": "District 8", "percentage": 13 },
-    { "district": "District 9", "percentage": 27 }
-  ],
   "republican": [
-    { "district": "District 1", "percentage": 72 },
-    { "district": "District 2", "percentage": 78 },
-    { "district": "District 3", "percentage": 78 },
-    { "district": "District 4", "percentage": 40 },
-    { "district": "District 5", "percentage": 99 },
-    { "district": "District 6", "percentage": 41 },
-    { "district": "District 7", "percentage": 93 },
-    { "district": "District 8", "percentage": 87 },
-    { "district": "District 9", "percentage": 73 }
+    { "district": "District 1", "percentage": 14 },
+    { "district": "District 2", "percentage": 65 },
+    { "district": "District 3", "percentage": 59 },
+    { "district": "District 4", "percentage": 86 },
+    { "district": "District 5", "percentage": 88},
+    { "district": "District 6", "percentage": 73 },
+    { "district": "District 7", "percentage": 54},
+    { "district": "District 8", "percentage": 51 },
+    { "district": "District 9", "percentage": 54 }
+  ],
+  "democratic": [
+    { "district": "District 1", "percentage": 86 },
+    { "district": "District 2", "percentage": 35 },
+    { "district": "District 3", "percentage": 41 },
+    { "district": "District 4", "percentage": 14 },
+    { "district": "District 5", "percentage": 12 },
+    { "district": "District 6", "percentage": 27 },
+    { "district": "District 7", "percentage": 46 },
+    { "district": "District 8", "percentage": 49 },
+    { "district": "District 9", "percentage": 46 }
   ]
 }

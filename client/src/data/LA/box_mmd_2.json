@@ -1,0 +1,292 @@
+{
+  "total": [
+    {
+      "district": "1",
+      "min": 7,
+      "q1": 12,
+      "median": 15,
+      "q3": 30,
+      "max": 43
+    },
+
+    {
+      "district": "2",
+      "min": 10,
+      "q1": 29,
+      "median": 30,
+      "q3": 42,
+      "max": 52
+    },
+
+    {
+      "district": "3",
+      "min": 6,
+      "q1": 13,
+      "median": 14,
+      "q3": 27,
+      "max": 38
+    },
+
+    {
+      "district": "4",
+      "min": 6,
+      "q1": 9,
+      "median": 27,
+      "q3": 36,
+      "max": 47
+    },
+
+    {
+      "district": "5",
+      "min": 0,
+      "q1": 11,
+      "median": 27,
+      "q3": 37,
+      "max": 51
+    },
+
+    {
+      "district": "6",
+      "min": 5,
+      "q1": 19,
+      "median": 36,
+      "q3": 47,
+      "max": 62
+    },
+
+    {
+      "district": "7",
+      "min": 2,
+      "q1": 11,
+      "median": 20,
+      "q3": 39,
+      "max": 48
+    },
+
+    {
+      "district": "8",
+      "min": 5,
+      "q1": 13,
+      "median": 28,
+      "q3": 37,
+      "max": 57
+    },
+
+    {
+      "district": "9",
+      "min": 4,
+      "q1": 5,
+      "median": 11,
+      "q3": 19,
+      "max": 39
+    },
+
+    {
+      "district": "10",
+      "min": 8,
+      "q1": 23,
+      "median": 25,
+      "q3": 41,
+      "max": 57
+    },
+
+    {
+      "district": "11",
+      "min": 10,
+      "q1": 23,
+      "median": 38,
+      "q3": 56,
+      "max": 71
+    },
+
+    {
+      "district": "12",
+      "min": 2,
+      "q1": 7,
+      "median": 22,
+      "q3": 32,
+      "max": 37
+    },
+
+    {
+      "district": "13",
+      "min": 2,
+      "q1": 20,
+      "median": 30,
+      "q3": 44,
+      "max": 57
+    },
+    {
+      "district": "14",
+      "min": 7,
+      "q1": 12,
+      "median": 15,
+      "q3": 30,
+      "max": 43
+    },
+
+    {
+      "district": "15",
+      "min": 10,
+      "q1": 29,
+      "median": 30,
+      "q3": 42,
+      "max": 52
+    },
+
+    {
+      "district": "16",
+      "min": 6,
+      "q1": 13,
+      "median": 14,
+      "q3": 27,
+      "max": 38
+    },
+
+    {
+      "district": "17",
+      "min": 6,
+      "q1": 9,
+      "median": 27,
+      "q3": 36,
+      "max": 47
+    },
+
+    {
+      "district": "18",
+      "min": 0,
+      "q1": 11,
+      "median": 27,
+      "q3": 37,
+      "max": 51
+    },
+
+    {
+      "district": "19",
+      "min": 5,
+      "q1": 19,
+      "median": 36,
+      "q3": 47,
+      "max": 62
+    },
+
+    {
+      "district": "20",
+      "min": 2,
+      "q1": 11,
+      "median": 20,
+      "q3": 39,
+      "max": 48
+    },
+
+    {
+      "district": "21",
+      "min": 5,
+      "q1": 13,
+      "median": 28,
+      "q3": 37,
+      "max": 57
+    },
+
+    {
+      "district": "22",
+      "min": 4,
+      "q1": 5,
+      "median": 11,
+      "q3": 19,
+      "max": 39
+    },
+
+    {
+      "district": "23",
+      "min": 8,
+      "q1": 23,
+      "median": 25,
+      "q3": 41,
+      "max": 57
+    },
+
+    {
+      "district": "24",
+      "min": 10,
+      "q1": 23,
+      "median": 38,
+      "q3": 56,
+      "max": 71
+    },
+
+    {
+      "district": "25",
+      "min": 2,
+      "q1": 7,
+      "median": 22,
+      "q3": 32,
+      "max": 37
+    },
+
+    {
+      "district": "26",
+      "min": 2,
+      "q1": 20,
+      "median": 30,
+      "q3": 44,
+      "max": 57
+    }
+  ],
+  "republican": [
+    { "district": "1", "percentage": 44 },
+    { "district": "2", "percentage": 35 },
+    { "district": "3", "percentage": 60 },
+    { "district": "4", "percentage": 39 },
+    { "district": "5", "percentage": 28 },
+    { "district": "6", "percentage": 50 },
+    { "district": "7", "percentage": 22 },
+    { "district": "8", "percentage": 30 },
+    { "district": "9", "percentage": 31 },
+    { "district": "10", "percentage": 51 },
+    { "district": "11", "percentage": 70 },
+    { "district": "12", "percentage": 41 },
+    { "district": "13", "percentage": 59 },
+    { "district": "14", "percentage": 56 },
+    { "district": "15", "percentage": 38 },
+    { "district": "16", "percentage": 43 },
+    { "district": "17", "percentage": 50 },
+    { "district": "18", "percentage": 54 },
+    { "district": "19", "percentage": 37 },
+    { "district": "20", "percentage": 40 },
+    { "district": "21", "percentage": 49 },
+    { "district": "22", "percentage": 38 },
+    { "district": "23", "percentage": 29 },
+    { "district": "24", "percentage": 19 },
+    { "district": "25", "percentage": 22 },
+    { "district": "26", "percentage": 25 }
+  ],
+  "democratic": [
+    { "district": "1", "percentage": 56 },
+    { "district": "2", "percentage": 65 },
+    { "district": "3", "percentage": 40 },
+    { "district": "4", "percentage": 61 },
+    { "district": "5", "percentage": 72 },
+    { "district": "6", "percentage": 50 },
+    { "district": "7", "percentage": 78 },
+    { "district": "8", "percentage": 70 },
+    { "district": "9", "percentage": 69 },
+    { "district": "10", "percentage": 49 },
+    { "district": "11", "percentage": 30 },
+    { "district": "12", "percentage": 59 },
+    { "district": "13", "percentage": 41},
+    { "district": "14", "percentage": 44 },
+    { "district": "15", "percentage": 62 },
+    { "district": "16", "percentage": 57 },
+    { "district": "17", "percentage": 50 },
+    { "district": "18", "percentage": 46 },
+    { "district": "19", "percentage": 63 },
+    { "district": "20", "percentage": 60 },
+    { "district": "21", "percentage": 51 },
+    { "district": "22", "percentage": 62 },
+    { "district": "23", "percentage": 71 },
+    { "district": "24", "percentage": 81 },
+    { "district": "25", "percentage": 78 },
+    { "district": "26", "percentage": 75}
+  ]
+}

@@ -1,0 +1,1132 @@
+{
+  "SMD": {
+    "total": {
+      "White": 0.56,
+      "Hispanic": 0.19,
+      "Black": 0.15,
+      "Asian": 0.1
+    },
+    "district": [
+        {
+            "District": 1,
+            "Total population": 710344,
+            "White": 0.773,
+            "Hispanic": 0.131,
+            "Black": 0.014,
+            "Asian": 0.03,
+            "Other": 0.052
+        },
+        {
+            "District": 2,
+            "Total population": 720346,
+            "White": 0.709,
+            "Hispanic": 0.177,
+            "Black": 0.015,
+            "Asian": 0.04,
+            "Other": 0.059
+        },
+        {
+            "District": 3,
+            "Total population": 731775,
+            "White": 0.474,
+            "Hispanic": 0.3,
+            "Black": 0.061,
+            "Asian": 0.108,
+            "Other": 0.057
+        },
+        {
+            "District": 4,
+            "Total population": 722313,
+            "White": 0.762,
+            "Hispanic": 0.132,
+            "Black": 0.016,
+            "Asian": 0.047,
+            "Other": 0.043
+        },
+        {
+            "District": 5,
+            "Total population": 733412,
+            "White": 0.496,
+            "Hispanic": 0.279,
+            "Black": 0.057,
+            "Asian": 0.115,
+            "Other": 0.052
+        },
+        {
+            "District": 6,
+            "Total population": 750843,
+            "White": 0.366,
+            "Hispanic": 0.295,
+            "Black": 0.119,
+            "Asian": 0.151,
+            "Other": 0.069
+        },
+        {
+            "District": 7,
+            "Total population": 739069,
+            "White": 0.546,
+            "Hispanic": 0.159,
+            "Black": 0.073,
+            "Asian": 0.16,
+            "Other": 0.062
+        },
+        {
+            "District": 8,
+            "Total population": 716399,
+            "White": 0.461,
+            "Hispanic": 0.392,
+            "Black": 0.076,
+            "Asian": 0.029,
+            "Other": 0.042
+        },
+        {
+            "District": 9,
+            "Total population": 746779,
+            "White": 0.352,
+            "Hispanic": 0.376,
+            "Black": 0.087,
+            "Asian": 0.14,
+            "Other": 0.045
+        },
+        {
+            "District": 10,
+            "Total population": 739784,
+            "White": 0.429,
+            "Hispanic": 0.427,
+            "Black": 0.03,
+            "Asian": 0.068,
+            "Other": 0.044
+        },
+        {
+            "District": 11,
+            "Total population": 752786,
+            "White": 0.461,
+            "Hispanic": 0.272,
+            "Black": 0.083,
+            "Asian": 0.137,
+            "Other": 0.047
+        },
+        {
+            "District": 12,
+            "Total population": 749688,
+            "White": 0.433,
+            "Hispanic": 0.149,
+            "Black": 0.051,
+            "Asian": 0.322,
+            "Other": 0.044
+        },
+        {
+            "District": 13,
+            "Total population": 755776,
+            "White": 0.35,
+            "Hispanic": 0.224,
+            "Black": 0.168,
+            "Asian": 0.201,
+            "Other": 0.057
+        },
+        {
+            "District": 14,
+            "Total population": 757062,
+            "White": 0.341,
+            "Hispanic": 0.243,
+            "Black": 0.028,
+            "Asian": 0.333,
+            "Other": 0.055
+        },
+        {
+            "District": 15,
+            "Total population": 771800,
+            "White": 0.326,
+            "Hispanic": 0.222,
+            "Black": 0.059,
+            "Asian": 0.335,
+            "Other": 0.059
+        },
+        {
+            "District": 16,
+            "Total population": 740625,
+            "White": 0.223,
+            "Hispanic": 0.604,
+            "Black": 0.048,
+            "Asian": 0.096,
+            "Other": 0.029
+        },
+        {
+            "District": 17,
+            "Total population": 760444,
+            "White": 0.247,
+            "Hispanic": 0.162,
+            "Black": 0.024,
+            "Asian": 0.528,
+            "Other": 0.04
+        },
+        {
+            "District": 18,
+            "Total population": 738774,
+            "White": 0.551,
+            "Hispanic": 0.159,
+            "Black": 0.017,
+            "Asian": 0.227,
+            "Other": 0.046
+        },
+        {
+            "District": 19,
+            "Total population": 765143,
+            "White": 0.252,
+            "Hispanic": 0.413,
+            "Black": 0.028,
+            "Asian": 0.268,
+            "Other": 0.039
+        },
+        {
+            "District": 20,
+            "Total population": 733752,
+            "White": 0.368,
+            "Hispanic": 0.529,
+            "Black": 0.016,
+            "Asian": 0.05,
+            "Other": 0.036
+        },
+        {
+            "District": 21,
+            "Total population": 716371,
+            "White": 0.17,
+            "Hispanic": 0.747,
+            "Black": 0.037,
+            "Asian": 0.03,
+            "Other": 0.017
+        },
+        {
+            "District": 22,
+            "Total population": 741313,
+            "White": 0.401,
+            "Hispanic": 0.467,
+            "Black": 0.033,
+            "Asian": 0.072,
+            "Other": 0.027
+        },
+        {
+            "District": 23,
+            "Total population": 738690,
+            "White": 0.471,
+            "Hispanic": 0.377,
+            "Black": 0.067,
+            "Asian": 0.052,
+            "Other": 0.033
+        },
+        {
+            "District": 24,
+            "Total population": 736757,
+            "White": 0.547,
+            "Hispanic": 0.36,
+            "Black": 0.019,
+            "Asian": 0.046,
+            "Other": 0.028
+        },
+        {
+            "District": 25,
+            "Total population": 720316,
+            "White": 0.428,
+            "Hispanic": 0.372,
+            "Black": 0.08,
+            "Asian": 0.09,
+            "Other": 0.03
+        },
+        {
+            "District": 26,
+            "Total population": 725084,
+            "White": 0.436,
+            "Hispanic": 0.45,
+            "Black": 0.017,
+            "Asian": 0.069,
+            "Other": 0.027
+        },
+        {
+            "District": 27,
+            "Total population": 733239,
+            "White": 0.264,
+            "Hispanic": 0.279,
+            "Black": 0.046,
+            "Asian": 0.379,
+            "Other": 0.032
+        },
+        {
+            "District": 28,
+            "Total population": 714897,
+            "White": 0.562,
+            "Hispanic": 0.242,
+            "Black": 0.029,
+            "Asian": 0.132,
+            "Other": 0.034
+        },
+        {
+            "District": 29,
+            "Total population": 720532,
+            "White": 0.184,
+            "Hispanic": 0.688,
+            "Black": 0.038,
+            "Asian": 0.076,
+            "Other": 0.014
+        },
+        {
+            "District": 30,
+            "Total population": 771108,
+            "White": 0.499,
+            "Hispanic": 0.289,
+            "Black": 0.042,
+            "Asian": 0.131,
+            "Other": 0.039
+        },
+        {
+            "District": 31,
+            "Total population": 738482,
+            "White": 0.271,
+            "Hispanic": 0.518,
+            "Black": 0.102,
+            "Asian": 0.078,
+            "Other": 0.03
+        },
+        {
+            "District": 32,
+            "Total population": 732927,
+            "White": 0.163,
+            "Hispanic": 0.634,
+            "Black": 0.017,
+            "Asian": 0.168,
+            "Other": 0.018
+        },
+        {
+            "District": 33,
+            "Total population": 730338,
+            "White": 0.557,
+            "Hispanic": 0.21,
+            "Black": 0.05,
+            "Asian": 0.142,
+            "Other": 0.042
+        },
+        {
+            "District": 34,
+            "Total population": 797723,
+            "White": 0.13,
+            "Hispanic": 0.675,
+            "Black": 0.021,
+            "Asian": 0.155,
+            "Other": 0.02
+        },
+        {
+            "District": 35,
+            "Total population": 739819,
+            "White": 0.13,
+            "Hispanic": 0.715,
+            "Black": 0.059,
+            "Asian": 0.07,
+            "Other": 0.026
+        },
+        {
+            "District": 36,
+            "Total population": 750645,
+            "White": 0.402,
+            "Hispanic": 0.498,
+            "Black": 0.044,
+            "Asian": 0.031,
+            "Other": 0.025
+        },
+        {
+            "District": 37,
+            "Total population": 722781,
+            "White": 0.252,
+            "Hispanic": 0.381,
+            "Black": 0.234,
+            "Asian": 0.097,
+            "Other": 0.036
+        },
+        {
+            "District": 38,
+            "Total population": 725433,
+            "White": 0.164,
+            "Hispanic": 0.625,
+            "Black": 0.037,
+            "Asian": 0.153,
+            "Other": 0.022
+        },
+        {
+            "District": 39,
+            "Total population": 731324,
+            "White": 0.3,
+            "Hispanic": 0.349,
+            "Black": 0.017,
+            "Asian": 0.308,
+            "Other": 0.026
+        },
+        {
+            "District": 40,
+            "Total population": 721037,
+            "White": 0.049,
+            "Hispanic": 0.876,
+            "Black": 0.045,
+            "Asian": 0.025,
+            "Other": 0.005
+        },
+        {
+            "District": 41,
+            "Total population": 745630,
+            "White": 0.251,
+            "Hispanic": 0.58,
+            "Black": 0.091,
+            "Asian": 0.051,
+            "Other": 0.028
+        },
+        {
+            "District": 42,
+            "Total population": 772860,
+            "White": 0.428,
+            "Hispanic": 0.381,
+            "Black": 0.049,
+            "Asian": 0.1,
+            "Other": 0.042
+        },
+        {
+            "District": 43,
+            "Total population": 744444,
+            "White": 0.135,
+            "Hispanic": 0.483,
+            "Black": 0.223,
+            "Asian": 0.125,
+            "Other": 0.034
+        },
+        {
+            "District": 44,
+            "Total population": 712204,
+            "White": 0.068,
+            "Hispanic": 0.694,
+            "Black": 0.148,
+            "Asian": 0.066,
+            "Other": 0.024
+        },
+        {
+            "District": 45,
+            "Total population": 771550,
+            "White": 0.513,
+            "Hispanic": 0.179,
+            "Black": 0.022,
+            "Asian": 0.244,
+            "Other": 0.042
+        },
+        {
+            "District": 46,
+            "Total population": 738410,
+            "White": 0.175,
+            "Hispanic": 0.673,
+            "Black": 0.018,
+            "Asian": 0.119,
+            "Other": 0.015
+        },
+        {
+            "District": 47,
+            "Total population": 718339,
+            "White": 0.306,
+            "Hispanic": 0.363,
+            "Black": 0.068,
+            "Asian": 0.219,
+            "Other": 0.044
+        },
+        {
+            "District": 48,
+            "Total population": 724082,
+            "White": 0.563,
+            "Hispanic": 0.203,
+            "Black": 0.012,
+            "Asian": 0.182,
+            "Other": 0.04
+        },
+        {
+            "District": 49,
+            "Total population": 735828,
+            "White": 0.615,
+            "Hispanic": 0.258,
+            "Black": 0.025,
+            "Asian": 0.068,
+            "Other": 0.035
+        },
+        {
+            "District": 50,
+            "Total population": 753486,
+            "White": 0.556,
+            "Hispanic": 0.314,
+            "Black": 0.023,
+            "Asian": 0.061,
+            "Other": 0.046
+        },
+        {
+            "District": 51,
+            "Total population": 724812,
+            "White": 0.131,
+            "Hispanic": 0.706,
+            "Black": 0.056,
+            "Asian": 0.087,
+            "Other": 0.021
+        },
+        {
+            "District": 52,
+            "Total population": 755498,
+            "White": 0.575,
+            "Hispanic": 0.157,
+            "Black": 0.028,
+            "Asian": 0.19,
+            "Other": 0.051
+        }
+    ]
+  },
+  "MMD2": {
+    "total": {
+      "White": 0.56,
+      "Hispanic": 0.19,
+      "Black": 0.15,
+      "Asian": 0.1
+    },
+    "district": [
+        {
+            "District": 1,
+            "Total population": 1430690.0,
+            "White": 0.741,
+            "Hispanic": 0.154,
+            "Black": 0.015,
+            "Asian": 0.035,
+            "Other": 0.055
+        },
+        {
+            "District": 2,
+            "Total population": 1473156.0,
+            "White": 0.56,
+            "Hispanic": 0.215,
+            "Black": 0.068,
+            "Asian": 0.1,
+            "Other": 0.056
+        },
+        {
+            "District": 3,
+            "Total population": 1465187.0,
+            "White": 0.485,
+            "Hispanic": 0.289,
+            "Black": 0.059,
+            "Asian": 0.112,
+            "Other": 0.055
+        },
+        {
+            "District": 4,
+            "Total population": 1485848.0,
+            "White": 0.448,
+            "Hispanic": 0.268,
+            "Black": 0.08,
+            "Asian": 0.15,
+            "Other": 0.054
+        },
+        {
+            "District": 5,
+            "Total population": 1456183.0,
+            "White": 0.445,
+            "Hispanic": 0.41,
+            "Black": 0.053,
+            "Asian": 0.049,
+            "Other": 0.043
+        },
+        {
+            "District": 6,
+            "Total population": 1502474.0,
+            "White": 0.447,
+            "Hispanic": 0.211,
+            "Black": 0.067,
+            "Asian": 0.23,
+            "Other": 0.045
+        },
+        {
+            "District": 7,
+            "Total population": 1512425.0,
+            "White": 0.275,
+            "Hispanic": 0.409,
+            "Black": 0.054,
+            "Asian": 0.218,
+            "Other": 0.044
+        },
+        {
+            "District": 8,
+            "Total population": 1517506.0,
+            "White": 0.294,
+            "Hispanic": 0.203,
+            "Black": 0.026,
+            "Asian": 0.431,
+            "Other": 0.047
+        },
+        {
+            "District": 9,
+            "Total population": 1503917.0,
+            "White": 0.399,
+            "Hispanic": 0.289,
+            "Black": 0.023,
+            "Asian": 0.248,
+            "Other": 0.042
+        },
+        {
+            "District": 10,
+            "Total population": 1472147.0,
+            "White": 0.262,
+            "Hispanic": 0.479,
+            "Black": 0.104,
+            "Asian": 0.118,
+            "Other": 0.038
+        },
+        {
+            "District": 11,
+            "Total population": 1475065.0,
+            "White": 0.385,
+            "Hispanic": 0.498,
+            "Black": 0.025,
+            "Asian": 0.061,
+            "Other": 0.031
+        },
+        {
+            "District": 12,
+            "Total population": 1461841.0,
+            "White": 0.492,
+            "Hispanic": 0.404,
+            "Black": 0.018,
+            "Asian": 0.058,
+            "Other": 0.028
+        },
+        {
+            "District": 13,
+            "Total population": 1471929.0,
+            "White": 0.368,
+            "Hispanic": 0.328,
+            "Black": 0.056,
+            "Asian": 0.215,
+            "Other": 0.033
+        },
+        {
+            "District": 14,
+            "Total population": 1444398.0,
+            "White": 0.496,
+            "Hispanic": 0.287,
+            "Black": 0.046,
+            "Asian": 0.136,
+            "Other": 0.035
+        },
+        {
+            "District": 15,
+            "Total population": 1480310.0,
+            "White": 0.357,
+            "Hispanic": 0.426,
+            "Black": 0.042,
+            "Asian": 0.139,
+            "Other": 0.036
+        },
+        {
+            "District": 16,
+            "Total population": 1489314.0,
+            "White": 0.585,
+            "Hispanic": 0.286,
+            "Black": 0.024,
+            "Asian": 0.064,
+            "Other": 0.04
+        },
+        {
+            "District": 17,
+            "Total population": 1476954.0,
+            "White": 0.275,
+            "Hispanic": 0.466,
+            "Black": 0.054,
+            "Asian": 0.178,
+            "Other": 0.027
+        },
+        {
+            "District": 18,
+            "Total population": 1439376.0,
+            "White": 0.177,
+            "Hispanic": 0.62,
+            "Black": 0.057,
+            "Asian": 0.122,
+            "Other": 0.024
+        },
+        {
+            "District": 19,
+            "Total population": 1445235.0,
+            "White": 0.559,
+            "Hispanic": 0.226,
+            "Black": 0.04,
+            "Asian": 0.137,
+            "Other": 0.038
+        },
+        {
+            "District": 20,
+            "Total population": 1478301.0,
+            "White": 0.201,
+            "Hispanic": 0.616,
+            "Black": 0.081,
+            "Asian": 0.074,
+            "Other": 0.028
+        },
+        {
+            "District": 21,
+            "Total population": 1509960.0,
+            "White": 0.348,
+            "Hispanic": 0.42,
+            "Black": 0.02,
+            "Asian": 0.183,
+            "Other": 0.029
+        },
+        {
+            "District": 22,
+            "Total population": 1498293.0,
+            "White": 0.3,
+            "Hispanic": 0.499,
+            "Black": 0.043,
+            "Asian": 0.126,
+            "Other": 0.032
+        },
+        {
+            "District": 23,
+            "Total population": 1453459.0,
+            "White": 0.174,
+            "Hispanic": 0.661,
+            "Black": 0.027,
+            "Asian": 0.122,
+            "Other": 0.016
+        },
+        {
+            "District": 24,
+            "Total population": 1568831.0,
+            "White": 0.311,
+            "Hispanic": 0.486,
+            "Black": 0.031,
+            "Asian": 0.143,
+            "Other": 0.029
+        },
+        {
+            "District": 25,
+            "Total population": 1473426.0,
+            "White": 0.328,
+            "Hispanic": 0.441,
+            "Black": 0.137,
+            "Asian": 0.063,
+            "Other": 0.03
+        },
+        {
+            "District": 26,
+            "Total population": 1456648.0,
+            "White": 0.102,
+            "Hispanic": 0.586,
+            "Black": 0.186,
+            "Asian": 0.096,
+            "Other": 0.029
+        }
+    ]
+  },
+  "MMD3": {
+    "total": {
+      "White": 0.56,
+      "Hispanic": 0.19,
+      "Black": 0.15,
+      "Asian": 0.1
+    },
+    "district": [
+        {
+            "District": 1,
+            "Total population": 2153003.0,
+            "White": 0.748,
+            "Hispanic": 0.147,
+            "Black": 0.015,
+            "Asian": 0.039,
+            "Other": 0.051
+        },
+        {
+            "District": 2,
+            "Total population": 2221687.0,
+            "White": 0.461,
+            "Hispanic": 0.252,
+            "Black": 0.085,
+            "Asian": 0.14,
+            "Other": 0.063
+        },
+        {
+            "District": 3,
+            "Total population": 2205871.0,
+            "White": 0.441,
+            "Hispanic": 0.322,
+            "Black": 0.052,
+            "Asian": 0.142,
+            "Other": 0.043
+        },
+        {
+            "District": 4,
+            "Total population": 2265211.0,
+            "White": 0.337,
+            "Hispanic": 0.364,
+            "Black": 0.063,
+            "Asian": 0.191,
+            "Other": 0.045
+        },
+        {
+            "District": 5,
+            "Total population": 2235967.0,
+            "White": 0.398,
+            "Hispanic": 0.293,
+            "Black": 0.105,
+            "Asian": 0.153,
+            "Other": 0.052
+        },
+        {
+            "District": 6,
+            "Total population": 2256280.0,
+            "White": 0.378,
+            "Hispanic": 0.188,
+            "Black": 0.023,
+            "Asian": 0.364,
+            "Other": 0.047
+        },
+        {
+            "District": 7,
+            "Total population": 2191436.0,
+            "White": 0.314,
+            "Hispanic": 0.58,
+            "Black": 0.028,
+            "Asian": 0.051,
+            "Other": 0.027
+        },
+        {
+            "District": 8,
+            "Total population": 2226984.0,
+            "White": 0.41,
+            "Hispanic": 0.408,
+            "Black": 0.021,
+            "Asian": 0.13,
+            "Other": 0.032
+        },
+        {
+            "District": 9,
+            "Total population": 2186826.0,
+            "White": 0.431,
+            "Hispanic": 0.3,
+            "Black": 0.048,
+            "Asian": 0.188,
+            "Other": 0.033
+        },
+        {
+            "District": 10,
+            "Total population": 2224567.0,
+            "White": 0.286,
+            "Hispanic": 0.532,
+            "Black": 0.032,
+            "Asian": 0.125,
+            "Other": 0.024
+        },
+        {
+            "District": 11,
+            "Total population": 2217870.0,
+            "White": 0.263,
+            "Hispanic": 0.455,
+            "Black": 0.166,
+            "Asian": 0.084,
+            "Other": 0.032
+        },
+        {
+            "District": 12,
+            "Total population": 2282787.0,
+            "White": 0.211,
+            "Hispanic": 0.582,
+            "Black": 0.07,
+            "Asian": 0.108,
+            "Other": 0.029
+        },
+        {
+            "District": 13,
+            "Total population": 2208639.0,
+            "White": 0.319,
+            "Hispanic": 0.482,
+            "Black": 0.071,
+            "Asian": 0.097,
+            "Other": 0.033
+        },
+        {
+            "District": 14,
+            "Total population": 2235393.0,
+            "White": 0.288,
+            "Hispanic": 0.487,
+            "Black": 0.025,
+            "Asian": 0.173,
+            "Other": 0.027
+        },
+        {
+            "District": 15,
+            "Total population": 2175204.0,
+            "White": 0.325,
+            "Hispanic": 0.497,
+            "Black": 0.046,
+            "Asian": 0.104,
+            "Other": 0.028
+        },
+        {
+            "District": 16,
+            "Total population": 2233796.0,
+            "White": 0.424,
+            "Hispanic": 0.388,
+            "Black": 0.035,
+            "Asian": 0.113,
+            "Other": 0.04
+        },
+        {
+            "District": 17,
+            "Total population": 1476954.0,
+            "White": 0.275,
+            "Hispanic": 0.466,
+            "Black": 0.054,
+            "Asian": 0.178,
+            "Other": 0.027
+        },
+        {
+            "District": 18,
+            "Total population": 1444398.0,
+            "White": 0.496,
+            "Hispanic": 0.287,
+            "Black": 0.046,
+            "Asian": 0.136,
+            "Other": 0.035
+        }
+    ]
+  },
+  "MMD4": {
+    "total": {
+      "White": 0.56,
+      "Hispanic": 0.19,
+      "Black": 0.15,
+      "Asian": 0.1
+    },
+    "district": [
+        {
+            "District": 1,
+            "Total population": 2903846.0,
+            "White": 0.649,
+            "Hispanic": 0.185,
+            "Black": 0.042,
+            "Asian": 0.068,
+            "Other": 0.056
+        },
+        {
+            "District": 2,
+            "Total population": 2951035.0,
+            "White": 0.467,
+            "Hispanic": 0.279,
+            "Black": 0.07,
+            "Asian": 0.131,
+            "Other": 0.054
+        },
+        {
+            "District": 3,
+            "Total population": 2958657.0,
+            "White": 0.446,
+            "Hispanic": 0.309,
+            "Black": 0.06,
+            "Asian": 0.141,
+            "Other": 0.044
+        },
+        {
+            "District": 4,
+            "Total population": 3029931.0,
+            "White": 0.285,
+            "Hispanic": 0.306,
+            "Black": 0.04,
+            "Asian": 0.324,
+            "Other": 0.046
+        },
+        {
+            "District": 5,
+            "Total population": 2976064.0,
+            "White": 0.331,
+            "Hispanic": 0.383,
+            "Black": 0.063,
+            "Asian": 0.183,
+            "Other": 0.04
+        },
+        {
+            "District": 6,
+            "Total population": 2936906.0,
+            "White": 0.438,
+            "Hispanic": 0.452,
+            "Black": 0.021,
+            "Asian": 0.06,
+            "Other": 0.03
+        },
+        {
+            "District": 7,
+            "Total population": 2916327.0,
+            "White": 0.431,
+            "Hispanic": 0.308,
+            "Black": 0.051,
+            "Asian": 0.176,
+            "Other": 0.034
+        },
+        {
+            "District": 8,
+            "Total population": 2969624.0,
+            "White": 0.471,
+            "Hispanic": 0.356,
+            "Black": 0.033,
+            "Asian": 0.102,
+            "Other": 0.038
+        },
+        {
+            "District": 9,
+            "Total population": 2916330.0,
+            "White": 0.227,
+            "Hispanic": 0.542,
+            "Black": 0.055,
+            "Asian": 0.15,
+            "Other": 0.026
+        },
+        {
+            "District": 10,
+            "Total population": 2923536.0,
+            "White": 0.378,
+            "Hispanic": 0.423,
+            "Black": 0.06,
+            "Asian": 0.105,
+            "Other": 0.033
+        },
+        {
+            "District": 11,
+            "Total population": 3008253.0,
+            "White": 0.324,
+            "Hispanic": 0.46,
+            "Black": 0.031,
+            "Asian": 0.154,
+            "Other": 0.031
+        },
+        {
+            "District": 12,
+            "Total population": 3022290.0,
+            "White": 0.245,
+            "Hispanic": 0.57,
+            "Black": 0.029,
+            "Asian": 0.133,
+            "Other": 0.023
+        },
+        {
+            "District": 13,
+            "Total population": 2930074.0,
+            "White": 0.216,
+            "Hispanic": 0.513,
+            "Black": 0.162,
+            "Asian": 0.08,
+            "Other": 0.03
+        }
+    ]
+  },
+  "MMD5": {
+    "total": {
+      "White": 0.56,
+      "Hispanic": 0.19,
+      "Black": 0.15,
+      "Asian": 0.1
+    },
+    "district": [
+        {
+            "District": 1,
+            "Total population": 3642915.0,
+            "White": 0.628,
+            "Hispanic": 0.18,
+            "Black": 0.048,
+            "Asian": 0.087,
+            "Other": 0.057
+        },
+        {
+            "District": 2,
+            "Total population": 3668149.0,
+            "White": 0.442,
+            "Hispanic": 0.355,
+            "Black": 0.062,
+            "Asian": 0.093,
+            "Other": 0.048
+        },
+        {
+            "District": 3,
+            "Total population": 3790798.0,
+            "White": 0.302,
+            "Hispanic": 0.333,
+            "Black": 0.048,
+            "Asian": 0.274,
+            "Other": 0.043
+        },
+        {
+            "District": 4,
+            "Total population": 3717671.0,
+            "White": 0.37,
+            "Hispanic": 0.301,
+            "Black": 0.061,
+            "Asian": 0.225,
+            "Other": 0.044
+        },
+        {
+            "District": 5,
+            "Total population": 3670145.0,
+            "White": 0.403,
+            "Hispanic": 0.417,
+            "Black": 0.026,
+            "Asian": 0.123,
+            "Other": 0.03
+        },
+        {
+            "District": 6,
+            "Total population": 3697993.0,
+            "White": 0.303,
+            "Hispanic": 0.496,
+            "Black": 0.074,
+            "Asian": 0.101,
+            "Other": 0.027
+        },
+        {
+            "District": 7,
+            "Total population": 3693706.0,
+            "White": 0.489,
+            "Hispanic": 0.326,
+            "Black": 0.029,
+            "Asian": 0.117,
+            "Other": 0.039
+        },
+        {
+            "District": 8,
+            "Total population": 3798781.0,
+            "White": 0.258,
+            "Hispanic": 0.48,
+            "Black": 0.09,
+            "Asian": 0.139,
+            "Other": 0.033
+        },
+        {
+            "District": 9,
+            "Total population": 3643732.0,
+            "White": 0.241,
+            "Hispanic": 0.573,
+            "Black": 0.06,
+            "Asian": 0.1,
+            "Other": 0.024
+        },
+        {
+            "District": 10,
+            "Total population": 2940171.0,
+            "White": 0.364,
+            "Hispanic": 0.413,
+            "Black": 0.048,
+            "Asian": 0.143,
+            "Other": 0.032
+        },
+        {
+            "District": 11,
+            "Total population": 2178812.0,
+            "White": 0.331,
+            "Hispanic": 0.463,
+            "Black": 0.056,
+            "Asian": 0.121,
+            "Other": 0.029
+        }
+    ]
+  }
+}
